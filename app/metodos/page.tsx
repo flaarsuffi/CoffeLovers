@@ -2,10 +2,9 @@ import { metodos } from "@/lib/data";
 
 export default function MetodosPage() {
   return (
-    <section className="px-20 py-15 border-b border-border">
+    <section className="px-20 py-15">
       <h1 className="font-serif text-5xl font-bold mb-8 letter-spacing-tight">
         Métodos de Preparo
-        <div className="w-10 h-0.5 bg-primary mt-4"></div>
       </h1>
       <div className="grid grid-cols-3 gap-6">
         {metodos.map((metodo) => (

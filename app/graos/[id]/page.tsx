@@ -21,7 +21,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </div>
 
       {/* HERO */}
-      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 border-b border-border items-center">
+      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 items-center">
         <div>
           <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-6">
             {grao.nome}
@@ -52,10 +52,9 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </section>
 
       {/* ORIGEM SECTION */}
-      <section className="px-20 py-15 border-b border-border">
+      <section className="px-20 py-15">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Origem
-          <div className="w-10 h-0.5 bg-primary mt-4"></div>
         </h2>
         <div className="grid grid-cols-[1.4fr_1fr] gap-15">
           <div className="text-base text-text-tertiary leading-relaxed font-light">
@@ -91,24 +90,20 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </section>
 
       {/* FLAVOR PROFILE */}
-      <section className="px-20 py-15 border-b border-border">
+      <section className="px-20 py-15">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Perfil
-          <div className="w-10 h-0.5 bg-primary mt-4"></div>
         </h2>
         <div className="grid grid-cols-3 gap-6">
           <div className="bg-bg-subtle px-7 py-7 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
-            <div className="text-4xl mb-3">🍫</div>
             <h3 className="font-serif text-lg font-bold text-primary mb-2">Corpo</h3>
             <p className="text-sm text-text-tertiary">{grao.flavor.corpo}</p>
           </div>
           <div className="bg-bg-subtle px-7 py-7 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
-            <div className="text-4xl mb-3">🍓</div>
             <h3 className="font-serif text-lg font-bold text-primary mb-2">Acidez</h3>
             <p className="text-sm text-text-tertiary">{grao.flavor.acidez}</p>
           </div>
           <div className="bg-bg-subtle px-7 py-7 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
-            <div className="text-4xl mb-3">🍬</div>
             <h3 className="font-serif text-lg font-bold text-primary mb-2">Doçura</h3>
             <p className="text-sm text-text-tertiary">{grao.flavor.docura}</p>
           </div>
@@ -129,10 +124,9 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </section>
 
       {/* MÉTODOS RECOMENDADOS */}
-      <section className="px-20 py-15 border-b border-border">
+      <section className="px-20 py-15">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Métodos Recomendados
-          <div className="w-10 h-0.5 bg-primary mt-4"></div>
         </h2>
         <div className="grid grid-cols-3 gap-6">
           {grao.metodos_recomendados.map((metodoNome) => {
@@ -143,7 +137,6 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
                 href={`/metodos/${metodoId}`}
                 className="bg-bg-subtle px-7 py-7 rounded-md border border-border text-center cursor-pointer transition-all hover:bg-opacity-10 hover:border-border-accent hover:translate-y-[-4px]"
               >
-                <div className="text-4xl mb-3">⏳</div>
                 <h3 className="font-serif text-lg font-bold text-primary">
                   {metodoNome}
                 </h3>

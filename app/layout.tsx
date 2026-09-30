@@ -27,21 +27,10 @@ export default function RootLayout({
 
 function Header() {
   return (
-    <header className="sticky top-0 z-100 bg-opacity-98 backdrop-blur-md border-b border-border px-20 py-6 flex justify-between items-center">
-      <div className="font-serif text-xl font-bold letter-spacing-3 text-primary">
+    <header className="sticky top-0 z-100 bg-opacity-98 backdrop-blur-md border-b border-border px-20 py-6">
+      <a href="/" className="font-serif text-xl font-bold letter-spacing-3 text-primary inline-block hover:text-primary">
         COFFEELOVERS
-      </div>
-      <nav className="flex gap-12">
-        <a href="#graos" className="text-text-secondary font-medium text-sm transition-colors hover:text-primary">
-          Grãos
-        </a>
-        <a href="#metodos" className="text-text-secondary font-medium text-sm transition-colors hover:text-primary">
-          Métodos
-        </a>
-        <a href="#quiz" className="text-text-secondary font-medium text-sm transition-colors hover:text-primary">
-          Quiz
-        </a>
-      </nav>
+      </a>
     </header>
   );
 }

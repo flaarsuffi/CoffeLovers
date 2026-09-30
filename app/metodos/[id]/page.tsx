@@ -21,7 +21,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </div>
 
       {/* HERO */}
-      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 border-b border-border items-center">
+      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 items-center">
         <div>
           <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-6">
             {metodo.nome}
@@ -53,23 +53,20 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
             ← Explorar métodos
           </a>
         </div>
-        <div className="flex justify-end">
-          <OptimizedImage
-            src={`/assets/images/metodos/${metodo.id}.png`}
-            alt={metodo.nome}
-            width={300}
-            height={300}
-            priority={true}
-            className="w-64 h-64"
-          />
-        </div>
+        <OptimizedImage
+          src={`/assets/images/metodos/${metodo.id}.png`}
+          alt={metodo.nome}
+          width={300}
+          height={300}
+          priority={true}
+          className="w-64 h-64"
+        />
       </section>
 
       {/* TUTORIAL SECTION */}
-      <section className="px-20 py-15 border-b border-border">
+      <section className="px-20 py-15">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Tutorial Passo a Passo
-          <div className="w-10 h-0.5 bg-primary mt-4"></div>
         </h2>
         <div className="space-y-6">
           {metodo.tutorial.passos.map((passo) => (
@@ -95,10 +92,9 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* TÉCNICAS SECTION */}
-      <section className="px-20 py-15 border-b border-border">
+      <section className="px-20 py-15">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Técnicas Essenciais
-          <div className="w-10 h-0.5 bg-primary mt-4"></div>
         </h2>
         <div className="grid grid-cols-4 gap-4">
           <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
@@ -129,14 +125,13 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* PRÓS & CONTRAS */}
-      <section className="px-20 py-15 border-b border-border">
+      <section className="px-20 py-15">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Prós e Contras
-          <div className="w-10 h-0.5 bg-primary mt-4"></div>
         </h2>
         <div className="grid grid-cols-2 gap-8">
           <div>
-            <h3 className="font-serif text-lg font-bold text-primary mb-4">✓ Prós</h3>
+            <h3 className="font-serif text-lg font-bold text-primary mb-4">Prós</h3>
             <ul className="space-y-2">
               {metodo.pros.map((pro, idx) => (
                 <li key={idx} className="text-sm text-text-secondary flex items-start gap-3">
@@ -147,7 +142,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
             </ul>
           </div>
           <div>
-            <h3 className="font-serif text-lg font-bold text-primary mb-4">✗ Contras</h3>
+            <h3 className="font-serif text-lg font-bold text-primary mb-4">Contras</h3>
             <ul className="space-y-2">
               {metodo.cons.map((con, idx) => (
                 <li key={idx} className="text-sm text-text-secondary flex items-start gap-3">
