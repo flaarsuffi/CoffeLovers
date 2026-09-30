@@ -21,7 +21,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </div>
 
       {/* HERO */}
-      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 items-center">
+      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-12 items-center">
         <div>
           <h1 className="font-serif text-6xl font-bold mb-4 letter-spacing-tight">
             {metodo.tagline}
