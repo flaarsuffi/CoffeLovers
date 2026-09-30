@@ -66,7 +66,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       {/* TUTORIAL SECTION */}
       <section className="px-20 py-15">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
-          Tutorial Passo a Passo
+          Como Preparar
         </h2>
         <div className="space-y-6">
           {metodo.tutorial.passos.map((passo) => (
@@ -79,11 +79,8 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
               <div className="flex-1">
                 <h3 className="font-serif text-lg font-bold mb-2">{passo.titulo}</h3>
                 <p className="text-sm text-text-secondary leading-relaxed mb-3">{passo.descricao}</p>
-                <div className="px-4 py-3 bg-bg-subtle border-l-2 border-primary rounded">
-                  <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1">
-                    Dica
-                  </div>
-                  <p className="text-sm text-text-tertiary">{passo.dica}</p>
+                <div className="px-3 py-2 bg-opacity-50 rounded text-xs text-text-tertiary italic">
+                  💡 {passo.dica}
                 </div>
               </div>
             </div>
@@ -124,14 +121,14 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
         </div>
       </section>
 
-      {/* PRÓS & CONTRAS */}
+      {/* POR QUE ESCOLHER */}
       <section className="px-20 py-15">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
-          Prós e Contras
+          Por Que Escolher Este Método
         </h2>
         <div className="grid grid-cols-2 gap-8">
           <div>
-            <h3 className="font-serif text-lg font-bold text-primary mb-4">Prós</h3>
+            <h3 className="font-serif text-lg font-bold text-primary mb-4">Por que vale a pena</h3>
             <ul className="space-y-2">
               {metodo.pros.map((pro, idx) => (
                 <li key={idx} className="text-sm text-text-secondary flex items-start gap-3">
@@ -142,7 +139,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
             </ul>
           </div>
           <div>
-            <h3 className="font-serif text-lg font-bold text-primary mb-4">Contras</h3>
+            <h3 className="font-serif text-lg font-bold text-primary mb-4">O que você vai enfrentar</h3>
             <ul className="space-y-2">
               {metodo.cons.map((con, idx) => (
                 <li key={idx} className="text-sm text-text-secondary flex items-start gap-3">
