@@ -52,7 +52,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </section>
 
       {/* ORIGEM SECTION */}
-      <section className="px-20 py-15">
+      <section className="px-20 py-24">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Origem
         </h2>
@@ -90,7 +90,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </section>
 
       {/* FLAVOR PROFILE */}
-      <section className="px-20 py-15">
+      <section className="px-20 py-24">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Perfil
         </h2>
@@ -124,7 +124,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </section>
 
       {/* MÉTODOS RECOMENDADOS */}
-      <section className="px-20 py-15">
+      <section className="px-20 py-24">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Métodos Recomendados
         </h2>

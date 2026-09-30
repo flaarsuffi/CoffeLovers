@@ -53,18 +53,22 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
             ← Explorar métodos
           </a>
         </div>
+      </section>
+
+      {/* IMAGEM SECTION */}
+      <section className="px-20 py-12 flex justify-center">
         <OptimizedImage
           src={`/assets/images/metodos/${metodo.id}.png`}
           alt={metodo.nome}
-          width={300}
-          height={300}
+          width={400}
+          height={400}
           priority={true}
-          className="w-64 h-64"
+          className="w-96 h-96"
         />
       </section>
 
       {/* TUTORIAL SECTION */}
-      <section className="px-20 py-15">
+      <section className="px-20 py-20">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Como Preparar
         </h2>
@@ -78,8 +82,8 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
               </div>
               <div className="flex-1">
                 <h3 className="font-serif text-lg font-bold mb-2">{passo.titulo}</h3>
-                <p className="text-sm text-text-secondary leading-relaxed mb-3">{passo.descricao}</p>
-                <div className="px-3 py-2 bg-opacity-50 rounded text-xs text-text-tertiary italic">
+                <p className="text-base text-text-secondary leading-relaxed mb-3">{passo.descricao}</p>
+                <div className="px-3 py-2 bg-opacity-50 rounded text-sm text-text-tertiary italic">
                   💡 {passo.dica}
                 </div>
               </div>
@@ -89,7 +93,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* TÉCNICAS SECTION */}
-      <section className="px-20 py-15">
+      <section className="px-20 py-20">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Técnicas Essenciais
         </h2>
@@ -122,7 +126,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* POR QUE ESCOLHER */}
-      <section className="px-20 py-15">
+      <section className="px-20 py-20">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Por Que Escolher Este Método
         </h2>

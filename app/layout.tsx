@@ -37,7 +37,7 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="bg-transparent text-text-tertiary text-xs px-20 py-12 text-center border-t border-border">
+    <footer className="bg-transparent text-text-tertiary text-xs px-20 py-12 text-center">
       <p>© 2026 CoffeLovers — Premium Coffee Enthusiasts</p>
       <div className="mt-4 space-x-3">
         <a href="#graos" className="text-primary hover:underline">
