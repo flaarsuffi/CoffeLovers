@@ -53,7 +53,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* IMAGEM SECTION */}
-      <section className="px-20 py-12">
+      <section className="px-20 py-8">
         <OptimizedImage
           src={`/assets/images/metodos/${metodo.id}.png`}
           alt={metodo.nome}
@@ -65,7 +65,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* TÉCNICAS SECTION */}
-      <section className="px-20 py-12">
+      <section className="px-20 py-8">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Técnicas Essenciais
         </h2>
@@ -98,7 +98,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* TUTORIAL SECTION */}
-      <section className="px-20 py-12">
+      <section className="px-20 py-8">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Como Preparar
         </h2>
@@ -123,7 +123,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* POR QUE ESCOLHER */}
-      <section className="px-20 py-12">
+      <section className="px-20 py-8">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Por Que Escolher Este Método
         </h2>
