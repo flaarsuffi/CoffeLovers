@@ -1,4 +1,5 @@
-import { getGraoById, getAllGraoIds, graos } from "@/lib/data";
+import { getGraoById, getAllGraoIds } from "@/lib/data";
+import { OptimizedImage } from "@/components/OptimizedImage";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -38,7 +39,16 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
             ← Explorar grãos
           </a>
         </div>
-        <div className="text-9xl text-right drop-shadow-lg">🫘</div>
+        <div className="flex justify-end">
+          <OptimizedImage
+            src={`/assets/images/graos/${grao.id}.png`}
+            alt={grao.nome}
+            width={300}
+            height={300}
+            priority={true}
+            className="w-64 h-64"
+          />
+        </div>
       </section>
 
       {/* ORIGEM SECTION */}
