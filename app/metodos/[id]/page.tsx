@@ -23,9 +23,6 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       {/* HERO */}
       <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 items-center">
         <div>
-          <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-6">
-            {metodo.nome}
-          </div>
           <h1 className="font-serif text-6xl font-bold mb-4 letter-spacing-tight">
             {metodo.tagline}
           </h1>
@@ -56,19 +53,19 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* IMAGEM SECTION */}
-      <section className="px-20 py-12 flex justify-center">
+      <section className="px-20 py-12">
         <OptimizedImage
           src={`/assets/images/metodos/${metodo.id}.png`}
           alt={metodo.nome}
           width={400}
           height={400}
           priority={true}
-          className="w-96 h-96"
+          className="w-72 h-72"
         />
       </section>
 
       {/* TUTORIAL SECTION */}
-      <section className="px-20 py-20">
+      <section className="px-20 py-16">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Como Preparar
         </h2>
@@ -93,7 +90,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* TÉCNICAS SECTION */}
-      <section className="px-20 py-20">
+      <section className="px-20 py-16">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Técnicas Essenciais
         </h2>
@@ -126,7 +123,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* POR QUE ESCOLHER */}
-      <section className="px-20 py-20">
+      <section className="px-20 py-16">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Por Que Escolher Este Método
         </h2>
@@ -135,7 +132,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
             <h3 className="font-serif text-lg font-bold text-primary mb-4">Por que vale a pena</h3>
             <ul className="space-y-2">
               {metodo.pros.map((pro, idx) => (
-                <li key={idx} className="text-sm text-text-secondary flex items-start gap-3">
+                <li key={idx} className="text-base text-text-secondary flex items-start gap-3">
                   <span className="text-primary font-bold mt-1">•</span>
                   <span>{pro}</span>
                 </li>
@@ -146,7 +143,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
             <h3 className="font-serif text-lg font-bold text-primary mb-4">O que você vai enfrentar</h3>
             <ul className="space-y-2">
               {metodo.cons.map((con, idx) => (
-                <li key={idx} className="text-sm text-text-secondary flex items-start gap-3">
+                <li key={idx} className="text-base text-text-secondary flex items-start gap-3">
                   <span className="text-primary font-bold mt-1">•</span>
                   <span>{con}</span>
                 </li>
