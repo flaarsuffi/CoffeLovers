@@ -135,17 +135,21 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
           <div className="w-10 h-0.5 bg-primary mt-4"></div>
         </h2>
         <div className="grid grid-cols-3 gap-6">
-          {grao.metodos_recomendados.map((metodoNome) => (
-            <div
-              key={metodoNome}
-              className="bg-bg-subtle px-7 py-7 rounded-md border border-border text-center cursor-pointer transition-all hover:bg-opacity-10 hover:border-border-accent hover:translate-y-[-4px]"
-            >
-              <div className="text-4xl mb-3">⏳</div>
-              <h3 className="font-serif text-lg font-bold text-primary">
-                {metodoNome}
-              </h3>
-            </div>
-          ))}
+          {grao.metodos_recomendados.map((metodoNome) => {
+            const metodoId = metodoNome.toLowerCase().replace(/\s+/g, "-");
+            return (
+              <a
+                key={metodoNome}
+                href={`/metodos/${metodoId}`}
+                className="bg-bg-subtle px-7 py-7 rounded-md border border-border text-center cursor-pointer transition-all hover:bg-opacity-10 hover:border-border-accent hover:translate-y-[-4px]"
+              >
+                <div className="text-4xl mb-3">⏳</div>
+                <h3 className="font-serif text-lg font-bold text-primary">
+                  {metodoNome}
+                </h3>
+              </a>
+            );
+          })}
         </div>
       </section>
     </>
