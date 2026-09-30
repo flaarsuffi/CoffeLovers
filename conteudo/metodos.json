@@ -1,0 +1,471 @@
+{
+  "metodos": [
+    {
+      "id": "v60",
+      "nome": "V60",
+      "icone": "⏳",
+      "tagline": "Precisão & Clareza",
+      "descricao": "Controle total sobre o processo de extração. Ideal para explorar cada nuance do café e revelar notas delicadas.",
+      "dificuldade": "Intermediária",
+      "tempo_minutos": 3,
+      "tempo_exato": "3-4 min",
+      "investimento": "R$ 40-80",
+      "origem": "Desenvolvido pela Hario no Japão em 2005. O nome vem do ângulo de 60 graus do cone.",
+      "vibe": "Precisão, clareza, controle total. Para quem quer explorar nuances.",
+      "tutorial": {
+        "passos": [
+          {
+            "numero": 1,
+            "titulo": "Pré-aqueça o equipamento",
+            "descricao": "Coloque o V60 na xícara. Escalde com água quente (90-96°C) pra aquecer o ceramic/glass e remover o pó de fábrica.",
+            "dica": "Descarte essa água e use a mesma xícara — pré-aquecimento perfeito."
+          },
+          {
+            "numero": 2,
+            "titulo": "Pese e moa na hora",
+            "descricao": "Meça 15-20g de café em grãos. Moa em granulometria média-fina (entre açúcar cristal e farinha). A moagem é crítica no V60.",
+            "dica": "Moagem muito grossa = passa rápido + fraco. Moagem fina = entope + amargo."
+          },
+          {
+            "numero": 3,
+            "titulo": "Bloom (30 segundos)",
+            "descricao": "Despeje 50ml de água e deixe descansar por 30 segundos. O café vai inchar — CO2 saindo. Isso libera aromas e melhora extração.",
+            "dica": "Despeje em círculos lentamente. Não é só colocar água."
+          },
+          {
+            "numero": 4,
+            "titulo": "Primeiro derramamento",
+            "descricao": "Após bloom, despeje até 150ml em movimento circular. Objetivo: café passar constantemente (fluxo equilibrado). Não deixa secar.",
+            "dica": "Olhe de cima — papel filtro deve estar molhado, não com poça d'água."
+          },
+          {
+            "numero": 5,
+            "titulo": "Segundo derramamento",
+            "descricao": "Despeje o restante da água (até 250ml total) no mesmo ritmo circular. Tempo total até agora: ~2 minutos.",
+            "dica": "Controle a velocidade — derrame mais lento se o café passa rápido."
+          },
+          {
+            "numero": 6,
+            "titulo": "Término e degustação",
+            "descricao": "Deixe a água passar completamente (mais ~1-2 min). Tempo total: 3-4 minutos. Remova o V60, retire o filtro e sirva quente.",
+            "dica": "Se passou muito rápido (<2:30), próxima vez moa mais fino. Se passou devagar (>4:30), moa mais grosso."
+          }
+        ]
+      },
+      "tecnicas": {
+        "temperatura": "92-96°C",
+        "tempo": "3-4 min exato",
+        "proporcao": "1:16 (café:água)",
+        "granulometria": "Média-fina",
+        "grind_size": "Semelhante a açúcar cristal"
+      },
+      "equipment": [
+        {
+          "nome": "V60 Dripper",
+          "descricao": "Ceramic, glass ou plástico. Ceramic é mais durável e retem melhor calor. Custa R$ 40-60.",
+          "essencial": true
+        },
+        {
+          "nome": "Filtro de Papel",
+          "descricao": "Específico pra V60 (tabletop). Qualidade importante — papel branqueado remove resíduos.",
+          "essencial": true
+        },
+        {
+          "nome": "Balança Digital",
+          "descricao": "Precisão de 0.1g. Essencial pra V60 — você precisa de exatidão. Custa R$ 60-150.",
+          "essencial": true
+        },
+        {
+          "nome": "Moedor Manual/Elétrico",
+          "descricao": "Moagem na hora é obrigatória. Burr grinder (não blade). Custa R$ 100-500+.",
+          "essencial": true
+        },
+        {
+          "nome": "Bule/Chaleira com bico fino",
+          "descricao": "Precisão no derramamento. Bico fino permite controle. Custa R$ 30-100.",
+          "essencial": false
+        }
+      ],
+      "recipe": {
+        "cafe_gramas": 17,
+        "agua_ml": 250,
+        "proporcao": "1:15",
+        "temperatura": "93°C",
+        "tempo_total": "3:30",
+        "granulometria": "Média-fina"
+      },
+      "graos_combinam": ["Bourbon", "Catuaí", "Geisha", "Arábica"],
+      "pros": ["Clareza máxima", "Controle total", "Sabor brilhante", "Ritmo personalizado"],
+      "cons": ["Curva de aprendizado", "Requer técnica", "Moagem crítica", "Setup específico"]
+    },
+    {
+      "id": "aeropress",
+      "nome": "Aeropress",
+      "icone": "🔄",
+      "tagline": "Versátil & Rápido",
+      "descricao": "Imersão + pressão = extração eficiente com corpo rico e perfil limpo. Extremamente versátil e portátil.",
+      "dificuldade": "Fácil",
+      "tempo_minutos": 2,
+      "tempo_exato": "2-3 min",
+      "investimento": "R$ 100-150",
+      "origem": "Inventado por Alan Adler em 2005. Combina imersão (French Press) com pressão (Espresso) em um método manual único.",
+      "vibe": "Flexível, forgivable, rápido. Para quem quer simplicidade com qualidade.",
+      "tutorial": {
+        "passos": [
+          {
+            "numero": 1,
+            "titulo": "Prepare o equipamento",
+            "descricao": "Coloque um filtro de papel no cap do Aeropress. Escalde com água quente pra remover o sabor de papel.",
+            "dica": "O filtro remove óleos, deixando o café mais limpo que French Press."
+          },
+          {
+            "numero": 2,
+            "titulo": "Moa médio-fino",
+            "descricao": "Meça 17-20g de café. Moa em granulometria MÉDIO-FINA (mais fino que V60, mas não pó).",
+            "dica": "Aeropress é tolerante — pequenas variações não quebram o café."
+          },
+          {
+            "numero": 3,
+            "titulo": "Coloque no cilindro",
+            "descricao": "Despeje o café moído no cilindro (sem imersão). Coloque em cima da xícara.",
+            "dica": "Use a micra micrometrada da Aeropress — guia você na quantidade."
+          },
+          {
+            "numero": 4,
+            "titulo": "Bloom (10-30 segundos)",
+            "descricao": "Despeje 50ml de água a 85-90°C. Deixe descansar 10-30 segundos.",
+            "dica": "Aeropress usa temperatura MAIS BAIXA que V60 (85-90°C)."
+          },
+          {
+            "numero": 5,
+            "titulo": "Completar e agitar",
+            "descricao": "Despeje o restante da água (até 250ml). Coloque o êmbolo no topo (sem pressionar). Agite suavemente por 10 segundos.",
+            "dica": "A agitação distribui o café uniformemente."
+          },
+          {
+            "numero": 6,
+            "titulo": "Presione lentamente",
+            "descricao": "Pressione o êmbolo para baixo lentamente (30-45 segundos). Você vai ouvir um sound 'whoosh' quando termina.",
+            "dica": "Pressione até o fim — extrai todo o sabor. A pressão é o segredo."
+          }
+        ]
+      },
+      "tecnicas": {
+        "temperatura": "85-90°C",
+        "tempo": "2-3 min total",
+        "proporcao": "1:15 a 1:18",
+        "granulometria": "Médio-fina",
+        "pressao": "Lenta e constante"
+      },
+      "equipment": [
+        {
+          "nome": "Aeropress",
+          "descricao": "Cilindro plástico com êmbolo. Durável, leve, portátil. R$ 100-150.",
+          "essencial": true
+        },
+        {
+          "nome": "Filtros de Papel",
+          "descricao": "Específicos para Aeropress. Caixa com 350 filtros R$ 20-30.",
+          "essencial": true
+        },
+        {
+          "nome": "Moedor Manual",
+          "descricao": "Manual é popular para Aeropress (portabilidade). R$ 80-200.",
+          "essencial": true
+        },
+        {
+          "nome": "Chaleira com bico fino",
+          "descricao": "Controle na hora do bloom. R$ 30-80.",
+          "essencial": false
+        }
+      ],
+      "recipe": {
+        "cafe_gramas": 18,
+        "agua_ml": 250,
+        "proporcao": "1:14",
+        "temperatura": "88°C",
+        "tempo_total": "2:30",
+        "granulometria": "Médio-fina"
+      },
+      "graos_combinam": ["Bourbon", "Catuaí", "Acaiá", "Icatu"],
+      "pros": ["Fácil de aprender", "Versátil", "Portátil", "Consistente", "Forgivable"],
+      "cons": ["Menos clareza que V60", "Requer prensa (para alguns)", "Filtros descartáveis"]
+    },
+    {
+      "id": "french-press",
+      "nome": "French Press",
+      "icone": "🫖",
+      "tagline": "Corpo Encorpado",
+      "descricao": "Imersão longa revela todas as nuances do café com corpo cheio e ricos. O método clássico e indulgente.",
+      "dificuldade": "Muito fácil",
+      "tempo_minutos": 4,
+      "tempo_exato": "4 min",
+      "investimento": "R$ 50-150",
+      "origem": "Inventada em 1929 por Attilio Calimani. Método de imersão que retém óleos naturais do café.",
+      "vibe": "Relaxado, corpulento, tradicional. Para quem quer qualidade sem técnica.",
+      "tutorial": {
+        "passos": [
+          {
+            "numero": 1,
+            "titulo": "Aquece a prensa",
+            "descricao": "Despeje água quente na prensa vazia. Deixe 30 segundos. Descarte a água.",
+            "dica": "Pré-aquecer mantém a temperatura estável durante a infusão."
+          },
+          {
+            "numero": 2,
+            "titulo": "Moa GROSSA",
+            "descricao": "Meça 25-30g de café (proporção maior que V60). Moa em granulometria GROSSA (semelhante a flocos de milho).",
+            "dica": "Moagem grossa evita sobre-extração e sedimento na bebida."
+          },
+          {
+            "numero": 3,
+            "titulo": "Coloque o café",
+            "descricao": "Despeje o café moído grossa na prensa pré-aquecida.",
+            "dica": "A prensa é tolerante — não se preocupe com precisão milimétrica."
+          },
+          {
+            "numero": 4,
+            "titulo": "Bloom (1 minuto)",
+            "descricao": "Despeje água quente (95-100°C) apenas o suficiente para umidecer o café. Deixe 1 minuto.",
+            "dica": "Este bloom com imersão é muito mais longo que V60 ou Aeropress."
+          },
+          {
+            "numero": 5,
+            "titulo": "Despeje o restante",
+            "descricao": "Despeje água quente até encher a prensa. Coloque o êmbolo levemente (sem pressionar).",
+            "dica": "Não pressione ainda — deixe a imersão acontecer naturalmente."
+          },
+          {
+            "numero": 6,
+            "titulo": "Repouso (3 minutos)",
+            "descricao": "Deixe descansar por 3 minutos exatos. Você pode colocar a tampa para manter o calor.",
+            "dica": "Imersão longa extrai todo o corpo e complexidade."
+          },
+          {
+            "numero": 7,
+            "titulo": "Pressione e despeje",
+            "descricao": "Pressione o êmbolo lentamente para baixo. Despeje todo o café na xícara.",
+            "dica": "Beba logo — café em repouso continua extraindo e pode ficar amargo."
+          }
+        ]
+      },
+      "tecnicas": {
+        "temperatura": "95-100°C",
+        "tempo": "4 min exato",
+        "proporcao": "1:14 a 1:16",
+        "granulometria": "Grossa (flocos de milho)",
+        "imersao": "Completa"
+      },
+      "equipment": [
+        {
+          "nome": "French Press",
+          "descricao": "Vidro ou aço inox. Tamanhos 350ml-1L. R$ 50-150.",
+          "essencial": true
+        },
+        {
+          "nome": "Moedor Burr",
+          "descricao": "Essencial para moagem grossa consistente. R$ 100-300.",
+          "essencial": true
+        },
+        {
+          "nome": "Colher de madeira",
+          "descricao": "Opcional mas bom para agitar durante bloom.",
+          "essencial": false
+        }
+      ],
+      "recipe": {
+        "cafe_gramas": 30,
+        "agua_ml": 400,
+        "proporcao": "1:13",
+        "temperatura": "97°C",
+        "tempo_total": "4:00",
+        "granulometria": "Grossa"
+      },
+      "graos_combinam": ["Bourbon", "Bourbon Amarelo", "Icatu", "Acaiá"],
+      "pros": ["Muito fácil", "Corpo rico", "Óleos naturais", "Investimento baixo", "Sem filtros descartáveis"],
+      "cons": ["Sedimento", "Menos clareza", "Requer moagem grossa", "Perde calor rápido"]
+    },
+    {
+      "id": "italiana",
+      "nome": "Italiana",
+      "icone": "☕",
+      "tagline": "Concentrado & Intenso",
+      "descricao": "Pressão de vapor, sabor intenso e concentrado. O clássico italiano que não se extingue.",
+      "dificuldade": "Fácil",
+      "tempo_minutos": 6,
+      "tempo_exato": "6-8 min",
+      "investimento": "R$ 50-200",
+      "origem": "Inventada em 1901 por Alfonso Bialetti. A moka pot é ícone de design italiano e da cultura de café caseiro.",
+      "vibe": "Clássico, intenso, social. Para rituais italianos de café.",
+      "tutorial": {
+        "passos": [
+          {
+            "numero": 1,
+            "titulo": "Preencha com água",
+            "descricao": "Desrosqueie a moka pot. Preencha a câmara inferior com água FRIA até a linha de segurança.",
+            "dica": "Água fria ajuda a controlar a temperatura e evita over-extraction."
+          },
+          {
+            "numero": 2,
+            "titulo": "Moa fino",
+            "descricao": "Meça 17-20g de café (adaptado ao tamanho). Moa em granulometria FINA (entre açúcar e pó, mas não pó).",
+            "dica": "Italiana precisa de moagem fina para resistência à pressão de vapor."
+          },
+          {
+            "numero": 3,
+            "titulo": "Preencha o filtro",
+            "descricao": "Encha o filtro com café moído até a borda. NÃO compacte — apenas nivelado.",
+            "dica": "Compactar causa super-extração. Deixe natural."
+          },
+          {
+            "numero": 4,
+            "titulo": "Encaixe e rosqueie",
+            "descricao": "Coloque o filtro na câmara inferior. Rosqueie a câmara superior com força.",
+            "dica": "Rosca bem apertada evita vapor escapar pelos lados."
+          },
+          {
+            "numero": 5,
+            "titulo": "Fogo médio-baixo",
+            "descricao": "Coloque na boca do fogão em fogo médio-baixo. Deixe o cabo virado para o lado (para não queimar).",
+            "dica": "Fogo alto queima o café. Fogo baixo demora. Médio é perfeito."
+          },
+          {
+            "numero": 6,
+            "titulo": "Ouça o som",
+            "descricao": "Você vai ouvir um sibilo quando o vapor começa a forçar o café para a câmara superior. Retire do fogo quando ouve 'glugl-glugl'.",
+            "dica": "O som é seu sinal de pronto. Não deixe fazer barulho de 'psssssss' (queimado)."
+          },
+          {
+            "numero": 7,
+            "titulo": "Sirva imediatamente",
+            "descricao": "Despeje o café concentrado em xícaras pequenas (formato espresso). Pode ser puro ou com leite quente.",
+            "dica": "Café italiano é social — sirva em rodinha, conversa é parte do ritual."
+          }
+        ]
+      },
+      "tecnicas": {
+        "temperatura": "Vapor (não exata)",
+        "tempo": "6-8 min total",
+        "proporcao": "1:8 a 1:10 (muito concentrado)",
+        "granulometria": "Fina",
+        "pressao": "Vapor (natural)"
+      },
+      "equipment": [
+        {
+          "nome": "Moka Pot",
+          "descricao": "Alumínio ou aço inox. Tamanhos 1, 3, 6, 9 xícaras. R$ 50-200.",
+          "essencial": true
+        },
+        {
+          "nome": "Moedor Burr",
+          "descricao": "Moagem fina consistente. R$ 100-300.",
+          "essencial": true
+        },
+        {
+          "nome": "Fogão (gás ou elétrico)",
+          "descricao": "Qualquer fogão funciona. Prefira fogo médio-baixo.",
+          "essencial": true
+        }
+      ],
+      "recipe": {
+        "cafe_gramas": 18,
+        "agua_ml": 120,
+        "proporcao": "1:7",
+        "temperatura": "Vapor",
+        "tempo_total": "7:00",
+        "granulometria": "Fina"
+      },
+      "graos_combinam": ["Catuaí", "Acaiá", "Bourbon Amarelo"],
+      "pros": ["Fácil de aprender", "Concentrado", "Clássico", "Sem eletricidade", "Social"],
+      "cons": ["Menos controle", "Não é tecnicamente espresso", "Pode queimar", "Requer fogão"]
+    },
+    {
+      "id": "coado",
+      "nome": "Coado",
+      "icone": "🧵",
+      "tagline": "Suave & Tradicional",
+      "descricao": "Método tradicional brasileiro de pano. Suave, acessível, e profundamente cultural. Café de avó.",
+      "dificuldade": "Muito fácil",
+      "tempo_minutos": 3,
+      "tempo_exato": "3-5 min",
+      "investimento": "R$ 10-30",
+      "origem": "Método tradicional das cozinhas brasileiras há séculos. Extremamente simples e acessível.",
+      "vibe": "Aconchego, tradição, simplicidade. Para quem ama café sem frescura.",
+      "tutorial": {
+        "passos": [
+          {
+            "numero": 1,
+            "titulo": "Prepare o coador de pano",
+            "descricao": "Se novo, ferva o coador de pano em água por 5 minutos pra remover resíduos. Escalde antes de usar.",
+            "dica": "Pano limpo é essencial. Lave sempre após usar."
+          },
+          {
+            "numero": 2,
+            "titulo": "Coloque o pano",
+            "descricao": "Coloque o coador pendurado em uma caneca/xícara. Pode usar suportes de coador ou pendurar na boca da xícara.",
+            "dica": "Estabilidade é importante — o pano não pode cair dentro da xícara."
+          },
+          {
+            "numero": 3,
+            "titulo": "Moa grosso",
+            "descricao": "Meça 12-15g de café. Moa em granulometria MÉDIA-GROSSA (como açúcar de confeiteiro).",
+            "dica": "Moagem grossa deixa o café fluir melhor no pano."
+          },
+          {
+            "numero": 4,
+            "titulo": "Despeje lentamente",
+            "descricao": "Despeje água quente (90-95°C) lentamente no pano com o café. Deixe fluir naturalmente.",
+            "dica": "O pano filtra lentamente — isso é parte do charme. Não apresse."
+          },
+          {
+            "numero": 5,
+            "titulo": "Paciência",
+            "descricao": "Deixe a água passar completamente pelo pano (3-5 minutos). O resultado é café suave e completo.",
+            "dica": "Cada gota conta. Ouça o silêncio da casa enquanto espera."
+          },
+          {
+            "numero": 6,
+            "titulo": "Sirva e aproveite",
+            "descricao": "Quando terminar de coar, sirva quente. Pode beber puro ou com leite.",
+            "dica": "Café coado é feito para compartilhar — é ritual de convívio."
+          }
+        ]
+      },
+      "tecnicas": {
+        "temperatura": "90-95°C",
+        "tempo": "3-5 min",
+        "proporcao": "1:18 a 1:20",
+        "granulometria": "Média-grossa",
+        "filtragem": "Pano (lenta)"
+      },
+      "equipment": [
+        {
+          "nome": "Coador de Pano",
+          "descricao": "Pano de algodão tradicional. Dura anos se cuidado. R$ 10-30.",
+          "essencial": true
+        },
+        {
+          "nome": "Moedor Manual",
+          "descricao": "Qualquer moedor funciona. Manual é tradicional. R$ 50-200.",
+          "essencial": false
+        },
+        {
+          "nome": "Xícara/Caneca",
+          "descricao": "Qualquer xícara normal serve. R$ 10-50.",
+          "essencial": true
+        }
+      ],
+      "recipe": {
+        "cafe_gramas": 13,
+        "agua_ml": 250,
+        "proporcao": "1:19",
+        "temperatura": "93°C",
+        "tempo_total": "4:00",
+        "granulometria": "Média-grossa"
+      },
+      "graos_combinam": ["Bourbon", "Arábica", "Catuaí", "Qualquer grão"],
+      "pros": ["Muito barato", "Tradicional", "Simples", "Suave", "Cultural", "Sem lixo descartável"],
+      "cons": ["Lento", "Menos controle", "Pano precisa higiene", "Filtragem inconsistente"]
+    }
+  ]
+}

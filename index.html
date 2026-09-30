@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeLovers — Dominar a Arte do Café</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --preto: #1A1A1A;
+            --ouro: #D4AF37;
+            --verde-cafe: #344923;
+            --off-white: #F5F5F0;
+            --cinza-claro: #E0E0E0;
+            --cinza-medio: #555555;
+            --spacing: 16px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--off-white);
+            color: var(--preto);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(245, 245, 240, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(224, 224, 224, 0.5);
+            padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 4);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, var(--ouro), #E5C158);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav {
+            display: flex;
+            gap: calc(var(--spacing) * 4);
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--cinza-medio);
+            font-weight: 500;
+            font-size: 14px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--ouro);
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        nav a:hover {
+            color: var(--ouro);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .btn-nav {
+            background: var(--ouro);
+            color: var(--preto);
+            padding: calc(var(--spacing) * 0.75) calc(var(--spacing) * 2);
+            border: none;
+            border-radius: 24px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-nav:hover {
+            background: #E5C158;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(212, 175, 55, 0.25);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--off-white) 0%, #FAFAF8 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(52, 73, 35, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 var(--spacing) * 2;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(48px, 8vw, 72px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: calc(var(--spacing) * 2);
+            line-height: 1.1;
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            opacity: 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--cinza-medio);
+            margin-bottom: calc(var(--spacing) * 4);
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+            opacity: 0;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-hero {
+            display: inline-block;
+            background: var(--ouro);
+            color: var(--preto);
+            padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 4);
+            border: none;
+            border-radius: 32px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.2);
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s forwards;
+            opacity: 0;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-hero:hover {
+            background: #E5C158;
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(212, 175, 55, 0.35);
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--ouro);
+            stroke-width: 2;
+            fill: none;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-10px); }
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about {
+            padding: calc(var(--spacing) * 10) var(--spacing) * 4;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--ouro);
+            font-weight: 600;
+            margin-bottom: var(--spacing);
+        }
+
+        .about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 700;
+            margin-bottom: calc(var(--spacing) * 3);
+            line-height: 1.2;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: var(--cinza-medio);
+            line-height: 1.8;
+            margin-bottom: calc(var(--spacing) * 2);
+            font-weight: 300;
+        }
+
+        /* ===== QUIZ WIDGET ===== */
+        .quiz-section {
+            padding: calc(var(--spacing) * 10) var(--spacing) * 4;
+            background: linear-gradient(135deg, var(--verde-cafe) 0%, #2d3f1e 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quiz-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .quiz-container {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .quiz-widget {
+            background: rgba(245, 245, 240, 0.95);
+            backdrop-filter: blur(10px);
+            color: var(--preto);
+            padding: calc(var(--spacing) * 5);
+            border-radius: 16px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
+            animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .quiz-widget h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: calc(var(--spacing) * 2);
+            letter-spacing: -0.5px;
+        }
+
+        .quiz-widget p {
+            font-size: 16px;
+            color: var(--cinza-medio);
+            margin-bottom: calc(var(--spacing) * 3);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .btn-quiz {
+            width: 100%;
+            background: var(--ouro);
+            color: var(--preto);
+            padding: calc(var(--spacing) * 1.5);
+            border: none;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-quiz:hover {
+            background: #E5C158;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(212, 175, 55, 0.3);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: calc(var(--spacing) * 10) var(--spacing) * 4;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 700;
+            margin-bottom: calc(var(--spacing) * 5);
+            letter-spacing: -1px;
+        }
+
+        /* ===== GRID ===== */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: calc(var(--spacing) * 4);
+            margin-top: calc(var(--spacing) * 4);
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            animation: fadeInScale 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+        }
+
+        .card:nth-child(1) { animation-delay: 0s; }
+        .card:nth-child(2) { animation-delay: 0.1s; }
+        .card:nth-child(3) { animation-delay: 0.2s; }
+        .card:nth-child(4) { animation-delay: 0.3s; }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .card-image {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, var(--verde-cafe) 0%, var(--ouro) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            font-size: 80px;
+        }
+
+        .card-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .card-image-svg {
+            width: 120px;
+            height: 120px;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+        }
+
+        .card:hover .card-image-svg {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+
+        .card-content {
+            padding: calc(var(--spacing) * 3);
+        }
+
+        .card-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--preto);
+            margin-bottom: calc(var(--spacing) * 0.75);
+            letter-spacing: -0.5px;
+        }
+
+        .card-subtitle {
+            font-size: 14px;
+            color: var(--cinza-medio);
+            font-weight: 300;
+            margin-bottom: calc(var(--spacing) * 1.5);
+            letter-spacing: 0.3px;
+        }
+
+        .card-description {
+            font-size: 15px;
+            color: #777;
+            line-height: 1.6;
+            margin-bottom: calc(var(--spacing) * 2);
+            font-weight: 300;
+        }
+
+        .card-tags {
+            display: flex;
+            gap: calc(var(--spacing) * 0.75);
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            border: 1.5px solid var(--ouro);
+            color: var(--ouro);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 0.3px;
+        }
+
+        .tag:hover {
+            background: var(--ouro);
+            color: var(--preto);
+            transform: scale(1.05);
+        }
+
+        /* ===== METHOD CARDS ===== */
+        .method-card {
+            text-align: center;
+            background: white;
+            border-radius: 16px;
+            padding: calc(var(--spacing) * 4);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(224, 224, 224, 0.5);
+        }
+
+        .method-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, var(--ouro) 0%, transparent 70%);
+            opacity: 0;
+            border-radius: 50%;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .method-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+        }
+
+        .method-card:hover::before {
+            opacity: 0.1;
+            top: -25%;
+            right: -25%;
+        }
+
+        .method-icon {
+            font-size: 64px;
+            margin-bottom: calc(var(--spacing) * 2);
+            animation: fadeInScale 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .method-card:hover .method-icon {
+            animation: spin 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg) scale(1); }
+            to { transform: rotate(360deg) scale(1.1); }
+        }
+
+        .method-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--preto);
+            margin-bottom: calc(var(--spacing) * 1);
+            letter-spacing: -0.5px;
+        }
+
+        .method-card p {
+            font-size: 16px;
+            color: var(--cinza-medio);
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--preto);
+            color: var(--off-white);
+            padding: calc(var(--spacing) * 6) var(--spacing) * 4;
+            text-align: center;
+            margin-top: calc(var(--spacing) * 6);
+        }
+
+        footer p {
+            margin-bottom: calc(var(--spacing) * 1.5);
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+        }
+
+        footer a {
+            color: var(--ouro);
+            text-decoration: none;
+            margin: 0 calc(var(--spacing) * 2);
+            transition: all 0.3s;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== SCROLL ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            header {
+                padding: var(--spacing) * 2;
+                flex-direction: column;
+                gap: var(--spacing) * 2;
+            }
+
+            nav {
+                gap: var(--spacing) * 2;
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            section {
+                padding: calc(var(--spacing) * 6) var(--spacing) * 2;
+            }
+
+            .grid {
+                gap: calc(var(--spacing) * 2);
+            }
+
+            .card-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">COFFEELOVERS</div>
+        <nav>
+            <a href="#graos">Grãos</a>
+            <a href="#metodos">Métodos</a>
+            <a href="#sobre">Sobre</a>
+            <button class="btn-nav">Começar Quiz</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dominar a Arte do Café</h1>
+            <p>Para entusiastas que querem explorar técnica, paladar e origem</p>
+            <button class="btn-hero">→ Começar Quiz</button>
+        </div>
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24">
+                <polyline points="12 5 12 19"></polyline>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <div class="section-label">Sobre CoffeLovers</div>
+        <h2>Por que estamos aqui</h2>
+        <p>Somos entusiastas que acreditam que café bem feito é exploração de paladar, técnica e origem. Não é apenas uma bebida — é ritual, ciência e arte. Aqui você encontra tudo que precisa para dominar a arte do café caseiro: desde a origem dos grãos até o método perfeito pra sua rotina.</p>
+    </section>
+
+    <!-- QUIZ WIDGET -->
+    <section class="quiz-section">
+        <div class="quiz-container">
+            <div class="quiz-widget">
+                <h3>Qual é seu café ideal?</h3>
+                <p>Respondendo 8 perguntas rápidas, você descobre qual método e qual grão combinam perfeitamente com seu paladar e rotina.</p>
+                <button class="btn-quiz">→ Começar Quiz Agora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRÃOS -->
+    <section id="graos">
+        <h2>Explorar Grãos</h2>
+        <div class="grid">
+            <div class="card fade-in">
+                <div class="card-image">
+                    <svg class="card-image-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="beanGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f5e6c8;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8b7355;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="50" cy="60" rx="28" ry="50" fill="url(#beanGrad1)" stroke="#6b5344" stroke-width="1.5"/>
+                        <path d="M 50 15 Q 48 25 50 35" stroke="#a0826d" stroke-width="2" fill="none"/>
+                        <ellipse cx="42" cy="50" rx="12" ry="25" fill="#a0826d" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <h3>Bourbon</h3>
+                    <p class="card-subtitle">Brasil, Minas Gerais</p>
+                    <p class="card-description">Notas de chocolate, flores secas e doçura natural. Corpo encorpado com acidez suave.</p>
+                    <div class="card-tags">
+                        <span class="tag">→ V60</span>
+                        <span class="tag">→ French Press</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card fade-in">
+                <div class="card-image">
+                    <svg class="card-image-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="beanGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#e8d4a0;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#7a6644;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="50" cy="60" rx="28" ry="50" fill="url(#beanGrad2)" stroke="#5a4634" stroke-width="1.5"/>
+                        <path d="M 50 15 Q 48 25 50 35" stroke="#8b7355" stroke-width="2" fill="none"/>
+                        <ellipse cx="58" cy="50" rx="12" ry="25" fill="#8b7355" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <h3>Catuaí</h3>
+                    <p class="card-subtitle">Brasil, São Paulo</p>
+                    <p class="card-description">Acidez brilhante, notas frutadas sutis. Corpo médio e paladar complexo.</p>
+                    <div class="card-tags">
+                        <span class="tag">→ V60</span>
+                        <span class="tag">→ Aeropress</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card fade-in">
+                <div class="card-image">
+                    <svg class="card-image-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="beanGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#dcc9a8;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#6b5344;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="50" cy="60" rx="28" ry="50" fill="url(#beanGrad3)" stroke="#4b3434" stroke-width="1.5"/>
+                        <path d="M 50 15 Q 48 25 50 35" stroke="#7a6644" stroke-width="2" fill="none"/>
+                        <ellipse cx="45" cy="55" rx="12" ry="25" fill="#7a6644" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <h3>Geisha</h3>
+                    <p class="card-subtitle">Panamá, Boquete</p>
+                    <p class="card-description">Floral intenso, notas de frutas exóticas. Complexidade e elegância excepcionais.</p>
+                    <div class="card-tags">
+                        <span class="tag">→ V60</span>
+                        <span class="tag">→ Pour Over</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÉTODOS -->
+    <section id="metodos">
+        <h2>Explorar Métodos</h2>
+        <div class="grid">
+            <div class="method-card fade-in">
+                <div class="method-icon">⏳</div>
+                <h3>V60</h3>
+                <p>Precisão e clareza de sabor com controle total sobre o processo. Ideal para explorar nuances do grão.</p>
+            </div>
+
+            <div class="method-card fade-in">
+                <div class="method-icon">🔄</div>
+                <h3>Aeropress</h3>
+                <p>Versátil e rápido. Imersão + pressão = extração eficiente com corpo rico e limpo.</p>
+            </div>
+
+            <div class="method-card fade-in">
+                <div class="method-icon">🫖</div>
+                <h3>French Press</h3>
+                <p>Corpo encorpado e complexo. Imersão longa revela todas as nuances do café.</p>
+            </div>
+
+            <div class="method-card fade-in">
+                <div class="method-icon">☕</div>
+                <h3>Italiana</h3>
+                <p>Pressão de vapor, sabor intenso e concentrado. O clássico que não se extingue.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 CoffeLovers — Feito para entusiastas de café caseiro</p>
+        <div>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+            <a href="#instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Parallax effect on hero
+        window.addEventListener('scroll', () => {
+            const hero = document.querySelector('.hero');
+            const scrollPosition = window.scrollY;
+            hero.style.backgroundPosition = `0 ${scrollPosition * 0.5}px`;
+        });
+    </script>
+</body>
+</html>

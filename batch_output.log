@@ -1,0 +1,333 @@
+/Users/flaviaarsuffi/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/flaviaarsuffi/Library/Python/3.9/lib/python/site-packages/langgraph/cache/base/__init__.py:8: LangChainPendingDeprecationWarning: The default value of `allowed_objects` will change in a future version. Pass an explicit value (e.g., allowed_objects='messages' or allowed_objects='core') to suppress this warning.
+  from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer
+
+======================================================================
+☕ COFFEELOVERS - BATCH GENERATION
+======================================================================
+
+📊 Rodando: 7 grãos + 5 métodos = 12 items
+
+
+🫘 PROCESSANDO GRÃOS:
+----------------------------------------------------------------------
+
+[1/7] Bourbon... 
+============================================================
+🚀 PIPELINE FINAL: BEAN - Bourbon
+============================================================
+
+
+📝 CONTENT GENERATOR: Bourbon (bean)...
+⚠️  JSON parse failed
+✅ CONTENT GENERATOR: OK
+
+🔍 VALIDATOR: Bourbon...
+⚠️  JSON parse failed
+❌ VALIDATOR ERROR: 1 validation error for ValidationFeedback
+criteria_results.1.criterion
+  Input should be 'tone', 'factual_accuracy', 'completeness', 'grammar' or 'accessibility' [type=enum, input_value='accuracy', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/enum
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Bourbon
+  Retries: 0/1
+  ✅ Conteúdo gerado
+
+============================================================
+
+✅
+
+[2/7] Catuaí... 
+============================================================
+🚀 PIPELINE FINAL: BEAN - Catuaí
+============================================================
+
+
+📝 CONTENT GENERATOR: Catuaí (bean)...
+⚠️  JSON parse failed
+✅ CONTENT GENERATOR: OK
+
+🔍 VALIDATOR: Catuaí...
+⚠️  JSON parse failed
+❌ VALIDATOR ERROR: 1 validation error for ValidationFeedback
+criteria_results.1.criterion
+  Input should be 'tone', 'factual_accuracy', 'completeness', 'grammar' or 'accessibility' [type=enum, input_value='accuracy', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/enum
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Catuaí
+  Retries: 0/1
+  ✅ Conteúdo gerado
+
+============================================================
+
+✅
+
+[3/7] Bourbon Amarelo... 
+============================================================
+🚀 PIPELINE FINAL: BEAN - Bourbon Amarelo
+============================================================
+
+
+📝 CONTENT GENERATOR: Bourbon Amarelo (bean)...
+⚠️  JSON parse failed
+✅ CONTENT GENERATOR: OK
+
+🔍 VALIDATOR: Bourbon Amarelo...
+⚠️  JSON parse failed
+❌ VALIDATOR ERROR: 1 validation error for ValidationFeedback
+criteria_results.1.criterion
+  Input should be 'tone', 'factual_accuracy', 'completeness', 'grammar' or 'accessibility' [type=enum, input_value='accuracy', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/enum
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Bourbon Amarelo
+  Retries: 0/1
+  ✅ Conteúdo gerado
+
+============================================================
+
+✅
+
+[4/7] Geisha... 
+============================================================
+🚀 PIPELINE FINAL: BEAN - Geisha
+============================================================
+
+
+📝 CONTENT GENERATOR: Geisha (bean)...
+❌ GENERATOR ERROR: No text in response
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Geisha
+  Retries: 0/1
+
+============================================================
+
+⏳
+
+[5/7] Acaiá... 
+============================================================
+🚀 PIPELINE FINAL: BEAN - Acaiá
+============================================================
+
+
+📝 CONTENT GENERATOR: Acaiá (bean)...
+❌ GENERATOR ERROR: No text in response
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Acaiá
+  Retries: 0/1
+
+============================================================
+
+⏳
+
+[6/7] Arábica... 
+============================================================
+🚀 PIPELINE FINAL: BEAN - Arábica
+============================================================
+
+
+📝 CONTENT GENERATOR: Arábica (bean)...
+⚠️  JSON parse failed
+✅ CONTENT GENERATOR: OK
+
+🔍 VALIDATOR: Arábica...
+❌ VALIDATOR ERROR: No text in response
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Arábica
+  Retries: 0/1
+  ✅ Conteúdo gerado
+
+============================================================
+
+✅
+
+[7/7] Icatu... 
+============================================================
+🚀 PIPELINE FINAL: BEAN - Icatu
+============================================================
+
+
+📝 CONTENT GENERATOR: Icatu (bean)...
+❌ GENERATOR ERROR: No text in response
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Icatu
+  Retries: 0/1
+
+============================================================
+
+⏳
+
+
+☕ PROCESSANDO MÉTODOS:
+----------------------------------------------------------------------
+
+[1/5] V60... 
+============================================================
+🚀 PIPELINE FINAL: METHOD - V60
+============================================================
+
+
+📝 CONTENT GENERATOR: V60 (method)...
+❌ GENERATOR ERROR: No text in response
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: V60
+  Retries: 0/1
+
+============================================================
+
+⏳
+
+[2/5] Aeropress... 
+============================================================
+🚀 PIPELINE FINAL: METHOD - Aeropress
+============================================================
+
+
+📝 CONTENT GENERATOR: Aeropress (method)...
+⚠️  JSON parse failed
+✅ CONTENT GENERATOR: OK
+
+🔍 VALIDATOR: Aeropress...
+❌ VALIDATOR ERROR: No text in response
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Aeropress
+  Retries: 0/1
+  ✅ Conteúdo gerado
+
+============================================================
+
+✅
+
+[3/5] French Press... 
+============================================================
+🚀 PIPELINE FINAL: METHOD - French Press
+============================================================
+
+
+📝 CONTENT GENERATOR: French Press (method)...
+⚠️  JSON parse failed
+✅ CONTENT GENERATOR: OK
+
+🔍 VALIDATOR: French Press...
+⚠️  JSON parse failed
+❌ VALIDATOR ERROR: 1 validation error for ValidationFeedback
+criteria_results.1.criterion
+  Input should be 'tone', 'factual_accuracy', 'completeness', 'grammar' or 'accessibility' [type=enum, input_value='accuracy', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/enum
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: French Press
+  Retries: 0/1
+  ✅ Conteúdo gerado
+
+============================================================
+
+✅
+
+[4/5] Italiana... 
+============================================================
+🚀 PIPELINE FINAL: METHOD - Italiana
+============================================================
+
+
+📝 CONTENT GENERATOR: Italiana (method)...
+❌ GENERATOR ERROR: No text in response
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Italiana
+  Retries: 0/1
+
+============================================================
+
+⏳
+
+[5/5] Coado... 
+============================================================
+🚀 PIPELINE FINAL: METHOD - Coado
+============================================================
+
+
+📝 CONTENT GENERATOR: Coado (method)...
+⚠️  JSON parse failed
+✅ CONTENT GENERATOR: OK
+
+🔍 VALIDATOR: Coado...
+⚠️  JSON parse failed
+❌ VALIDATOR ERROR: 1 validation error for ValidationFeedback
+criteria_results.1.criterion
+  Input should be 'tone', 'factual_accuracy', 'completeness', 'grammar' or 'accessibility' [type=enum, input_value='accuracy', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/enum
+
+============================================================
+📊 RESULTADO:
+============================================================
+
+  Item: Coado
+  Retries: 0/1
+  ✅ Conteúdo gerado
+
+============================================================
+
+✅
+
+
+======================================================================
+📊 RESUMO FINAL
+======================================================================
+
+✅ Completados: 7/12
+📁 Salvos em: output/
+  ✅ bean/Bourbon
+  ✅ bean/Catuaí
+  ✅ bean/Bourbon Amarelo
+  ✅ bean/Arábica
+  ✅ method/Aeropress
+  ✅ method/French Press
+  ✅ method/Coado
+
+======================================================================
+🎉 BATCH COMPLETO!
+======================================================================
+

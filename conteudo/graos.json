@@ -1,0 +1,283 @@
+{
+  "graos": [
+    {
+      "id": "bourbon",
+      "nome": "Bourbon",
+      "regiao": "Brasil, Minas Gerais",
+      "pais": "Brasil",
+      "altitude": "900-2.000m",
+      "origin": "Espécie clássica originária da Etiópia, levada para a Ilha de Bourbon (atual Reunião) no século XVII. Hoje representa ~18% da produção mundial de arabica e é o café nobre brasileiro.",
+      "flavor": {
+        "descricao": "Chocolate ao leite, caramelo, frutas vermelhas, fundo floral e nozes tostadas",
+        "acidez": "Suave",
+        "corpo": "Encorpado",
+        "docura": "Marcante",
+        "notas": ["Chocolate", "Caramelo", "Frutas vermelhas", "Floral", "Nozes tostadas"]
+      },
+      "metodos_recomendados": ["V60", "Aeropress", "French Press"],
+      "recipe": {
+        "cafe_gramas": 15,
+        "agua_ml": 250,
+        "proporcao": "1:16",
+        "temperatura": "92-96°C",
+        "tempo_total_minutos": 3,
+        "granulometria": "Média",
+        "passos": [
+          "Pese 15g de café em grãos",
+          "Aqueça 250ml de água a 92-96°C",
+          "Moa na hora em granulometria média (açúcar cristal)",
+          "Escalde o filtro com água quente e descarte a água",
+          "Despeje o café moído e comece a verter água em círculos",
+          "Mantenha o fluxo constante por 3 minutos",
+          "Sirva quente e desfrute"
+        ]
+      },
+      "especificacoes": {
+        "cafeina_percentual": "1,5%",
+        "producao_global": "~18% arabica",
+        "altitude_ideal": "1.000-1.500m",
+        "clima": "Tropical de altitude"
+      }
+    },
+    {
+      "id": "catuai",
+      "nome": "Catuaí",
+      "regiao": "Brasil, São Paulo",
+      "pais": "Brasil",
+      "altitude": "800-1.500m",
+      "origin": "Híbrido natural de Caturra e Mundo Novo, desenvolvido no Brasil em 1949. É resistente a doenças e produz grãos grandes com excelente sabor.",
+      "flavor": {
+        "descricao": "Acidez brilhante, notas frutadas sutis, corpo médio, paladar complexo",
+        "acidez": "Brilhante",
+        "corpo": "Médio",
+        "docura": "Equilibrada",
+        "notas": ["Frutas vermelhas", "Cereja", "Acidez viva", "Corpo limpo"]
+      },
+      "metodos_recomendados": ["V60", "Aeropress", "Italiana"],
+      "recipe": {
+        "cafe_gramas": 18,
+        "agua_ml": 270,
+        "proporcao": "1:15",
+        "temperatura": "90-95°C",
+        "tempo_total_minutos": 3.5,
+        "granulometria": "Média-fina",
+        "passos": [
+          "Meça 18g de café Catuaí",
+          "Aqueça água a 90-95°C (mais baixa que Bourbon)",
+          "Moa em granulometria média-fina",
+          "Pré-aqueça o equipamento",
+          "Faça bloom de 30 segundos com 50ml de água",
+          "Despeje gradualmente até completar 270ml",
+          "Deixe passar completamente (3,5 min total)",
+          "A acidez brilhante vai brilhar"
+        ]
+      },
+      "especificacoes": {
+        "cafeina_percentual": "1,6%",
+        "producao_global": "~8% arabica",
+        "altitude_ideal": "1.000-1.400m",
+        "clima": "Subtropical"
+      }
+    },
+    {
+      "id": "bourbon-amarelo",
+      "nome": "Bourbon Amarelo",
+      "regiao": "Brasil, Minas Gerais",
+      "pais": "Brasil",
+      "altitude": "1.000-1.600m",
+      "origin": "Mutação natural do Bourbon com frutos amarelos (ao invés de vermelhos). Descoberto no Brasil e agora cultivado em várias regiões. Representa o topo da qualidade bourbon brasileira.",
+      "flavor": {
+        "descricao": "Doçura intensa, notas de mel, frutas tropicais, corpo cheio, acidez equilibrada",
+        "acidez": "Equilibrada",
+        "corpo": "Cheio",
+        "docura": "Intensa",
+        "notas": ["Mel", "Frutas tropicais", "Caramelo", "Corpo denso", "Chocolate branco"]
+      },
+      "metodos_recomendados": ["French Press", "Aeropress", "V60"],
+      "recipe": {
+        "cafe_gramas": 20,
+        "agua_ml": 300,
+        "proporcao": "1:15",
+        "temperatura": "88-92°C",
+        "tempo_total_minutos": 4,
+        "granulometria": "Grossa-média",
+        "passos": [
+          "Pese 20g de grãos Bourbon Amarelo",
+          "Aqueça água a 88-92°C (temperatura mais baixa para preservar doçura)",
+          "Moa grossa-média (permite mais tempo de extração)",
+          "Pré-aqueça a prensa ou dripper",
+          "Coloque o café moído",
+          "Despeje água em movimento suave",
+          "Espere 4 minutos para extração completa",
+          "A doçura natural vai dominar o perfil"
+        ]
+      },
+      "especificacoes": {
+        "cafeina_percentual": "1,4%",
+        "producao_global": "~3% arabica (raro)",
+        "altitude_ideal": "1.200-1.600m",
+        "clima": "Montanhoso tropical"
+      }
+    },
+    {
+      "id": "geisha",
+      "nome": "Geisha",
+      "regiao": "Panamá, Boquete",
+      "pais": "Panamá",
+      "altitude": "1.500-2.000m",
+      "origin": "Variedade etíope trazida para o Panamá em 1960. Floresce em altitude extrema, resultando em complexidade e elegância incomparáveis. Um dos cafés mais caros do mundo (~$100/kg).",
+      "flavor": {
+        "descricao": "Floral intenso, frutas exóticas, complexidade excepcional, elegância pura",
+        "acidez": "Viva e refinada",
+        "corpo": "Leve-médio",
+        "docura": "Delicada",
+        "notas": ["Floral", "Framboesa", "Jasmim", "Frutas tropicais", "Mel de flores"]
+      },
+      "metodos_recomendados": ["V60", "Pour Over", "Aeropress"],
+      "recipe": {
+        "cafe_gramas": 12,
+        "agua_ml": 200,
+        "proporcao": "1:17",
+        "temperatura": "94-96°C",
+        "tempo_total_minutos": 3,
+        "granulometria": "Fina",
+        "passos": [
+          "Use apenas 12g de grãos Geisha (café precioso)",
+          "Água a 94-96°C exata",
+          "Moa FINO (extração precisa é crítica)",
+          "Bloom de 45 segundos (deixe CO2 sair)",
+          "Despeje em círculos finos e controlados",
+          "Tempo total exato: 3 minutos",
+          "Observe os aromas florais intensos",
+          "Cada gota é ouro puro"
+        ]
+      },
+      "especificacoes": {
+        "cafeina_percentual": "1,5%",
+        "producao_global": "< 1% arabica (extremamente raro)",
+        "altitude_ideal": "1.500-2.100m",
+        "clima": "Montanha tropical úmida"
+      }
+    },
+    {
+      "id": "acaia",
+      "nome": "Acaiá",
+      "regiao": "Brasil, São Paulo",
+      "pais": "Brasil",
+      "altitude": "800-1.400m",
+      "origin": "Híbrido de Mundo Novo e Bourbon, desenvolvido no Brasil. Resistente e produtivo, ganha cada vez mais espaço na cafeicultura brasileira de qualidade.",
+      "flavor": {
+        "descricao": "Corpo médio-cheio, acidez suave, notas de chocolate e frutas secas, final limpo",
+        "acidez": "Suave",
+        "corpo": "Médio-cheio",
+        "docura": "Equilibrada",
+        "notas": ["Chocolate escuro", "Frutas secas", "Nozes", "Corpo balanceado"]
+      },
+      "metodos_recomendados": ["Aeropress", "V60", "French Press"],
+      "recipe": {
+        "cafe_gramas": 17,
+        "agua_ml": 260,
+        "proporcao": "1:15",
+        "temperatura": "91-95°C",
+        "tempo_total_minutos": 3.5,
+        "granulometria": "Média",
+        "passos": [
+          "Meça 17g de café Acaiá",
+          "Água a 91-95°C",
+          "Moa em granulometria média",
+          "Pré-aqueça o dripper",
+          "Bloom de 30 segundos",
+          "Despeje a água em movimento constante",
+          "Total de 3,5 minutos",
+          "Desfrute do corpo equilibrado"
+        ]
+      },
+      "especificacoes": {
+        "cafeina_percentual": "1,5%",
+        "producao_global": "~6% arabica",
+        "altitude_ideal": "1.000-1.300m",
+        "clima": "Subtropical"
+      }
+    },
+    {
+      "id": "arabica",
+      "nome": "Arábica",
+      "regiao": "Etiópia, Kaffa",
+      "pais": "Etiópia",
+      "altitude": "1.200-2.200m",
+      "origin": "A espécie original e nativa da Etiópia, berço do café. Representa 60% da produção mundial. Cultivada desde tempos imemoriais nas terras altas de Kaffa.",
+      "flavor": {
+        "descricao": "Corpo médio, acidez viva, doçura natural, notas variadas por origem (chocolate, frutas, floral)",
+        "acidez": "Viva e agradável",
+        "corpo": "Médio",
+        "docura": "Natural marcante",
+        "notas": ["Chocolate ao leite", "Caramelo", "Frutas vermelhas", "Floral", "Nozes"]
+      },
+      "metodos_recomendados": ["V60", "Aeropress", "Espresso", "French Press"],
+      "recipe": {
+        "cafe_gramas": 16,
+        "agua_ml": 240,
+        "proporcao": "1:15",
+        "temperatura": "92-96°C",
+        "tempo_total_minutos": 3,
+        "granulometria": "Média",
+        "passos": [
+          "Pese 16g de café Arábica em grãos",
+          "Aqueça 240ml de água a 92-96°C",
+          "Moa na hora em granulometria média",
+          "Escalde o filtro com água quente",
+          "Despeje o café e aguarde 30 segundos (bloom)",
+          "Prossiga vertendo água em círculos suaves",
+          "Tempo total: 3 minutos",
+          "Aprecie a qualidade da espécie original"
+        ]
+      },
+      "especificacoes": {
+        "cafeina_percentual": "1,2-1,5%",
+        "producao_global": "~60% arabica",
+        "altitude_ideal": "1.500-2.000m",
+        "clima": "Tropical de altitude"
+      }
+    },
+    {
+      "id": "icatu",
+      "nome": "Icatu",
+      "regiao": "Brasil, São Paulo",
+      "pais": "Brasil",
+      "altitude": "600-1.200m",
+      "origin": "Híbrido complexo que combina Bourbon, Typica e Robusta. Desenvolvido no Instituto Agronômico de Campinas. Resistente a pragas mas com qualidade de arabica.",
+      "flavor": {
+        "descricao": "Corpo encorpado, acidez suave, notas de chocolate e cacau, final adocicado",
+        "acidez": "Suave",
+        "corpo": "Encorpado",
+        "docura": "Adocicada",
+        "notas": ["Chocolate", "Cacau", "Nozes", "Corpo pesado", "Macio"]
+      },
+      "metodos_recomendados": ["French Press", "Aeropress", "Italiana"],
+      "recipe": {
+        "cafe_gramas": 19,
+        "agua_ml": 280,
+        "proporcao": "1:14",
+        "temperatura": "89-93°C",
+        "tempo_total_minutos": 4,
+        "granulometria": "Grossa",
+        "passos": [
+          "Meça 19g de café Icatu",
+          "Aqueça água a 89-93°C (temperatura mais baixa)",
+          "Moa em granulometria GROSSA (para French Press ideal)",
+          "Pré-aqueça a prensa",
+          "Coloque o café moído",
+          "Despeje água em movimento lento",
+          "Deixe descansar 4 minutos",
+          "Aprecie o corpo encorpado e macio"
+        ]
+      },
+      "especificacoes": {
+        "cafeina_percentual": "1,7% (maior que arabica pura)",
+        "producao_global": "~2% arabica",
+        "altitude_ideal": "800-1.100m",
+        "clima": "Subtropical"
+      }
+    }
+  ]
+}
