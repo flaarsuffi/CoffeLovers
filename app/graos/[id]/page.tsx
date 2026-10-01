@@ -96,7 +96,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Perfil
         </h2>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="bg-bg-subtle px-5 py-4 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
             <h3 className="font-serif text-lg font-bold text-primary mb-2">Corpo</h3>
             <p className="text-sm text-text-tertiary">{grao.flavor.corpo}</p>
@@ -130,7 +130,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Métodos Recomendados
         </h2>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {grao.metodos_recomendados.map((metodoNome) => {
             const metodoId = metodoNome.toLowerCase().replace(/\s+/g, "-");
             return (
