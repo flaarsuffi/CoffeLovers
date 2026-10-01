@@ -21,7 +21,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </div>
 
       {/* HERO */}
-      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 items-center">
+      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 items-center relative z-0">
         <div>
           <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-6">
             {grao.nome}
@@ -39,7 +39,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
             ← Explorar grãos
           </a>
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end relative z-0">
           <OptimizedImage
             src={`/assets/images/graos/${grao.id}.png`}
             alt={grao.nome}

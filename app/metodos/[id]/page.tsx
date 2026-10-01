@@ -53,7 +53,7 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
       </section>
 
       {/* IMAGEM SECTION */}
-      <section className="px-20 py-8">
+      <section className="px-20 py-8 relative z-0">
         <OptimizedImage
           src={`/assets/images/metodos/${metodo.id}.png`}
           alt={metodo.nome}
