@@ -28,9 +28,9 @@
           },
           {
             "numero": 3,
-            "titulo": "Bloom (30 segundos)",
-            "descricao": "Despeje 50ml de água e deixe descansar por 30 segundos. O café vai inchar — CO2 saindo. Isso libera aromas e melhora extração.",
-            "dica": "Despeje em círculos lentamente. Não é só colocar água."
+            "titulo": "Bloom (30 segundos com 50ml)",
+            "descricao": "Despeje EXATAMENTE 50ml de água a 92-96°C e deixe descansar por 30 segundos. O café vai inchar — CO2 saindo. Isso libera aromas e melhora extração.",
+            "dica": "Despeje em círculos lentamente. Não é só colocar água — controle a velocidade."
           },
           {
             "numero": 4,
@@ -103,7 +103,7 @@
       "nome": "Aeropress",
       "icone": "🔄",
       "tagline": "Versátil & Rápido",
-      "descricao": "Imersão + pressão = extração eficiente com corpo rico e perfil limpo. Extremamente versátil e portátil.",
+      "descricao": "Imersão + pressão = extração eficiente com corpo rico e perfil limpo. Este guia usa o método tradicional (imersão de ~2-3 min). Extremamente versátil e portátil.",
       "dificuldade": "Fácil",
       "tempo_minutos": 2,
       "tempo_exato": "2-3 min",
@@ -226,8 +226,8 @@
           {
             "numero": 4,
             "titulo": "Bloom (1 minuto)",
-            "descricao": "Despeje água quente (95-100°C) apenas o suficiente para umidecer o café. Deixe 1 minuto.",
-            "dica": "Este bloom com imersão é muito mais longo que V60 ou Aeropress."
+            "descricao": "Despeje 100ml de água quente (95-100°C) apenas o suficiente para umidecer o café. Deixe 1 minuto.",
+            "dica": "Este bloom com imersão é muito mais longo que V60 ou Aeropress. Depois despeje o restante até encher a prensa."
           },
           {
             "numero": 5,
@@ -325,9 +325,9 @@
           },
           {
             "numero": 5,
-            "titulo": "Fogo médio-baixo",
-            "descricao": "Coloque na boca do fogão em fogo médio-baixo. Deixe o cabo virado para o lado (para não queimar).",
-            "dica": "Fogo alto queima o café. Fogo baixo demora. Médio é perfeito."
+            "titulo": "Fogo MÉDIO-BAIXO (crítico)",
+            "descricao": "Coloque na boca do fogão em fogo MÉDIO-BAIXO (não alto). Se o fogo está muito quente, você ouvirá um sibilo/assobio rápido. Deixe o cabo virado para o lado (para não queimar).",
+            "dica": "Fogo alto queima o café e causa gosto amargo. Fogo baixo demora muito. Ajuste até ouvir glugl-glugl lentamente (~6-8 min)."
           },
           {
             "numero": 6,
@@ -413,9 +413,9 @@
           },
           {
             "numero": 4,
-            "titulo": "Despeje lentamente",
-            "descricao": "Despeje água quente (90-95°C) lentamente no pano com o café. Deixe fluir naturalmente.",
-            "dica": "O pano filtra lentamente — isso é parte do charme. Não apresse."
+            "titulo": "Bloom (20 seg) + Despeje lentamente",
+            "descricao": "Primeiro despeje ~50ml de água quente (90-95°C) no pano com o café. Deixe descansar 20 segundos. Depois despeje o restante (até ~250ml) lentamente. Deixe fluir naturalmente.",
+            "dica": "O pano filtra lentamente — isso é parte do charme. Não apresse. Água deve estar em torno de 90-95°C para manter calor."
           },
           {
             "numero": 5,

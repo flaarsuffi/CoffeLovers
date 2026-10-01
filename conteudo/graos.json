@@ -114,7 +114,7 @@
       },
       "especificacoes": {
         "cafeina_percentual": "1,4%",
-        "producao_global": "~3% arabica (raro)",
+        "producao_global": "~5-8% arabica (raro)",
         "altitude_ideal": "1.200-1.600m",
         "clima": "Montanhoso tropical"
       }
@@ -125,7 +125,7 @@
       "regiao": "Panamá, Boquete",
       "pais": "Panamá",
       "altitude": "1.500-2.000m",
-      "origin": "Variedade etíope trazida para o Panamá em 1960. Floresce em altitude extrema, resultando em complexidade e elegância incomparáveis. Um dos cafés mais caros do mundo (~$100/kg).",
+      "origin": "Variedade etíope trazida para o Panamá em 1960. Floresce em altitude extrema, resultando em complexidade e elegância incomparáveis. Um dos cafés mais caros do mundo (atualmente $150-200/kg).",
       "flavor": {
         "descricao": "Floral intenso, frutas exóticas, complexidade excepcional, elegância pura",
         "acidez": "Viva e refinada",
@@ -207,7 +207,7 @@
       "altitude": "1.200-2.200m",
       "origin": "A espécie original e nativa da Etiópia, berço do café. Representa 60% da produção mundial. Cultivada desde tempos imemoriais nas terras altas de Kaffa.",
       "flavor": {
-        "descricao": "Corpo médio, acidez viva, doçura natural, notas variadas por origem (chocolate, frutas, floral)",
+        "descricao": "Corpo médio, acidez viva, doçura natural, notas variadas por origem (chocolate, frutas, floral). IMPORTANTE: Etiópia é sensível a superextração — use água ligeiramente mais fresca (90-92°C) e despeje lentamente.",
         "acidez": "Viva e agradável",
         "corpo": "Médio",
         "docura": "Natural marcante",
