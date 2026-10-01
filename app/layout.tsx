@@ -29,7 +29,7 @@ export default function RootLayout({
 
 function Header() {
   return (
-    <header className="sticky top-0 z-sticky bg-dark bg-opacity-98 backdrop-blur-md border-b border-border px-20 py-6">
+    <header className="sticky top-0 z-sticky bg-dark/90 backdrop-blur-md border-b border-border px-20 py-6">
       <a href="/" className="font-serif text-xl font-bold letter-spacing-3 text-primary inline-block hover:text-primary">
         COFFEELOVERS
       </a>
