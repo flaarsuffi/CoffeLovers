@@ -39,16 +39,18 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
             ← Explorar grãos
           </a>
         </div>
-        <div className="flex justify-end">
-          <OptimizedImage
-            src={`/assets/images/graos/${grao.id}.png`}
-            alt={grao.nome}
-            width={300}
-            height={300}
-            priority={true}
-            className="w-64 h-64"
-          />
-        </div>
+      </section>
+
+      {/* IMAGEM SECTION */}
+      <section className="px-20 py-8">
+        <OptimizedImage
+          src={`/assets/images/graos/${grao.id}.png`}
+          alt={grao.nome}
+          width={400}
+          height={400}
+          priority={true}
+          className="w-72 h-72"
+        />
       </section>
 
       {/* ORIGEM SECTION */}
@@ -61,25 +63,25 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
             <p className="mb-4">{grao.origin}</p>
           </div>
           <div className="space-y-5">
-            <div className="px-5 py-4 bg-bg-subtle rounded-md border-l-2 border-primary">
+            <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
               <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
                 Altitude
               </div>
               <div className="text-base text-white font-medium">{grao.altitude}</div>
             </div>
-            <div className="px-5 py-4 bg-bg-subtle rounded-md border-l-2 border-primary">
+            <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
               <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
                 Região
               </div>
               <div className="text-base text-white font-medium">{grao.regiao}</div>
             </div>
-            <div className="px-5 py-4 bg-bg-subtle rounded-md border-l-2 border-primary">
+            <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
               <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
                 Produção
               </div>
               <div className="text-base text-white font-medium">{grao.especificacoes.producao_global}</div>
             </div>
-            <div className="px-5 py-4 bg-bg-subtle rounded-md border-l-2 border-primary">
+            <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
               <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
                 Cafeína
               </div>
@@ -95,15 +97,15 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
           Perfil
         </h2>
         <div className="grid grid-cols-3 gap-6">
-          <div className="bg-bg-subtle px-7 py-7 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
+          <div className="bg-bg-subtle px-5 py-4 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
             <h3 className="font-serif text-lg font-bold text-primary mb-2">Corpo</h3>
             <p className="text-sm text-text-tertiary">{grao.flavor.corpo}</p>
           </div>
-          <div className="bg-bg-subtle px-7 py-7 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
+          <div className="bg-bg-subtle px-5 py-4 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
             <h3 className="font-serif text-lg font-bold text-primary mb-2">Acidez</h3>
             <p className="text-sm text-text-tertiary">{grao.flavor.acidez}</p>
           </div>
-          <div className="bg-bg-subtle px-7 py-7 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
+          <div className="bg-bg-subtle px-5 py-4 rounded-md border border-border text-center transition-all hover:bg-opacity-10 hover:border-border-accent">
             <h3 className="font-serif text-lg font-bold text-primary mb-2">Doçura</h3>
             <p className="text-sm text-text-tertiary">{grao.flavor.docura}</p>
           </div>
