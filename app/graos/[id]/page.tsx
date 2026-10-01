@@ -21,7 +21,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </div>
 
       {/* HERO */}
-      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 items-center">
+      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-12 items-center">
         <div>
           <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-6">
             {grao.nome}
@@ -52,7 +52,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </section>
 
       {/* ORIGEM SECTION */}
-      <section className="px-20 py-24">
+      <section className="px-20 py-8">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Origem
         </h2>
@@ -90,7 +90,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </section>
 
       {/* FLAVOR PROFILE */}
-      <section className="px-20 py-24">
+      <section className="px-20 py-8">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Perfil
         </h2>
@@ -124,7 +124,7 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
       </section>
 
       {/* MÉTODOS RECOMENDADOS */}
-      <section className="px-20 py-24">
+      <section className="px-20 py-8">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Métodos Recomendados
         </h2>
