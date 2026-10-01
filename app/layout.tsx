@@ -42,14 +42,11 @@ function Footer() {
     <footer className="bg-transparent text-text-tertiary text-xs px-20 py-12 text-center">
       <p>© 2026 CoffeLovers — Premium Coffee Enthusiasts</p>
       <div className="mt-4 space-x-3">
-        <a href="#graos" className="text-primary hover:underline">
+        <a href="/graos" className="text-primary hover:underline">
           Grãos
         </a>
-        <a href="#metodos" className="text-primary hover:underline">
+        <a href="/metodos" className="text-primary hover:underline">
           Métodos
-        </a>
-        <a href="#quiz" className="text-primary hover:underline">
-          Quiz
         </a>
       </div>
     </footer>

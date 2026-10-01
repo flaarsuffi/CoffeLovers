@@ -133,7 +133,7 @@
         "docura": "Delicada",
         "notas": ["Floral", "Framboesa", "Jasmim", "Frutas tropicais", "Mel de flores"]
       },
-      "metodos_recomendados": ["V60", "Pour Over", "Aeropress"],
+      "metodos_recomendados": ["V60", "Aeropress", "French Press"],
       "recipe": {
         "cafe_gramas": 12,
         "agua_ml": 200,
@@ -213,7 +213,7 @@
         "docura": "Natural marcante",
         "notas": ["Chocolate ao leite", "Caramelo", "Frutas vermelhas", "Floral", "Nozes"]
       },
-      "metodos_recomendados": ["V60", "Aeropress", "Espresso", "French Press"],
+      "metodos_recomendados": ["V60", "Aeropress", "French Press"],
       "recipe": {
         "cafe_gramas": 16,
         "agua_ml": 240,
