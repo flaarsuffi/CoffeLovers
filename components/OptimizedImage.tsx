@@ -18,7 +18,7 @@ export function OptimizedImage({
   className = "",
 }: OptimizedImageProps) {
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative z-0 ${className}`}>
       <Image
         src={src}
         alt={alt}
