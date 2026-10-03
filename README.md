@@ -69,10 +69,13 @@ mudança. Um dos casos varre os 28 pares grão × método e afirma que exatament
 dois são ajustados pela pesquisa; mexer em `coffee-ratios.json` sem querer
 derruba esse teste.
 
-`e2e/` cobre o que atravessa páginas e só existe no navegador: a seleção que
-sobrevive à navegação, a precedência da query string, o tema claro e escuro, e
-uma varredura de acessibilidade com axe-core. Roda em dois perfis, desktop e
-celular.
+`e2e/` cobre o que atravessa páginas e só existe no navegador, com Playwright em
+dois perfis (desktop e celular):
+- **navegacao.spec.ts**: transição entre páginas, query string, sessionStorage
+- **calculadora.spec.ts**: seleção, cálculo, validação, slider com teclado
+- **proporcao-ajustada.spec.ts**: pares grão × método com pesquisa customizada
+- **tema.spec.ts**: tema claro e escuro, sincronização com sistema operacional
+- **acessibilidade.spec.ts**: varredura com axe-core, rótulos e navegação
 
 O que continua manual: leitor de tela de verdade e julgamento visual.
 
@@ -80,7 +83,8 @@ O que continua manual: leitor de tela de verdade e julgamento visual.
 
 - **O CSS do kit não é editado.** Tudo que precisamos mudar vive em
   `coffeelovers-next.css`, para que `coffeelovers.css` continue substituível
-  quando o kit for atualizado.
+  quando o kit for atualizado. Token adicional `--cl-muted-on-soft` foi criado
+  para garantir contraste AA em botões de intensidade e sugestões.
 - **Sem Tailwind.** O design system é feito de custom properties, container
   queries e `light-dark()`; traduzir para classes utilitárias perderia
   fidelidade.
@@ -88,6 +92,8 @@ O que continua manual: leitor de tela de verdade e julgamento visual.
   divergir entre servidor e cliente e quebrar a hidratação.
 - **A seleção da receita fica em `sessionStorage`**, para sobreviver à
   navegação entre páginas sem sujar a URL. A query string tem precedência.
+  Persistência é reação aos manipuladores do usuário, não a mudanças de estado,
+  para evitar apagar dados antes de recuperá-los.
 
 ## Tema
 
