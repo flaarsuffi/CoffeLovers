@@ -53,43 +53,125 @@ export default function GraoDetailPage({ params }: { params: { id: string } }) {
         />
       </section>
 
+      {/* SOBRE ESTE GRÃO SECTION */}
+      <section className="px-20 py-8">
+        <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
+          Sobre este grão
+        </h2>
+        <div className="text-base text-text-tertiary leading-relaxed font-light mb-8 max-w-3xl">
+          <p>
+            {grao.nome} é uma variedade com características próprias que a distinguem no mundo do café specialty.
+            Cada origem traz seus aromas, sabores e acidez particulares. Entender essas nuances permite que você
+            escolha a proporção certa de água e café, maximizando o potencial sensorial de cada xícara.
+          </p>
+        </div>
+      </section>
+
       {/* ORIGEM SECTION */}
       <section className="px-20 py-8">
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Origem
         </h2>
-        <div className="grid grid-cols-[1.4fr_1fr] gap-15">
-          <div className="text-base text-text-tertiary leading-relaxed font-light">
-            <p className="mb-4">{grao.origin}</p>
+        <div className="text-base text-text-tertiary leading-relaxed font-light mb-8">
+          <p>{grao.origin}</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
+            <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
+              Altitude
+            </div>
+            <div className="text-base text-white font-medium">{grao.altitude}</div>
           </div>
-          <div className="space-y-5">
-            <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
-              <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
-                Altitude
-              </div>
-              <div className="text-base text-white font-medium">{grao.altitude}</div>
+          <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
+            <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
+              Região
             </div>
-            <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
-              <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
-                Região
-              </div>
-              <div className="text-base text-white font-medium">{grao.regiao}</div>
+            <div className="text-base text-white font-medium">{grao.regiao}</div>
+          </div>
+          <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
+            <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
+              Produção
             </div>
-            <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
-              <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
-                Produção
-              </div>
-              <div className="text-base text-white font-medium">{grao.especificacoes.producao_global}</div>
+            <div className="text-base text-white font-medium">{grao.especificacoes.producao_global}</div>
+          </div>
+          <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
+            <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
+              Cafeína
             </div>
-            <div className="px-5 py-4 bg-bg-subtle rounded-md border border-border">
-              <div className="text-xs font-bold uppercase letter-spacing-widest text-primary mb-1.5">
-                Cafeína
-              </div>
-              <div className="text-base text-white font-medium">{grao.especificacoes.cafeina_percentual}</div>
-            </div>
+            <div className="text-base text-white font-medium">{grao.especificacoes.cafeina_percentual}</div>
           </div>
         </div>
       </section>
+
+      {/* ORIGIN STORY */}
+      {grao.origin_story && (
+        <section className="px-20 py-8">
+          <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
+            A História
+          </h2>
+          <div className="text-base text-text-tertiary leading-relaxed font-light space-y-4">
+            {grao.origin_story.split('\n').map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ALTITUDE IMPLICATIONS */}
+      {grao.altitude_implications && (
+        <section className="px-20 py-8">
+          <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
+            Por Que a Altitude Importa
+          </h2>
+          <div className="text-base text-text-tertiary leading-relaxed font-light space-y-4">
+            {grao.altitude_implications.split('\n').map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* TASTING GUIDE */}
+      {grao.tasting_guide && (
+        <section className="px-20 py-8">
+          <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
+            Como Degustar
+          </h2>
+          <div className="text-base text-text-tertiary leading-relaxed font-light space-y-4">
+            {grao.tasting_guide.split('\n').map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* PAIRINGS */}
+      {grao.pairings && (
+        <section className="px-20 py-8">
+          <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
+            Recomendações de Harmonização
+          </h2>
+          <div className="text-base text-text-tertiary leading-relaxed font-light space-y-4">
+            {grao.pairings.split('\n').map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* RECIPE NOTES */}
+      {grao.recipe_notes && (
+        <section className="px-20 py-8">
+          <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
+            Notas de Preparo
+          </h2>
+          <div className="text-base text-text-tertiary leading-relaxed font-light space-y-4">
+            {grao.recipe_notes.split('\n').map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* FLAVOR PROFILE */}
       <section className="px-20 py-8">

@@ -1,85 +1,58 @@
-import { graos, metodos } from "@/lib/data";
+import { graos, metodos, getCoffeeCalculatorData } from "@/lib/data";
+import { CoffeeCalculatorSection } from "@/components/CoffeeCalculatorSection";
 
 export default function HomePage() {
+  const { beans, methods, ratios } = getCoffeeCalculatorData();
   return (
     <>
-      {/* HERO */}
-      <section className="grid grid-cols-[1.2fr_1fr] gap-15 px-20 py-20 items-center">
-        <div>
+      {/* HERO SECTION */}
+      <section className="px-20 py-20">
+        <div className="max-w-2xl mb-12">
           <h1 className="font-serif text-6xl font-bold mb-4 letter-spacing-tight">
-            Café Premium Discoverer
+            Descubra sua proporção perfeita
           </h1>
           <p className="text-xl text-text-secondary leading-relaxed mb-8 font-light">
-            Explore as melhores variedades de café do Brasil e do mundo. Aprenda técnicas de preparo, descubra perfis de sabor únicos e eleve sua experiência cafetera.
+            A água e o café formam uma dupla. Encontre a medida exata para seu grão e método, e transforme cada xícara em uma experiência.
           </p>
+        </div>
+
+        {/* COFFEE CALCULATOR SECTION */}
+        <CoffeeCalculatorSection beans={beans} methods={methods} ratios={ratios} />
+      </section>
+
+      {/* EDUCATION CARDS SECTION */}
+      <section className="px-20 py-20">
+        <h2 className="font-serif text-5xl font-bold mb-8 letter-spacing-tight">
+          Entenda o básico
+        </h2>
+        <p className="text-lg text-text-secondary mb-12 font-light max-w-2xl">
+          Os dois pilares que definem seu café
+        </p>
+
+        <div className="grid grid-cols-2 gap-8">
           <a
             href="/graos"
-            className="inline-block bg-transparent text-primary px-7 py-3 border-2 border-primary rounded-pill font-semibold cursor-pointer transition-all hover:bg-primary hover:text-dark hover:translate-y-[-2px] text-sm letter-spacing-wide"
+            className="bg-bg-subtle px-8 py-8 rounded-md border border-border cursor-pointer transition-all hover:border-primary hover:bg-opacity-50 hover:translate-y-[-4px]"
           >
-            Explorar Grãos
+            <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+              O Grão
+            </h3>
+            <p className="text-base text-text-secondary leading-relaxed">
+              Cada origem traz seu próprio caráter. Arábica oferece notas florais e doces. Bourbon é encorpado com toques de chocolate. Geisha traz delicadeza e aroma único. Explore qual história você quer extrair de seu café.
+            </p>
           </a>
-        </div>
-        <div></div>
-      </section>
 
-      {/* GRÃOS SECTION */}
-      <section id="graos" className="px-20 py-15">
-        <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
-          Nossas Variedades
-        </h2>
-        <div className="grid grid-cols-3 gap-6">
-          {graos.map((grao) => (
-            <a
-              key={grao.id}
-              href={`/graos/${grao.id}`}
-              className="bg-bg-subtle px-7 py-7 rounded-md border border-border cursor-pointer transition-all text-center hover:bg-opacity-10 hover:border-border-accent hover:translate-y-[-4px] hover:shadow-md"
-            >
-              <h3 className="font-serif text-lg font-bold text-primary mb-2">
-                {grao.nome}
-              </h3>
-              <p className="text-sm text-text-tertiary leading-normal">
-                {grao.flavor.descricao}
-              </p>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      {/* MÉTODOS SECTION */}
-      <section id="metodos" className="px-20 py-15">
-        <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
-          Métodos de Preparo
-        </h2>
-        <div className="grid grid-cols-3 gap-6">
-          {metodos.map((metodo) => (
-            <a
-              key={metodo.id}
-              href={`/metodos/${metodo.id}`}
-              className="bg-bg-subtle px-7 py-7 rounded-md border border-border cursor-pointer transition-all text-center hover:bg-opacity-10 hover:border-border-accent hover:translate-y-[-4px] hover:shadow-md"
-            >
-              <h3 className="font-serif text-lg font-bold text-primary mb-2">
-                {metodo.nome}
-              </h3>
-              <p className="text-sm text-text-tertiary leading-normal">
-                {metodo.tagline}
-              </p>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      {/* QUIZ SECTION */}
-      <section id="quiz" className="px-20 py-15">
-        <div className="bg-bg-subtle px-15 py-10 rounded-lg border border-border text-center max-w-2xl mx-auto">
-          <h3 className="font-serif text-3xl font-bold text-primary mb-4">
-            Qual é o seu café ideal?
-          </h3>
-          <p className="text-base text-text-secondary leading-relaxed mb-6">
-            Responda algumas perguntas e descubra qual grão e método combinam melhor com seu paladar e rotina.
-          </p>
-          <button className="inline-block bg-transparent text-primary px-7 py-3 border-2 border-primary rounded-pill font-semibold cursor-pointer transition-all hover:bg-primary hover:text-dark hover:translate-y-[-2px] text-sm letter-spacing-wide">
-            Começar Quiz
-          </button>
+          <a
+            href="/metodos"
+            className="bg-bg-subtle px-8 py-8 rounded-md border border-border cursor-pointer transition-all hover:border-primary hover:bg-opacity-50 hover:translate-y-[-4px]"
+          >
+            <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+              O Método
+            </h3>
+            <p className="text-base text-text-secondary leading-relaxed">
+              A técnica de preparo define como o café é extraído. V60 oferece café limpo e brilhante, perfeito para quem quer clareza sensorial. Aeropress é versátil e rápido, ideal para quem tem pouco tempo. French Press entrega corpo intenso, para quem ama profundidade. Escolha o método que combina com seu ritmo.
+            </p>
+          </a>
         </div>
       </section>
     </>

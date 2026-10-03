@@ -102,23 +102,27 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Como Preparar
         </h2>
-        <div className="space-y-6">
-          {metodo.tutorial.passos.map((passo) => (
-            <div key={passo.numero} className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="font-serif text-3xl font-bold text-primary w-12 h-12 flex items-center justify-center">
-                  {passo.numero}
+        <div className="text-base text-text-secondary leading-relaxed space-y-4">
+          {metodo.tutorial && typeof metodo.tutorial === 'string' ? (
+            <div>{metodo.tutorial}</div>
+          ) : metodo.tutorial?.passos ? (
+            metodo.tutorial.passos.map((passo) => (
+              <div key={passo.numero} className="flex gap-6">
+                <div className="flex-shrink-0">
+                  <div className="font-serif text-3xl font-bold text-primary w-12 h-12 flex items-center justify-center">
+                    {passo.numero}
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-serif text-lg font-bold mb-2">{passo.titulo}</h3>
+                  <p className="text-base text-text-secondary leading-relaxed mb-3">{passo.descricao}</p>
+                  <div className="px-3 py-2 bg-opacity-50 rounded text-sm text-text-tertiary italic">
+                    💡 {passo.dica}
+                  </div>
                 </div>
               </div>
-              <div className="flex-1">
-                <h3 className="font-serif text-lg font-bold mb-2">{passo.titulo}</h3>
-                <p className="text-base text-text-secondary leading-relaxed mb-3">{passo.descricao}</p>
-                <div className="px-3 py-2 bg-opacity-50 rounded text-sm text-text-tertiary italic">
-                  💡 {passo.dica}
-                </div>
-              </div>
-            </div>
-          ))}
+            ))
+          ) : null}
         </div>
       </section>
 
@@ -127,30 +131,39 @@ export default function MetodoDetailPage({ params }: { params: { id: string } })
         <h2 className="font-serif text-4xl font-bold mb-8 letter-spacing-tight">
           Por Que Escolher Este Método
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="font-serif text-lg font-bold text-primary mb-4">Por que vale a pena</h3>
-            <ul className="space-y-2">
-              {metodo.pros.map((pro, idx) => (
-                <li key={idx} className="text-base text-text-secondary flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span>{pro}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-serif text-lg font-bold text-primary mb-4">O que você vai enfrentar</h3>
-            <ul className="space-y-2">
-              {metodo.cons.map((con, idx) => (
-                <li key={idx} className="text-base text-text-secondary flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span>{con}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="text-base text-text-tertiary leading-relaxed font-light mb-8 max-w-3xl">
+          <p>
+            {metodo.nome} tem características únicas que o diferenciam de outros métodos.
+            Sua técnica específica define como a água extrai os sabores do café, resultando em um perfil sensorial particular.
+            Escolher o método certo para seu grão e paladar faz toda a diferença.
+          </p>
         </div>
+        {metodo.pros && Array.isArray(metodo.pros) && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div>
+              <h3 className="font-serif text-lg font-bold text-primary mb-4">Por que vale a pena</h3>
+              <ul className="space-y-2">
+                {metodo.pros.map((pro, idx) => (
+                  <li key={idx} className="text-base text-text-secondary flex items-start gap-3">
+                    <span className="text-primary font-bold mt-1">•</span>
+                    <span>{pro}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-serif text-lg font-bold text-primary mb-4">O que você vai enfrentar</h3>
+              <ul className="space-y-2">
+                {metodo.cons.map((con, idx) => (
+                  <li key={idx} className="text-base text-text-secondary flex items-start gap-3">
+                    <span className="text-primary font-bold mt-1">•</span>
+                    <span>{con}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
       </section>
     </>
   );
