@@ -51,4 +51,10 @@ export interface Receita {
   proporcao: number | null;
   /** Gramas de café. `null` na Moka. */
   cafeG: number | null;
+  /**
+   * Verdadeiro quando a pesquisa por grão × método mudou a proporção em
+   * relação à base do método. Falso quando a pesquisa concorda com a base,
+   * para não sinalizar um ajuste que não alterou nada.
+   */
+  ajustadaPeloGrao: boolean;
 }

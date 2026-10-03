@@ -1,15 +1,22 @@
 "use client";
 
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Grao, Intensidade, Metodo, Receita } from "@/lib/types";
 import { montarReceita } from "@/lib/data";
 import { gramas, mililitros } from "@/lib/format";
+import { lerSessao, salvarSessao } from "@/lib/sessao";
 import { AGUA_MAX, AGUA_MIN, RecipeForm } from "./RecipeForm";
 import { RecipeResult } from "./RecipeResult";
 import { PreparationGuide } from "./PreparationGuide";
 
 const AGUA_PADRAO = 350;
+
+const INTENSIDADES_VALIDAS: Intensidade[] = [
+  "leve",
+  "equilibrado",
+  "intenso",
+];
 
 function aguaEhValida(texto: string): boolean {
   const n = Number(texto);
@@ -44,7 +51,42 @@ export function Calculator({ metodos, graos }: Props) {
 
   const botaoGuiaRef = useRef<HTMLButtonElement>(null);
 
+  /*
+   * A seleção salva é aplicada depois da hidratação: sessionStorage não existe
+   * no servidor, e ler durante o render faria o HTML divergir.
+   * A query string tem precedência — quem veio de um catálogo pediu aquilo
+   * explicitamente; a sessão só preenche o que a URL não trouxe.
+   */
+  useEffect(() => {
+    const salvo = lerSessao();
+    if (!salvo) return;
+
+    if (
+      !params.get("metodo") &&
+      metodos.some((m) => m.id === salvo.metodoId)
+    ) {
+      setMetodoId(salvo.metodoId!);
+    }
+    if (!params.get("grao") && salvo.graoId !== undefined) {
+      setGraoId(graos.some((g) => g.id === salvo.graoId) ? salvo.graoId : "");
+    }
+    if (salvo.aguaMl && aguaEhValida(String(salvo.aguaMl))) {
+      setAguaMl(salvo.aguaMl);
+      setAguaTexto(String(salvo.aguaMl));
+    }
+    if (salvo.intensidade && INTENSIDADES_VALIDAS.includes(salvo.intensidade)) {
+      setIntensidade(salvo.intensidade);
+    }
+    // Só na montagem: depois disso o estado da tela é a fonte da verdade.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const aguaValida = aguaEhValida(aguaTexto);
+
+  useEffect(() => {
+    if (!aguaValida) return;
+    salvarSessao({ metodoId, graoId, aguaMl, intensidade });
+  }, [metodoId, graoId, aguaMl, intensidade, aguaValida]);
 
   const receita = useMemo(
     () => montarReceita(metodoId, graoId || null, aguaMl, intensidade),

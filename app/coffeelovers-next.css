@@ -95,3 +95,80 @@
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/*
+ * Nota de proporção ajustada — acréscimo ao kit.
+ * A linha divisória sai de .cl-ratio e passa para o bloco, para que a nota
+ * fique do lado de dentro, junto da proporção que ela explica.
+ */
+#coffee-next .cl-ratio-bloco {
+  margin-bottom: 18px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #ffffff25;
+}
+
+#coffee-next .cl-ratio-bloco .cl-ratio {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+#coffee-next .cl-ratio-fonte {
+  margin-top: 7px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #b5c6ae;
+}
+
+@container coffee (max-width: 760px) {
+  #coffee-next .cl-ratio-bloco {
+    margin-bottom: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+/*
+ * Foco visível. O design system não define um anel e conta com o padrão do
+ * navegador, que some sobre os painéis verde-escuros.
+ */
+#coffee-next {
+  --cl-focus: light-dark(#305740, #c5d5a8);
+}
+
+#coffee-next :focus-visible {
+  outline: 2px solid var(--cl-focus);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Os painéis escuros mantêm sua identidade nos dois temas, então o anel
+   também precisa ser claro nos dois. */
+#coffee-next .cl-recipe :focus-visible,
+#coffee-next .cl-sensory :focus-visible,
+#coffee-next .cl-moka-info :focus-visible {
+  outline-color: #e4cfaa;
+}
+
+/*
+ * Conforto de toque. O kit tem controles entre 30 e 41 px; a meta que o
+ * próprio documento sugere é 44–48 px. Elevados apenas onde o apontador é
+ * impreciso, para não alterar as proporções no desktop.
+ */
+@media (pointer: coarse) {
+  #coffee-next .cl-nav a,
+  #coffee-next .cl-nav button,
+  #coffee-next .cl-text-button,
+  #coffee-next .cl-breadcrumb a,
+  #coffee-next .cl-breadcrumb button,
+  #coffee-next .cl-card-action,
+  #coffee-next .cl-segments button,
+  #coffee-next .cl-number input,
+  #coffee-next .cl-close,
+  #coffee-next .cl-knowledge-note a {
+    min-height: 44px;
+  }
+
+  #coffee-next .cl-close {
+    min-width: 44px;
+  }
+}

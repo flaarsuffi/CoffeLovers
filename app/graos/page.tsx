@@ -28,7 +28,10 @@ export default function GraosPage() {
         <strong>Espécie e variedade: qual a diferença?</strong>
         <br />
         Arábica é uma espécie. Bourbon, Catuaí e outras variedades ajudam a
-        contar sua diversidade. <Link href="/graos/arabica">Conheça o Arábica →</Link>
+        contar sua diversidade.{" "}
+        <Link href="/graos/arabica">
+          Conheça o Arábica <span aria-hidden="true">→</span>
+        </Link>
       </div>
     </>
   );

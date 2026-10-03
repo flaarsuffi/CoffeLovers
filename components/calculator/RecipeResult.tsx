@@ -69,10 +69,20 @@ export function RecipeResult({
             </div>
           </div>
 
-          <div className="cl-ratio">
-            <span>Proporção</span>
-            <strong>1:{proporcao}</strong>
-            <span>· café : água</span>
+          <div className="cl-ratio-bloco">
+            <div className="cl-ratio">
+              <span>Proporção</span>
+              <strong>1:{proporcao}</strong>
+              <span>· café : água</span>
+            </div>
+            {receita.ajustadaPeloGrao && grao && (
+              /* Separador em vez de preposição: os nomes de método têm
+                 gêneros diferentes ("o V60", "a Prensa francesa"). */
+              <p className="cl-ratio-fonte">
+                Ajustada para {grao.nome} · {metodo.nome}, a partir das
+                referências pesquisadas.
+              </p>
+            )}
           </div>
 
           <div className="cl-specs">

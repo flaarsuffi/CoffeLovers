@@ -18,9 +18,12 @@ export function SuggestedMethods({ grao }: { grao: Grao }) {
           <Link
             key={metodo.id}
             href={`/?metodo=${metodo.id}&grao=${grao.id}`}
+            aria-label={`Preparar ${grao.nome} no ${metodo.nome}`}
           >
             <span>{metodo.nome}</span>
-            <small>{metodo.tempo} →</small>
+            <small>
+              {metodo.tempo} <span aria-hidden="true">→</span>
+            </small>
           </Link>
         ))}
       </div>

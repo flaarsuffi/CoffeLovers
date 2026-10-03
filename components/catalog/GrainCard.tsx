@@ -22,7 +22,7 @@ export function GrainCard({ grao }: { grao: Grao }) {
       <div className="cl-card-meta">{grao.corpo}</div>
 
       <Link className="cl-card-action" href={`/graos/${grao.id}`}>
-        Conhecer {grao.nome} →
+        Conhecer {grao.nome} <span aria-hidden="true">→</span>
       </Link>
     </article>
   );

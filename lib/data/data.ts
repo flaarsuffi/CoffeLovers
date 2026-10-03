@@ -82,10 +82,12 @@ export function montarReceita(
       intensidade,
       proporcao: null,
       cafeG: null,
+      ajustadaPeloGrao: false,
     };
   }
 
-  const base = (grao && proporcaoPesquisada(grao.id, metodo.id)) ?? metodo.proporcao;
+  const pesquisada = grao ? proporcaoPesquisada(grao.id, metodo.id) : null;
+  const base = pesquisada ?? metodo.proporcao;
   const proporcao = base + AJUSTE_INTENSIDADE[intensidade];
 
   return {
@@ -95,5 +97,6 @@ export function montarReceita(
     intensidade,
     proporcao,
     cafeG: aguaMl / proporcao,
+    ajustadaPeloGrao: pesquisada !== null && pesquisada !== metodo.proporcao,
   };
 }
