@@ -107,13 +107,68 @@ export function CoffeeCalculator({
 
       {/* Selection Summary */}
       {isValid && selectedBean && selectedMethod && (
-        <div className="p-4 bg-bg-subtle border border-border rounded-md mb-6">
+        <div className="p-4 bg-bg-subtle border border-border rounded-md mb-8">
           <div className="text-xs text-text-tertiary uppercase tracking-wider mb-1">
             Você selecionou
           </div>
           <div className="text-sm text-text-primary font-light">
             {selectedBean.nome} × {selectedMethod.nome}
           </div>
+        </div>
+      )}
+
+      {/* Water Amount Display */}
+      {isValid && (
+        <div className="mb-6">
+          <div className="flex items-baseline justify-between mb-3">
+            <label className="block text-xs font-bold uppercase tracking-wider text-text-tertiary">
+              Quantidade de água
+            </label>
+            <div className="text-3xl font-light text-primary">
+              {waterAmount}
+              <span className="text-xs text-text-tertiary ml-1">ml</span>
+            </div>
+          </div>
+
+          {/* Slider */}
+          <input
+            type="range"
+            min="100"
+            max="500"
+            step="50"
+            value={waterAmount}
+            onChange={(e) => setWaterAmount(parseInt(e.target.value))}
+            className="w-full h-1 bg-border rounded-lg appearance-none cursor-pointer accent-primary"
+            aria-label="Quantidade de água em mililitros"
+          />
+
+          {/* Slider Labels */}
+          <div className="flex justify-between mt-3 text-xs text-text-tertiary">
+            <span>100ml</span>
+            <span>300ml</span>
+            <span>500ml</span>
+          </div>
+        </div>
+      )}
+
+      {/* Coffee Result */}
+      {isValid && coffeeAmount !== null && (
+        <div className="p-6 bg-gradient-to-br from-primary/5 to-primary/0 border border-primary rounded-lg text-center">
+          <div className="text-xs font-bold uppercase tracking-wider text-text-tertiary mb-2">
+            Café moído recomendado
+          </div>
+          <div className="text-5xl font-light text-primary mb-1">
+            {coffeeAmount}
+          </div>
+          <div className="text-sm text-text-secondary">gramas</div>
+
+          {/* Variations */}
+          {currentRatio && (
+            <div className="mt-6 pt-6 border-t border-primary/20 text-xs text-text-secondary space-y-1">
+              <div>Leve: {Math.round(waterAmount / (parseInt(currentRatio.variações.leve.split(":")[1]) || 16))}g</div>
+              <div>Intenso: {Math.round(waterAmount / (parseInt(currentRatio.variações.intenso.split(":")[1]) || 16))}g</div>
+            </div>
+          )}
         </div>
       )}
     </div>

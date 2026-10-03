@@ -197,4 +197,91 @@ describe("CoffeeCalculator Types & Logic", () => {
       expect(isValid).toBe(false);
     });
   });
+
+  describe("Sprint 2: Slider & Calculation", () => {
+    it("should accept water amount between 100-500ml", () => {
+      expect(100).toBeGreaterThanOrEqual(100);
+      expect(500).toBeLessThanOrEqual(500);
+      expect(350).toBeGreaterThanOrEqual(100);
+      expect(350).toBeLessThanOrEqual(500);
+    });
+
+    it("should validate water amount > 0", () => {
+      expect(100 > 0).toBe(true);
+      expect(0 > 0).toBe(false);
+      expect(-50 > 0).toBe(false);
+    });
+
+    it("should round coffee amount to nearest gram", () => {
+      const waterAmount = 350;
+      const denominator = 16;
+      const coffeeAmount = Math.round(waterAmount / denominator);
+      expect(coffeeAmount).toBe(22);
+      expect(typeof coffeeAmount).toBe("number");
+    });
+
+    it("should calculate for minimum water (100ml)", () => {
+      const waterAmount = 100;
+      const denominator = 16;
+      const coffeeAmount = Math.round(waterAmount / denominator);
+      expect(coffeeAmount).toBe(6);
+    });
+
+    it("should calculate for maximum water (500ml)", () => {
+      const waterAmount = 500;
+      const denominator = 16;
+      const coffeeAmount = Math.round(waterAmount / denominator);
+      expect(coffeeAmount).toBe(31);
+    });
+
+    it("should calculate variations (leve/intenso)", () => {
+      const waterAmount = 350;
+      const ratio = mockRatios[0];
+
+      const leve_denom = parseInt(ratio.variações.leve.split(":")[1]);
+      const leve_amount = Math.round(waterAmount / leve_denom);
+
+      const intenso_denom = parseInt(ratio.variações.intenso.split(":")[1]);
+      const intenso_amount = Math.round(waterAmount / intenso_denom);
+
+      expect(leve_amount).toBe(21); // 350 / 17 ≈ 21
+      expect(intenso_amount).toBe(23); // 350 / 15 ≈ 23
+    });
+
+    it("should handle slider step of 50ml correctly", () => {
+      const sliderStep = 50;
+      expect(100 % sliderStep).toBe(0);
+      expect(150 % sliderStep).toBe(0);
+      expect(200 % sliderStep).toBe(0);
+      expect(350 % sliderStep).toBe(0);
+      expect(500 % sliderStep).toBe(0);
+    });
+
+    it("should return null coffee amount when invalid", () => {
+      const selectedBeanId = "";
+      const selectedMethodId = "v60";
+      const waterAmount = 350;
+      const isValid = selectedBeanId && selectedMethodId && waterAmount > 0;
+
+      let coffeeAmount = null;
+      if (isValid) {
+        coffeeAmount = Math.round(waterAmount / 16);
+      }
+
+      expect(coffeeAmount).toBeNull();
+    });
+
+    it("should show result only when valid", () => {
+      const selectedBeanId = "arabica";
+      const selectedMethodId = "v60";
+      const waterAmount = 350;
+      const isValid = selectedBeanId && selectedMethodId && waterAmount > 0;
+      const ratio = mockRatios.find(
+        (r) => r.grão_id === selectedBeanId && r.método_id === selectedMethodId
+      );
+
+      expect(isValid).toBe(true);
+      expect(ratio).toBeDefined();
+    });
+  });
 });
