@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import type { Grao, Intensidade, Metodo, Receita } from "@/lib/types";
 import { montarReceita } from "@/lib/data";
 import { gramas, mililitros } from "@/lib/format";
-import { lerSessao, salvarSessao } from "@/lib/sessao";
+import { lerSessao, salvarSessao, type ReceitaSalva } from "@/lib/sessao";
 import { AGUA_MAX, AGUA_MIN, RecipeForm } from "./RecipeForm";
 import { RecipeResult } from "./RecipeResult";
 import { PreparationGuide } from "./PreparationGuide";
@@ -83,10 +83,15 @@ export function Calculator({ metodos, graos }: Props) {
 
   const aguaValida = aguaEhValida(aguaTexto);
 
-  useEffect(() => {
-    if (!aguaValida) return;
-    salvarSessao({ metodoId, graoId, aguaMl, intensidade });
-  }, [metodoId, graoId, aguaMl, intensidade, aguaValida]);
+  /*
+   * Persistir é uma reação ao que a pessoa fez, não ao estado em tela.
+   * Salvar dentro de um efeito sobre o estado gravaria também a montagem,
+   * apagando a sessão anterior com os valores padrão antes de o efeito de
+   * leitura aplicar o que foi recuperado.
+   */
+  const persistir = (mudanca: Partial<ReceitaSalva>) => {
+    salvarSessao({ metodoId, graoId, aguaMl, intensidade, ...mudanca });
+  };
 
   const receita = useMemo(
     () => montarReceita(metodoId, graoId || null, aguaMl, intensidade),
@@ -106,16 +111,19 @@ export function Calculator({ metodos, graos }: Props) {
 
   const handleMetodo = (id: string) => {
     setMetodoId(id);
+    persistir({ metodoId: id });
     anunciar(montarReceita(id, graoId || null, aguaMl, intensidade));
   };
 
   const handleGrao = (id: string) => {
     setGraoId(id);
+    persistir({ graoId: id });
     anunciar(montarReceita(metodoId, id || null, aguaMl, intensidade));
   };
 
   const handleIntensidade = (valor: Intensidade) => {
     setIntensidade(valor);
+    persistir({ intensidade: valor });
     anunciar(montarReceita(metodoId, graoId || null, aguaMl, valor));
   };
 
@@ -131,6 +139,7 @@ export function Calculator({ metodos, graos }: Props) {
 
     const valor = Number(texto);
     setAguaMl(valor);
+    persistir({ aguaMl: valor });
     if (commit) {
       anunciar(montarReceita(metodoId, graoId || null, valor, intensidade));
     }

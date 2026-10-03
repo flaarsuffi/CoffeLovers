@@ -133,6 +133,20 @@
  */
 #coffee-next {
   --cl-focus: light-dark(#305740, #c5d5a8);
+
+  /*
+   * --cl-muted sobre --cl-soft dá 4.24:1 no tema claro, abaixo do mínimo AA
+   * de 4.5:1. A tabela de contraste do design system cobre muted sobre bg e
+   * sobre surface, mas não sobre soft. No tema escuro o par já dá 6.13:1 e
+   * fica como está.
+   */
+  --cl-muted-on-soft: light-dark(#5f6a5f, #b1baae);
+}
+
+/* Onde texto de apoio assenta sobre --cl-soft */
+#coffee-next .cl-segments button,
+#coffee-next .cl-grain-methods small {
+  color: var(--cl-muted-on-soft);
 }
 
 #coffee-next :focus-visible {

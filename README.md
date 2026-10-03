@@ -4,9 +4,13 @@ Calculadora de proporção café/água e conteúdo sobre grãos e métodos de pr
 
 ```bash
 npm install
-npm run dev     # http://localhost:3000
-npm test        # Vitest
-npm run lint    # ESLint (next/core-web-vitals)
+npx playwright install chromium   # uma vez, para os testes de ponta a ponta
+
+npm run dev      # http://localhost:3000
+npm test         # Vitest — cálculo e formatação
+npm run e2e      # Playwright — fluxos, tema e acessibilidade
+npm run e2e:ui   # mesmo, com inspetor visual
+npm run lint     # ESLint
 npm run build
 ```
 
@@ -53,9 +57,24 @@ components/
 data/                     conteúdo: metodos.json, graos.json
 lib/                      tipos, carga de dados, formatação, sessão
 docs/design-system/       documento do design system e o kit de referência
-__tests__/                testes do cálculo e da formatação
+__tests__/                testes de unidade: cálculo e formatação
+e2e/                      testes de ponta a ponta, em navegador real
 coffee-ratios.json        pesquisa de proporção por grão × método
 ```
+
+## Testes
+
+`__tests__/` cobre o cálculo da receita em isolamento — é rápido e roda a cada
+mudança. Um dos casos varre os 28 pares grão × método e afirma que exatamente
+dois são ajustados pela pesquisa; mexer em `coffee-ratios.json` sem querer
+derruba esse teste.
+
+`e2e/` cobre o que atravessa páginas e só existe no navegador: a seleção que
+sobrevive à navegação, a precedência da query string, o tema claro e escuro, e
+uma varredura de acessibilidade com axe-core. Roda em dois perfis, desktop e
+celular.
+
+O que continua manual: leitor de tela de verdade e julgamento visual.
 
 ## Decisões que não são óbvias no código
 
