@@ -56,3 +56,42 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Caminho da página — espelha .cl-breadcrumb button */
+#coffee-next .cl-breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 0;
+  color: var(--cl-accent);
+  min-height: 32px;
+  font-size: 12px;
+}
+
+/* Métodos sugeridos no grão — espelha .cl-grain-methods button */
+#coffee-next .cl-grain-methods a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  background: var(--cl-soft);
+  border: 1px solid var(--cl-line);
+  border-radius: 9px;
+  padding: 11px;
+  font-size: 13px;
+  min-height: 44px;
+  color: var(--cl-ink);
+}
+
+#coffee-next .cl-grain-methods a:hover {
+  border-color: var(--cl-accent);
+}
+
+/* O reset de `a` acima tira o sublinhado; a fonte editorial é um link
+   externo em meio a texto corrido e precisa continuar reconhecível. */
+#coffee-next .cl-source a {
+  color: var(--cl-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
