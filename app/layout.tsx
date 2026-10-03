@@ -1,9 +1,30 @@
 import type { Metadata } from "next";
+import { DM_Sans, Fraunces } from "next/font/google";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+import { SiteFooter } from "@/components/layout/SiteFooter";
 import "./globals.css";
+import "./coffeelovers.css";
+import "./coffeelovers-next.css";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  weight: ["400", "500"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "CoffeLovers — Premium Coffee Enthusiasts",
-  description: "Explore premium coffee beans and brewing methods. Learn the art and science of specialty coffee.",
+  title: "CoffeeLovers — Do grão à xícara",
+  description:
+    "Encontre a proporção de café e água para o seu método, conheça os grãos e prepare uma xícara do seu jeito.",
 };
 
 export default function RootLayout({
@@ -12,43 +33,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      <head>
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="bg-dark text-white font-sans">
-        <Header />
-        <main className="relative">
-          {children}
-        </main>
-        <Footer />
+    <html lang="pt-BR" className={`${dmSans.variable} ${fraunces.variable}`}>
+      <body>
+        <div id="coffee-next">
+          <div className="cl-app">
+            <SiteHeader />
+            <main className="cl-content">{children}</main>
+            <SiteFooter />
+          </div>
+        </div>
       </body>
     </html>
-  );
-}
-
-function Header() {
-  return (
-    <header className="sticky top-0 z-sticky bg-dark/90 backdrop-blur-md border-b border-border px-20 py-6">
-      <a href="/" className="font-serif text-xl font-bold letter-spacing-3 text-primary inline-block hover:text-primary">
-        COFFEELOVERS
-      </a>
-    </header>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="bg-transparent text-text-tertiary text-xs px-20 py-12 text-center">
-      <p>© 2026 CoffeLovers — Premium Coffee Enthusiasts</p>
-      <div className="mt-4 space-x-3">
-        <a href="/graos" className="text-primary hover:underline">
-          Grãos
-        </a>
-        <a href="/metodos" className="text-primary hover:underline">
-          Métodos
-        </a>
-      </div>
-    </footer>
   );
 }
