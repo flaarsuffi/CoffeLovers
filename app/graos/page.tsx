@@ -1,5 +1,5 @@
 import { graos } from "@/lib/data";
-import { OptimizedImage } from "@/components/OptimizedImage";
+import { OptimizedImage } from "@/components/ui/OptimizedImage";
 
 export default function GraosPage() {
   return (

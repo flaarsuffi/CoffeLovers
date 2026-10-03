@@ -1,5 +1,5 @@
-import { graos, metodos, getCoffeeCalculatorData } from "@/lib/data";
-import { CoffeeCalculatorSection } from "@/components/CoffeeCalculatorSection";
+import { getCoffeeCalculatorData } from "@/lib/data";
+import { CoffeeCalculatorSection } from "@/components/calculator/CoffeeCalculatorSection";
 
 export default function HomePage() {
   const { beans, methods, ratios } = getCoffeeCalculatorData();

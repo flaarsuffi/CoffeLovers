@@ -1,8 +1,8 @@
-import graosRaw from "@/conteudo/graos.json";
-import metodosRaw from "@/conteudo/metodos.json";
+import graosRaw from "@/data/graos.json";
+import metodosRaw from "@/data/metodos.json";
 import coffeeRatiosRaw from "@/coffee-ratios.json";
-import type { Grao, Metodo } from "./types";
-import type { Bean, Method, Ratio } from "@/components/CoffeeCalculator";
+import type { Grao, Metodo } from "@/lib/types";
+import type { Bean, Method, Ratio } from "@/components/calculator/CoffeeCalculator";
 
 export const graos = (graosRaw as any).graos as Grao[];
 export const metodos = (metodosRaw as any).metodos as Metodo[];

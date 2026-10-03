@@ -1,5 +1,5 @@
 import { getGraoById, getAllGraoIds } from "@/lib/data";
-import { OptimizedImage } from "@/components/OptimizedImage";
+import { OptimizedImage } from "@/components/ui/OptimizedImage";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {

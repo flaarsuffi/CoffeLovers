@@ -1,5 +1,5 @@
 import { metodos } from "@/lib/data";
-import { OptimizedImage } from "@/components/OptimizedImage";
+import { OptimizedImage } from "@/components/ui/OptimizedImage";
 
 export default function MetodosPage() {
   return (

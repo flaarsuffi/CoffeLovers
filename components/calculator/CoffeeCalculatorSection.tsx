@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { CoffeeCalculator } from "@/components/CoffeeCalculator";
-import type { Bean, Method, Ratio } from "@/components/CoffeeCalculator";
+import { CoffeeCalculator } from "./CoffeeCalculator";
+import type { Bean, Method, Ratio } from "./CoffeeCalculator";
 
 interface CoffeeCalculatorSectionProps {
   beans: Bean[];

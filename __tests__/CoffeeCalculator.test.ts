@@ -1,5 +1,5 @@
 import { describe, it, expect } from "@jest/globals";
-import type { Bean, Method, Ratio, CoffeeCalculatorProps } from "@/components/CoffeeCalculator";
+import type { Bean, Method, Ratio, CoffeeCalculatorProps } from "@/components/calculator/CoffeeCalculator";
 
 describe("CoffeeCalculator Types & Logic", () => {
   // Mock data
