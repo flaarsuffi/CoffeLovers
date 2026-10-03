@@ -34,3 +34,15 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# Development artifacts
+.claude/output/*
+!.claude/output/.gitkeep
+*.bak
+*.tmp
+~*
+
+# IDE temp files
+*.swp
+*.swo
+*~

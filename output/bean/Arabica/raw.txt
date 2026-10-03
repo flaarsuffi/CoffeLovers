@@ -1,7 +1,0 @@
-```json
-{
-    "name": "Arábica",
-    "origin": "Espécie Coffea arabica, originária das terras altas da Etiópia, na região de Kaffa, onde cresce de forma nativa desde antes do século IX. Levada para o Iêmen e depois para o mundo, hoje é cultivada acima de 800 metros de altitude em países como Brasil, Colômbia, Etiópia e Costa Rica. Representa cerca de 60% da produção mundial e é considerada o \"café nobre\", com grãos ovais, maiores e de fenda central sinuosa.",
-    "flavor": "Corpo médio e acidez viva e agradável, com doçura natural marcante. Notas de chocolate ao leite, caramelo e frutas vermelhas, com fundo floral e de nozes tostadas. Possui cerca de metade da cafeína do Robusta, o que resulta em menor amargor. Cafés de altitude apresentam o chamado \"perfil cítrico\", enquanto lotes naturais brasileiros tendem ao \"achocolatado\" e à castanha-do-pará.",
-    "methods": ["Coado em filtro de papel (Hario V60)", "Prensa francesa", "Espresso", "Aeropress", "Clever / Melitta", "Coador de pano \"mineiro\""],
-    "recipe": "Passo 1: pese 15 g de café arábica em grãos e aqueça 250 ml de água até 92-96 °C (nunca ferva sobre o pó). Passo 2: moa na hora, em granulometria média, semelhante a \"açúcar cristal\". Passo 3: escalde o filtro de papel com água quente e descarte a água da jarra para pré-aquecer. Passo

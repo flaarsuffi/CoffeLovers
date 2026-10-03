@@ -5,6 +5,11 @@ export interface Grao {
   pais: string;
   altitude: string;
   origin: string;
+  origin_story?: string;
+  altitude_implications?: string;
+  tasting_guide?: string;
+  pairings?: string;
+  recipe_notes?: string;
   flavor: {
     descricao: string;
     acidez: string;

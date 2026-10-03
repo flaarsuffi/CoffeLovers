@@ -7,14 +7,28 @@
       "pais": "Brasil",
       "altitude": "900-2.000m",
       "origin": "Espécie clássica originária da Etiópia, levada para a Ilha de Bourbon (atual Reunião) no século XVII. Hoje representa ~18% da produção mundial de arabica e é o café nobre brasileiro.",
+      "origin_story": "Bourbon nasceu em Kaffa, Etiópia, e foi levado à Ilha de Bourbon (Reunião) por mercadores no século XVII. Lá, uma mutação natural criou variações genéticas que o tornaram mais produtivo e adaptável. Hoje é sinônimo de qualidade e versatilidade: o café que funciona em qualquer método. Representa cerca de 18% da produção mundial de arábica e é o café nobre brasileiro por excelência. Quando cafeicultor quer puro sabor aliado a estabilidade, escolhe Bourbon.",
+      "altitude_implications": "Bourbon cresce bem entre 900 e 2.000 metros, mas altitude afeta dramaticamente o perfil do café. Abaixo de 1.000m você consegue corpo denso com chocolate intenso e menos acidez. Entre 1.000 e 1.500m (o ideal): balanço perfeito entre corpo encorpado e acidez presente. Acima de 1.500m: acidez mais viva emerge, sabores finos e florais ganham espaço, corpo fica mais delicado. A escolha de altitude define se você quer Bourbon robusto de manhã ou Bourbon fino de tarde.",
       "flavor": {
         "descricao": "Chocolate ao leite, caramelo, frutas vermelhas, fundo floral e nozes tostadas",
         "acidez": "Suave",
         "corpo": "Encorpado",
         "docura": "Marcante",
-        "notas": ["Chocolate", "Caramelo", "Frutas vermelhas", "Floral", "Nozes tostadas"]
+        "notas": [
+          "Chocolate",
+          "Caramelo",
+          "Frutas vermelhas",
+          "Floral",
+          "Nozes tostadas"
+        ]
       },
-      "metodos_recomendados": ["V60", "Aeropress", "French Press"],
+      "tasting_guide": "Procure por doçura redonda primeiro (não acidez pungente que cansa). Chocolate ao leite é a âncora: se não está presente, temperatura ou grind está errado. Frutas vermelhas emergem com força em métodos filtrados como V60, desaparecem completamente em French Press. Floral aparece em brews mais curtos e controlados, nozes ganham destaque em brews mais longos. Equilíbrio é a chave: corpo + acidez + doçura em harmonia.",
+      "pairings": "Café da manhã salgado é a combinação perfeita: queijo, pão, bacon. Chocolate com salgado cria magia no paladar. Sobremesas de chocolate também assentam bem. Melhor horário é manhã ou tarde, quando você quer algo completo. Evite como café de final de noite porque açúcar natural + cafetina combinam demais e afetam sono.",
+      "metodos_recomendados": [
+        "V60",
+        "Aeropress",
+        "French Press"
+      ],
       "recipe": {
         "cafe_gramas": 15,
         "agua_ml": 250,
@@ -32,6 +46,7 @@
           "Sirva quente e desfrute"
         ]
       },
+      "recipe_notes": "Bourbon tolera bem variação, é um café perdão. Grind mais grossa em French Press: corpo pesado, chocolate dominante, acidez suavizada. Grind mais fina em Aeropress: acidez ganha mais presença, sabores finos se revelam, mas tome cuidado com over-extraction acima de 3 minutos. Temperatura conta: 90 a 92°C amplifica doçura, 95 a 96°C amplifica acidez e florais. Ajuste conforme seu gosto e equipamento.",
       "especificacoes": {
         "cafeina_percentual": "1,5%",
         "producao_global": "~18% arabica",
@@ -46,14 +61,27 @@
       "pais": "Brasil",
       "altitude": "800-1.500m",
       "origin": "Híbrido natural de Caturra e Mundo Novo, desenvolvido no Brasil em 1949. É resistente a doenças e produz grãos grandes com excelente sabor.",
+      "origin_story": "Catuaí é 100% brazuca, criado no Instituto Agronômico de Campinas em 1949 pelo cruzamento deliberado de Caturra e Mundo Novo. Resultado: grão grande, planta vigorosa, resistência natural a pragas. Mas o melhor é a acidez brilhante que cafeicultor brasileiro adorou. Prova viva que híbridos podem ser tão nobres quanto originários. Hoje representa cerca de 8% da produção mundial de arábica e segue crescendo em popularidade entre os que buscam qualidade.",
+      "altitude_implications": "Catuaí prefere estar entre 800 e 1.500 metros, com sweet spot perfeito em 1.000 a 1.200m. Em altitude baixa (abaixo de 900m): corpo pesado, acidez morna e sem brilho. Em altitude média (1.000 a 1.200m): acidez brilhante desponta, frutado se revela, corpo fica limpo: exatamente o que Catuaí faz de melhor. Em altitude alta (acima de 1.400m): acidez sobe demais, corpo diminui, perde a identidade que o diferencia de outros cafés.",
       "flavor": {
         "descricao": "Acidez brilhante, notas frutadas sutis, corpo médio, paladar complexo",
         "acidez": "Brilhante",
         "corpo": "Médio",
         "docura": "Equilibrada",
-        "notas": ["Frutas vermelhas", "Cereja", "Acidez viva", "Corpo limpo"]
+        "notas": [
+          "Frutas vermelhas",
+          "Cereja",
+          "Acidez viva",
+          "Corpo limpo"
+        ]
       },
-      "metodos_recomendados": ["V60", "Aeropress", "Italiana"],
+      "tasting_guide": "Acidez é o ponto focal. Procure por brilho: limão e cereja, não aspereza tipo abacaxi verde. Corpo é secundário por design: não é pesado, é limpo e refrescante. Frutas vermelhas só aparecem se extração estiver certa; over-extract e acidez fica seca e desagradável, under-extract e o café fica insosso. É café que cobra precisão no preparo mas recompensa com complexidade.",
+      "pairings": "Acidez mais frutas é combinação perfeita com doces de fruta: jam caseira, compota, tarte de morango. Breakfast denso também funciona bem: ovos, linguiça. Hora de pico de energia (10am, 3pm) é quando Catuaí brilha. Evite como café de relaxamento pós-refeição pesada, porque acidez e doçura de sobremesa competem na boca.",
+      "metodos_recomendados": [
+        "V60",
+        "Aeropress",
+        "Italiana"
+      ],
       "recipe": {
         "cafe_gramas": 18,
         "agua_ml": 270,
@@ -72,6 +100,7 @@
           "A acidez brilhante vai brilhar"
         ]
       },
+      "recipe_notes": "Catuaí é sensível a temperatura: abaixo de 88°C fica insosso, 90 a 92°C traz acidez brilhante, acima de 95°C acidez fica áspera e desagradável. Grind fino amplifica acidez (ótimo para V60), grind médio traz equilíbrio (Aeropress). Bloom é importante: libera CO2 que mascara acidez natural. Respeite o ritual, acidez é tímida e aparece quando ambiente permite.",
       "especificacoes": {
         "cafeina_percentual": "1,6%",
         "producao_global": "~8% arabica",
@@ -86,14 +115,28 @@
       "pais": "Brasil",
       "altitude": "1.000-1.600m",
       "origin": "Mutação natural do Bourbon com frutos amarelos (ao invés de vermelhos). Descoberto no Brasil e agora cultivado em várias regiões. Representa o topo da qualidade bourbon brasileira.",
+      "origin_story": "Bourbon Amarelo é uma happy accident: mutação genética do Bourbon clássico onde frutos nascem amarelos em vez de vermelhos. Cafeicultor brasileiro em Minas Gerais notou isso décadas atrás e começou a propagar as mudas com cuidado. Hoje é tido como versão premium do Bourbon: mesma genética mas com ripening diferente que amplifica doçura natural ao máximo. É raro, mais caro, e faz jus ao preço quando preparado com respeito.",
+      "altitude_implications": "Amarelo cresce entre 1.000 e 1.600 metros, mas altitude muda tudo em seu perfil. De 1.000 a 1.200m: corpo cheio, chocolate dominante, doçura extrema. De 1.200 a 1.400m (o ideal): doçura equilibrada com acidez, complexidade aflora. Acima de 1.400m: acidez sobe, corpo cai, perde a doçura que é o ponto todo. Escolha altitude baixa se quer doçura máxima, altitude média se quer doçura com elegância.",
       "flavor": {
         "descricao": "Doçura intensa, notas de mel, frutas tropicais, corpo cheio, acidez equilibrada",
         "acidez": "Equilibrada",
         "corpo": "Cheio",
         "docura": "Intensa",
-        "notas": ["Mel", "Frutas tropicais", "Caramelo", "Corpo denso", "Chocolate branco"]
+        "notas": [
+          "Mel",
+          "Frutas tropicais",
+          "Caramelo",
+          "Corpo denso",
+          "Chocolate branco"
+        ]
       },
-      "metodos_recomendados": ["French Press", "Aeropress", "V60"],
+      "tasting_guide": "Doçura é a razão de existir: se não está percebendo mel e frutas tropicais, extração errou. Procure por complexidade (não é só doce, tem acidez balanceando). Chocolate branco é a assinatura de grãos bem fermentados. Mel floral no meio palato, frutas tropicais no aftertaste. É café que pede pausa para apreciar cada nuance.",
+      "pairings": "Doce só: bolo de chocolate, pudim cremoso, sorvete de baunilha. Café da tarde é horário perfeito. Não combina com salgado porque salgado anula a doçura que o define. Melhor pós-refeição leve ou standalone em momento de pausa contemplativa.",
+      "metodos_recomendados": [
+        "French Press",
+        "Aeropress",
+        "V60"
+      ],
       "recipe": {
         "cafe_gramas": 20,
         "agua_ml": 300,
@@ -112,6 +155,7 @@
           "A doçura natural vai dominar o perfil"
         ]
       },
+      "recipe_notes": "Temperatura baixa é crítica para preservar doçura: 88 a 90°C é ideal. Grind grossa permite longer contact time sem over-extraction. French Press é ideal: longa imersão amplifica corpo e doçura simultaneamente. Evite espresso porque pressão mais calor extremo traz amargura, perdendo tudo que é especial em Amarelo. Paciência e temperatura controlada são segredos.",
       "especificacoes": {
         "cafeina_percentual": "1,4%",
         "producao_global": "~5-8% arabica (raro)",
@@ -126,14 +170,28 @@
       "pais": "Panamá",
       "altitude": "1.500-2.000m",
       "origin": "Variedade etíope trazida para o Panamá em 1960. Floresce em altitude extrema, resultando em complexidade e elegância incomparáveis. Um dos cafés mais caros do mundo (atualmente $150-200/kg).",
+      "origin_story": "Geisha é African royalty em terra panamenha. Trazida da Etiópia para o Panamá nos anos 1960, floresceu em altitude extrema (1.500 a 2.000m) do Boquete criando complexidade floral nunca antes vista. Em 2004, Geisha ganhou prêmio de melhor café do mundo e status de unicórnio: raro, caro, transformador. Hoje está entre os cafés mais prestigiados do planeta, com preço que pode chegar a 150 a 200 dólares o quilo.",
+      "altitude_implications": "Geisha exige altitude extrema para existir de verdade. A 1.500m+, complexidade emerge. A 1.700m+, florais dominam e acidez fica refrescante. 2.000m é o limiar máximo para cultivo viável. Altitude é tudo: em altitude baixa, Geisha é só café comum e sem interesse. Em Boquete, entre 1.500 e 2.000 metros, torna-se transcendente. Terroir aqui não é detalhe, é o ponto inteiro.",
       "flavor": {
         "descricao": "Floral intenso, frutas exóticas, complexidade excepcional, elegância pura",
         "acidez": "Viva e refinada",
         "corpo": "Leve-médio",
         "docura": "Delicada",
-        "notas": ["Floral", "Framboesa", "Jasmim", "Frutas tropicais", "Mel de flores"]
+        "notas": [
+          "Floral",
+          "Framboesa",
+          "Jasmim",
+          "Frutas tropicais",
+          "Mel de flores"
+        ]
       },
-      "metodos_recomendados": ["V60", "Aeropress", "French Press"],
+      "tasting_guide": "Floral é a porta de entrada: jasmim, rosa, gardênia, tudo presente. Frutas exóticas aparecem depois (framboesa, mirtilo, maçã verde). Corpo é leve por design: não mata aromas delicados que tomam conta da xícara. Acidez é refinada (limão, lima) não afiada nem agressiva. É café para saborear devagar, não para grelhar rápido. Cada gole é meditação.",
+      "pairings": "Gourmet só: light desserts (macaron, panna cotta), frutas frescas. Manhã serena em silêncio. Cerimônia: serve um pequeno copo e deixa pessoa aproveitar. Não combina com nada forte (chocolate escuro, caramelo mascaram completamente). Geisha merece escuta, não companhia barulhenta.",
+      "metodos_recomendados": [
+        "V60",
+        "Aeropress",
+        "French Press"
+      ],
       "recipe": {
         "cafe_gramas": 12,
         "agua_ml": 200,
@@ -152,6 +210,7 @@
           "Cada gota é ouro puro"
         ]
       },
+      "recipe_notes": "Precisão é tudo. Grind muito fino causa over-extraction (acidez seca). Grind muito grossa causa under-extraction (plano e sem interesse). Temperatura: 94 a 96°C exata é tight, abaixo perde florais, acima traz amargura. Use água filtrada sempre. Sirva em xícara pré-aquecida. Beba quente: esfria e sabor muda. Cada detalhe importa, nada é acidental.",
       "especificacoes": {
         "cafeina_percentual": "1,5%",
         "producao_global": "< 1% arabica (extremamente raro)",
@@ -166,14 +225,27 @@
       "pais": "Brasil",
       "altitude": "800-1.400m",
       "origin": "Híbrido de Mundo Novo e Bourbon, desenvolvido no Brasil. Resistente e produtivo, ganha cada vez mais espaço na cafeicultura brasileira de qualidade.",
+      "origin_story": "Acaiá é café do futuro brazuca: híbrido resistente que cafeicultor ama (alta produção, menos doença) mas specialty coffee respeitava pouco inicialmente. Desenvolvido no Brasil, criado para sobreviver em altitude média onde alguns originários falham. Nos últimos 10 anos, qualidade disparou e hoje produz café que rivaliza com Bourbon em complexidade e refinamento. Representa cerca de 6% da produção mundial e segue conquistando respeito.",
+      "altitude_implications": "Acaiá prospera entre 800 e 1.400 metros, mas altitude muda sua personalidade significativamente. De 800 a 1.000m: corpo pesado, chocolate dominante, suavidade máxima. De 1.000 a 1.200m (ideal): balanço perfeito: corpo cheio mais acidez presente mais sabores finos todos convivendo. Acima de 1.200m: acidez sobe, corpo diminui, perde o encorpamento que é sua força. Encontre sua zona de conforto.",
       "flavor": {
         "descricao": "Corpo médio-cheio, acidez suave, notas de chocolate e frutas secas, final limpo",
         "acidez": "Suave",
         "corpo": "Médio-cheio",
         "docura": "Equilibrada",
-        "notas": ["Chocolate escuro", "Frutas secas", "Nozes", "Corpo balanceado"]
+        "notas": [
+          "Chocolate escuro",
+          "Frutas secas",
+          "Nozes",
+          "Corpo balanceado"
+        ]
       },
-      "metodos_recomendados": ["Aeropress", "V60", "French Press"],
+      "tasting_guide": "Procure por corpo primeiro (é a razão de ser) e chocolate discreto no fundo (não é óbvio, é sutil). Frutas secas aparecem em brews mais longos (French Press), desaparecem em brews curtos. Acidez é suave: só presente se extração estiver precisa. Não é café barulhento, é silencioso e consistente. Confiável para diário.",
+      "pairings": "Afternoon staple perfeito: chocolate, nuts, pão integral tostado. Não é café de manhã (pesado demais), é café de afternoon break entre 3 e 4pm. Combina com tudo exceto ácido ou cítrico (anula chocolate completamente). Companheiro leal de trabalho.",
+      "metodos_recomendados": [
+        "Aeropress",
+        "V60",
+        "French Press"
+      ],
       "recipe": {
         "cafe_gramas": 17,
         "agua_ml": 260,
@@ -192,6 +264,7 @@
           "Desfrute do corpo equilibrado"
         ]
       },
+      "recipe_notes": "Acaiá tolera bem variação, é café perdão. Grind mais grossa em French Press: corpo máximo, chocolate, frutas secas ganham espaço. Grind mais fina em Aeropress: acidez sobe, chocolate suaviza. Temperatura: 91 a 93°C traz chocolate, 94 a 95°C traz acidez. Roast level importa: médio realça complexidade, escuro mascara. Ajuste conforme sua prensa.",
       "especificacoes": {
         "cafeina_percentual": "1,5%",
         "producao_global": "~6% arabica",
@@ -206,14 +279,28 @@
       "pais": "Etiópia",
       "altitude": "1.200-2.200m",
       "origin": "A espécie original e nativa da Etiópia, berço do café. Representa 60% da produção mundial. Cultivada desde tempos imemoriais nas terras altas de Kaffa.",
+      "origin_story": "A história do Arábica começa nas montanhas nubladas da Etiópia, há séculos. Segundo a lenda, um pastor notou que suas cabras ficavam estranhamente animadas depois de comer certos frutos vermelhos. E aí nasceu o café que hoje é bebido por mais de 2 bilhões de pessoas.\n\nDo berço etíope, o Arábica viajou pela Arábia (é daí que vem o nome), se enraizou em terras altas da Turquia, depois Egito, e eventualmente conquistou a Europa através de mercadores venezianos. No século 17, jesuítas portugueses trouxeram mudas pra Brasil, que hoje produz um terço da safra mundial.\n\nPor quê o Arábica virou o rei do café? Porque tem sabor. Enquanto robusta é potência bruta, Arábica sussurra complexidade: acidez brilhante, corpo equilibrado, notas que mudam conforme a altitude e o solo. É o café que fez o café valer a pena. E mesmo sendo mais delicado pra cultivar, mais caro, mais exigente, pessoas escolhem ele.\n\nHoje encontra Arábica de qualidade em Etiópia (berço), Brasil (volume), Colômbia (equilíbrio) e dúzias de outras regiões. Cada safra conta uma história geográfica diferente.",
+      "altitude_implications": "Altitude é a alavanca secreta do sabor do café. Quanto mais alto, mais lento o fruto amadurece. Parece ruim, mas é perfeito. Ripening lento significa concentração. Os açúcares têm tempo de se desenvolver, os ácidos se aprofundam no grão, criando densidade e complexidade.\n\nArábica prospera entre 800 e 2.200 metros de altitude. Nessa faixa consegue acidez viva, doçura natural e corpo que não soa aguado. Altitudes muito altas (acima de 2.500m) produzem cafés interessantes mas arriscados: clima fica instável, colheita fica rara e cara. Altitudes muito baixas (abaixo de 600m) deixam o grão plano, sem padrão.\n\nA mágica real está entre 1.000 e 1.800 metros. É aí que encontra Arábica que brilha (quando você toma, sente a diferença). A acidez não é sour (azedo chato), é lively (vivo); o corpo tem peso mas não é viscoso. Se provar uma xícara de Arábica de altitude decente versus uma de origem duvidosa, você entende na segunda.",
       "flavor": {
-        "descricao": "Corpo médio, acidez viva, doçura natural, notas variadas por origem (chocolate, frutas, floral). IMPORTANTE: Etiópia é sensível a superextração — use água ligeiramente mais fresca (90-92°C) e despeje lentamente.",
+        "descricao": "Corpo médio, acidez viva, doçura natural, notas que variam conforme a origem (chocolate, frutas, floral).",
         "acidez": "Viva e agradável",
         "corpo": "Médio",
         "docura": "Natural marcante",
-        "notas": ["Chocolate ao leite", "Caramelo", "Frutas vermelhas", "Floral", "Nozes"]
+        "notas": [
+          "Chocolate ao leite",
+          "Caramelo",
+          "Frutas vermelhas",
+          "Floral",
+          "Nozes"
+        ]
       },
-      "metodos_recomendados": ["V60", "Aeropress", "French Press"],
+      "tasting_guide": "Comece com o aroma. Antes mesmo de beber, o nariz faz o trabalho de detective. Levante a xícara pra perto, inspire devagar. Que te diz? Notas florais? Chocolate? Citrus?\n\nAgora o primeiro gole. Não beba rápido, deixa a língua sentir. Procura equilíbrio: ácido (que faz saliva) e corpo (que faz peso) vivendo junto. Se só sente amargura ou só sente fraco, algo saiu errado no preparo ou no grão.\n\nO meio da xícara revela complexidade. Aqui o café se abre, notas secundárias aparecem. Chocolate meio amargo, notas de noz, às vezes até fruta vermelha com sutileza.\n\nO final é o teste: quanto tempo o sabor fica na boca? Um segundo? Dez? Arábica de qualidade deixa um final limpo, levemente doce, que quer que você beba mais.\n\nMétodo importa. V60 tira acidez brilhante. French Press tira corpo cheio com óleos. Espresso tira intensidade. Use 88–92°C de água: mais frio perde o brilho; muito quente puxa amargura indesejada.",
+      "pairings": "Arábica é o café da manhã ideal. Croissant de manteiga, bolo de chocolate, pão com queijo (qualquer coisa que celebre manhã fica melhor com Arábica do lado).\n\nDepois de almoço também é perfeito. Não como shot isolado (pesado demais), mas como companheiro de sobremesa (café com brigadeiro, café com pudim) porque a acidez do café limpa o paladar e responde bem à doçura.\n\nTarde focada? Arábica em xícara grande, nem muito quente pra poder beber devagar, é sua melhor amiga pra concentração. Diferente de bebidas açucaradas, café de verdade não deixa nervoso, só alerta.\n\nNão faça Arábica com algo muito amargo (chocolate dark demais) ou muito ácido (laranja), vai ganhar um no outro. Pense sabores complementares, não competidores.",
+      "metodos_recomendados": [
+        "V60",
+        "Aeropress",
+        "French Press"
+      ],
       "recipe": {
         "cafe_gramas": 16,
         "agua_ml": 240,
@@ -232,6 +319,7 @@
           "Aprecie a qualidade da espécie original"
         ]
       },
+      "recipe_notes": "Tudo gira em torno de extração equilibrada. Água quente dissolve os bons sabores no café moído: ácidos florais, doçura, corpo. Mas se você der tempo demais ou usar água muito quente, acaba puxando amargura também.\n\nA moagem é o primeiro detalhe. Média é o caminho do meio (nem pó fino, nem granulado tosco). Se moer muito fino, faz over-extraction e fica amargo; se moer muito grossa, o sabor sai fraco e aguado.\n\nTemperatura conta uma história também. A faixa de 88–92°C é onde o Arábica brilha de verdade. Como assim? É água quente mas não fervendo (deixa fervir, espera uns 30 segundos, depois usa). Mais frio que isso perde o brilho; muito quente puxa amargura que você não quer.\n\nAí entra o ratio, a proporção de café pra água. O padrão é 1:16 (30g café, 480ml água), mas ajusta conforme seu gosto: mais café deixa forte, menos café deixa mais delicado.\n\nE o timing depende do método. V60 leva uns 3-4 minutos. French Press leva 4. Espresso, 25-30 segundos. Tempo demais traz over-extração (sabor flat); tempo pouco deixa tudo insosso.\n\nHonestamente, o maior erro que vejo é impaciência. Pessoa quer fazer tudo rápido, tira água muito quente, acha que economiza 30 segundos. Resultado: xícara amarga, falsa, não parece nem café. Arábica cobra respeito no preparo. Leva tempo, mas vale cada segundo.",
       "especificacoes": {
         "cafeina_percentual": "1,2-1,5%",
         "producao_global": "~60% arabica",
@@ -246,14 +334,28 @@
       "pais": "Brasil",
       "altitude": "600-1.200m",
       "origin": "Híbrido complexo que combina Bourbon, Typica e Robusta. Desenvolvido no Instituto Agronômico de Campinas. Resistente a pragas mas com qualidade de arabica.",
+      "origin_story": "Icatu é experimento bem-sucedido: Robusta (resistência, corpo) cruzada com Arábica (qualidade, sabor). Resultado: café que sobrevive em altitude baixa onde Arábica puro morreria, mas com sabor competitivo. Desenvolvido em Campinas na década de 1970, é símbolo da inovação cafeeira brasileira. Representa cerca de 2% da produção mundial arábica mas tem nicho leal entre quem adora corpo sem compromisso de sabor.",
+      "altitude_implications": "Icatu cresce bem entre 600 e 1.200 metros, altitude baixa que Arábica puro rejeita. De 600 a 800m: corpo extremamente cheio, chocolate intenso, acidez praticamente zero. De 800 a 1.000m (ideal): corpo encorpado mais chocolate mais doçura sem perder definição completa. Acima de 1.000m: corpo diminui, perde vantagem competitiva. Escolha baixo se quer máximo corpo, escolha médio se quer um pouco de elegância.",
       "flavor": {
         "descricao": "Corpo encorpado, acidez suave, notas de chocolate e cacau, final adocicado",
         "acidez": "Suave",
         "corpo": "Encorpado",
         "docura": "Adocicada",
-        "notas": ["Chocolate", "Cacau", "Nozes", "Corpo pesado", "Macio"]
+        "notas": [
+          "Chocolate",
+          "Cacau",
+          "Nozes",
+          "Corpo pesado",
+          "Macio"
+        ]
       },
-      "metodos_recomendados": ["French Press", "Aeropress", "Italiana"],
+      "tasting_guide": "Corpo é tudo aqui: pesado, macio, redondo, envolvente. Chocolate é discreto no fundo, nunca óbvio. Acidez quase ausente (herança Robusta). Final adocicado puro e limpo: ideal para quem não gosta de acidez vivida. É café que abraça, não que desafia.",
+      "pairings": "Chocolate, caramelo, panetone. Café pós-refeição pesada (domingo à tarde, almoço família). Manhã energética também funciona (corpo mais cafetina combinam). Não combina com ácido ou frutas (anula sabor completamente). Bom companheiro de silêncio.",
+      "metodos_recomendados": [
+        "French Press",
+        "Aeropress",
+        "Italiana"
+      ],
       "recipe": {
         "cafe_gramas": 19,
         "agua_ml": 280,
@@ -272,6 +374,7 @@
           "Aprecie o corpo encorpado e macio"
         ]
       },
+      "recipe_notes": "Grind grossa é crucial: fino causa over-extraction de amargura (herança Robusta indesejada). French Press é ideal: long immersion realça corpo, suaviza Robusta bitterness. Temperatura baixa (89 a 91°C) protege, acima de 93°C traz amargura. Roast escuro amplifica chocolate, roast médio traz equilíbrio. Sirva logo: esfria e fica pesado demais na xícara.",
       "especificacoes": {
         "cafeina_percentual": "1,7% (maior que arabica pura)",
         "producao_global": "~2% arabica",

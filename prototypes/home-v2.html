@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeLovers — Home v2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --dark-bg: #121212;
+      --light-text: #F5F5F0;
+      --gold: #D4AF37;
+      --subtle-bg: #1a1a1a;
+      --border: #333333;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--light-text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .serif-title {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, transparent 100%);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .card-edu {
+      background: var(--subtle-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .card-edu:hover {
+      border-color: var(--gold);
+      background: rgba(212, 175, 55, 0.02);
+    }
+
+    .card-edu-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .grain-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grain-card {
+      background: var(--subtle-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .grain-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+    }
+
+    .grain-image {
+      width: 100%;
+      height: 140px;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .grain-info {
+      padding: 1.5rem;
+    }
+
+    .grain-info h3 {
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .grain-info p {
+      font-size: 0.85rem;
+      color: #999;
+      line-height: 1.4;
+    }
+
+    .method-carousel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .method-card {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(212, 175, 55, 0.02));
+      border: 2px solid rgba(212, 175, 55, 0.2);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .method-card:hover {
+      border-color: var(--gold);
+      background: rgba(212, 175, 55, 0.15);
+    }
+
+    .method-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .method-card h3 {
+      color: var(--light-text);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .method-card p {
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    .calculator-placeholder {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.02));
+      border: 2px dashed rgba(212, 175, 55, 0.3);
+      border-radius: 16px;
+      padding: 3rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: transparent;
+      color: var(--gold);
+      border: 2px solid var(--gold);
+      padding: 0.75rem 2rem;
+      border-radius: 24px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background: var(--gold);
+      color: var(--dark-bg);
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: #999;
+      margin-bottom: 3rem;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HERO SECTION -->
+  <section class="hero-section py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl">
+        <h1 class="section-title">
+          Calcule a proporção ideal
+        </h1>
+        <p class="section-subtitle">
+          A proposta certa de café e água faz toda a diferença. Descubra a medida exata para seu grão e método de preparo.
+        </p>
+        <a href="#calculator" class="cta-button">Iniciar cálculo</a>
+      </div>
+
+      <!-- CALCULATOR PLACEHOLDER -->
+      <div class="calculator-placeholder">
+        <p style="color: #666;">🧮 Calculadora será renderizada aqui</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION CARDS -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-title">Entenda o básico</h2>
+      <p class="section-subtitle">Os dois pilares que definem seu café</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div class="card-edu">
+          <span class="card-edu-icon">🌱</span>
+          <h3 style="color: var(--gold); font-size: 1.25rem; margin-bottom: 1rem; font-family: Georgia, serif;">O Grão</h3>
+          <p style="color: #aaa; line-height: 1.6;">
+            Cada origem oferece um perfil sensorial único. As variedades diferem em acidez, corpo e notas aromáticas. Escolha o grão que mais se alinha ao seu paladar.
+          </p>
+        </div>
+
+        <div class="card-edu">
+          <span class="card-edu-icon">💧</span>
+          <h3 style="color: var(--gold); font-size: 1.25rem; margin-bottom: 1rem; font-family: Georgia, serif;">O Método</h3>
+          <p style="color: #aaa; line-height: 1.6;">
+            Cada método de preparo extrai as características do café de forma distinta. A proporção água-café varia conforme a técnica escolhida.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER MINIMAL -->
+  <section style="border-top: 1px solid var(--border); padding: 3rem 0; margin-top: 4rem;">
+    <div class="max-w-6xl mx-auto px-6 text-center" style="color: #666; font-size: 0.9rem;">
+      <p>CoffeLovers © 2026 — Descoberta de café premium</p>
+    </div>
+  </section>
+</body>
+</html>
