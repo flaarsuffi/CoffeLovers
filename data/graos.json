@@ -3,384 +3,135 @@
     {
       "id": "bourbon",
       "nome": "Bourbon",
-      "regiao": "Brasil, Minas Gerais",
-      "pais": "Brasil",
-      "altitude": "900-2.000m",
-      "origin": "Espécie clássica originária da Etiópia, levada para a Ilha de Bourbon (atual Reunião) no século XVII. Hoje representa ~18% da produção mundial de arabica e é o café nobre brasileiro.",
-      "origin_story": "Bourbon nasceu em Kaffa, Etiópia, e foi levado à Ilha de Bourbon (Reunião) por mercadores no século XVII. Lá, uma mutação natural criou variações genéticas que o tornaram mais produtivo e adaptável. Hoje é sinônimo de qualidade e versatilidade: o café que funciona em qualquer método. Representa cerca de 18% da produção mundial de arábica e é o café nobre brasileiro por excelência. Quando cafeicultor quer puro sabor aliado a estabilidade, escolhe Bourbon.",
-      "altitude_implications": "Bourbon cresce bem entre 900 e 2.000 metros, mas altitude afeta dramaticamente o perfil do café. Abaixo de 1.000m você consegue corpo denso com chocolate intenso e menos acidez. Entre 1.000 e 1.500m (o ideal): balanço perfeito entre corpo encorpado e acidez presente. Acima de 1.500m: acidez mais viva emerge, sabores finos e florais ganham espaço, corpo fica mais delicado. A escolha de altitude define se você quer Bourbon robusto de manhã ou Bourbon fino de tarde.",
-      "flavor": {
-        "descricao": "Chocolate ao leite, caramelo, frutas vermelhas, fundo floral e nozes tostadas",
-        "acidez": "Suave",
-        "corpo": "Encorpado",
-        "docura": "Marcante",
-        "notas": [
-          "Chocolate",
-          "Caramelo",
-          "Frutas vermelhas",
-          "Floral",
-          "Nozes tostadas"
-        ]
+      "tipo": "variedade",
+      "perfil": "Doçura e equilíbrio",
+      "notas": ["Chocolate", "caramelo", "frutas"],
+      "corpo": "Corpo mais presente",
+      "sensorial": "Use chocolate, caramelo e frutas como pontos de partida. Perceba a relação entre doçura, acidez e a sensação de corpo, sem esperar que todo Bourbon tenha o mesmo sabor.",
+      "historia": "O nome vem da antiga Ilha de Bourbon, hoje Reunião. A variedade foi levada do Iêmen à ilha no início do século XVIII e depois se espalhou pela África e pelas Américas. Sua chegada ao Brasil é situada por volta de 1860. É uma variedade importante na história do arábica e está na origem de outras variedades cultivadas hoje.",
+      "fonte": {
+        "url": "https://varieties.worldcoffeeresearch.org/varieties/bourbon",
+        "publicacao": "World Coffee Research"
       },
-      "tasting_guide": "Procure por doçura redonda primeiro (não acidez pungente que cansa). Chocolate ao leite é a âncora: se não está presente, temperatura ou grind está errado. Frutas vermelhas emergem com força em métodos filtrados como V60, desaparecem completamente em French Press. Floral aparece em brews mais curtos e controlados, nozes ganham destaque em brews mais longos. Equilíbrio é a chave: corpo + acidez + doçura em harmonia.",
-      "pairings": "Café da manhã salgado é a combinação perfeita: queijo, pão, bacon. Chocolate com salgado cria magia no paladar. Sobremesas de chocolate também assentam bem. Melhor horário é manhã ou tarde, quando você quer algo completo. Evite como café de final de noite porque açúcar natural + cafetina combinam demais e afetam sono.",
-      "metodos_recomendados": [
-        "V60",
-        "Aeropress",
-        "French Press"
-      ],
-      "recipe": {
-        "cafe_gramas": 15,
-        "agua_ml": 250,
-        "proporcao": "1:16",
-        "temperatura": "92-96°C",
-        "tempo_total_minutos": 3,
-        "granulometria": "Média",
-        "passos": [
-          "Pese 15g de café em grãos",
-          "Aqueça 250ml de água a 92-96°C",
-          "Moa na hora em granulometria média (açúcar cristal)",
-          "Escalde o filtro com água quente e descarte a água",
-          "Despeje o café moído e comece a verter água em círculos",
-          "Mantenha o fluxo constante por 3 minutos",
-          "Sirva quente e desfrute"
-        ]
-      },
-      "recipe_notes": "Bourbon tolera bem variação, é um café perdão. Grind mais grossa em French Press: corpo pesado, chocolate dominante, acidez suavizada. Grind mais fina em Aeropress: acidez ganha mais presença, sabores finos se revelam, mas tome cuidado com over-extraction acima de 3 minutos. Temperatura conta: 90 a 92°C amplifica doçura, 95 a 96°C amplifica acidez e florais. Ajuste conforme seu gosto e equipamento.",
-      "especificacoes": {
-        "cafeina_percentual": "1,5%",
-        "producao_global": "~18% arabica",
-        "altitude_ideal": "1.000-1.500m",
-        "clima": "Tropical de altitude"
-      }
+      "degustacao": "Comece procurando a doçura. Depois observe a acidez e a sensação que permanece na boca. Anotar suas impressões ajuda a comparar os próximos preparos.",
+      "cultivo": "Bourbon é cultivado em diferentes regiões. Ao escolher um lote, veja sua procedência e altitude específicas; uma faixa genérica da variedade não descreve todos os cafés que levam esse nome.",
+      "preparo": "Comece com a receita base do método que você já usa. Compare uma mudança de cada vez: quantidade de café, moagem ou tempo. Registre o que deixou a xícara mais agradável para você.",
+      "harmonizacao": "Experimente com chocolate ao leite, pão ou um queijo suave. Prove o café antes e depois de uma mordida para perceber como a combinação altera sua percepção.",
+      "metodosSugeridos": ["v60", "aeropress", "prensa"]
     },
     {
       "id": "catuai",
       "nome": "Catuaí",
-      "regiao": "Brasil, São Paulo",
-      "pais": "Brasil",
-      "altitude": "800-1.500m",
-      "origin": "Híbrido natural de Caturra e Mundo Novo, desenvolvido no Brasil em 1949. É resistente a doenças e produz grãos grandes com excelente sabor.",
-      "origin_story": "Catuaí é 100% brazuca, criado no Instituto Agronômico de Campinas em 1949 pelo cruzamento deliberado de Caturra e Mundo Novo. Resultado: grão grande, planta vigorosa, resistência natural a pragas. Mas o melhor é a acidez brilhante que cafeicultor brasileiro adorou. Prova viva que híbridos podem ser tão nobres quanto originários. Hoje representa cerca de 8% da produção mundial de arábica e segue crescendo em popularidade entre os que buscam qualidade.",
-      "altitude_implications": "Catuaí prefere estar entre 800 e 1.500 metros, com sweet spot perfeito em 1.000 a 1.200m. Em altitude baixa (abaixo de 900m): corpo pesado, acidez morna e sem brilho. Em altitude média (1.000 a 1.200m): acidez brilhante desponta, frutado se revela, corpo fica limpo: exatamente o que Catuaí faz de melhor. Em altitude alta (acima de 1.400m): acidez sobe demais, corpo diminui, perde a identidade que o diferencia de outros cafés.",
-      "flavor": {
-        "descricao": "Acidez brilhante, notas frutadas sutis, corpo médio, paladar complexo",
-        "acidez": "Brilhante",
-        "corpo": "Médio",
-        "docura": "Equilibrada",
-        "notas": [
-          "Frutas vermelhas",
-          "Cereja",
-          "Acidez viva",
-          "Corpo limpo"
-        ]
+      "tipo": "variedade",
+      "perfil": "Versátil na xícara",
+      "notas": ["Frutas", "doçura", "equilíbrio"],
+      "corpo": "Perfil varia com a origem",
+      "sensorial": "Explore a doçura e procure notas de frutas no seu lote. Use o corpo e a acidez para comparar origens e torras, em vez de esperar um perfil único para todos os Catuaís.",
+      "historia": "Desenvolvido pelo Instituto Agronômico (IAC), em Campinas, o Catuaí vem do cruzamento entre Mundo Novo e Caturra. O cruzamento foi realizado em 1949 e a variedade foi lançada no Brasil em 1972. Existem seleções de frutos amarelos e vermelhos. Seu porte baixo e produtividade ajudaram a torná-lo importante na cafeicultura.",
+      "fonte": {
+        "url": "https://varieties.worldcoffeeresearch.org/varieties/catuai",
+        "publicacao": "World Coffee Research"
       },
-      "tasting_guide": "Acidez é o ponto focal. Procure por brilho: limão e cereja, não aspereza tipo abacaxi verde. Corpo é secundário por design: não é pesado, é limpo e refrescante. Frutas vermelhas só aparecem se extração estiver certa; over-extract e acidez fica seca e desagradável, under-extract e o café fica insosso. É café que cobra precisão no preparo mas recompensa com complexidade.",
-      "pairings": "Acidez mais frutas é combinação perfeita com doces de fruta: jam caseira, compota, tarte de morango. Breakfast denso também funciona bem: ovos, linguiça. Hora de pico de energia (10am, 3pm) é quando Catuaí brilha. Evite como café de relaxamento pós-refeição pesada, porque acidez e doçura de sobremesa competem na boca.",
-      "metodos_recomendados": [
-        "V60",
-        "Aeropress",
-        "Italiana"
-      ],
-      "recipe": {
-        "cafe_gramas": 18,
-        "agua_ml": 270,
-        "proporcao": "1:15",
-        "temperatura": "90-95°C",
-        "tempo_total_minutos": 3.5,
-        "granulometria": "Média-fina",
-        "passos": [
-          "Meça 18g de café Catuaí",
-          "Aqueça água a 90-95°C (mais baixa que Bourbon)",
-          "Moa em granulometria média-fina",
-          "Pré-aqueça o equipamento",
-          "Faça bloom de 30 segundos com 50ml de água",
-          "Despeje gradualmente até completar 270ml",
-          "Deixe passar completamente (3,5 min total)",
-          "A acidez brilhante vai brilhar"
-        ]
-      },
-      "recipe_notes": "Catuaí é sensível a temperatura: abaixo de 88°C fica insosso, 90 a 92°C traz acidez brilhante, acima de 95°C acidez fica áspera e desagradável. Grind fino amplifica acidez (ótimo para V60), grind médio traz equilíbrio (Aeropress). Bloom é importante: libera CO2 que mascara acidez natural. Respeite o ritual, acidez é tímida e aparece quando ambiente permite.",
-      "especificacoes": {
-        "cafeina_percentual": "1,6%",
-        "producao_global": "~8% arabica",
-        "altitude_ideal": "1.000-1.400m",
-        "clima": "Subtropical"
-      }
+      "degustacao": "Faça dois preparos do mesmo lote e mude apenas uma variável. Compare o equilíbrio que você percebe em cada xícara.",
+      "cultivo": "Existem diversas linhagens e regiões produtoras de Catuaí. Anote a fazenda, a região e a altitude do lote para tornar suas comparações mais úteis.",
+      "preparo": "Escolha seu método habitual e use a receita base. Um registro simples da quantidade de água, café e tempo ajuda a repetir o resultado de que você gostou.",
+      "harmonizacao": "Como experiência, compare o café sozinho e acompanhado de pão, bolo simples ou frutas. Escolha sua combinação preferida a partir do lote que está provando.",
+      "metodosSugeridos": ["coado", "v60", "aeropress"]
     },
     {
       "id": "bourbon-amarelo",
       "nome": "Bourbon Amarelo",
-      "regiao": "Brasil, Minas Gerais",
-      "pais": "Brasil",
-      "altitude": "1.000-1.600m",
-      "origin": "Mutação natural do Bourbon com frutos amarelos (ao invés de vermelhos). Descoberto no Brasil e agora cultivado em várias regiões. Representa o topo da qualidade bourbon brasileira.",
-      "origin_story": "Bourbon Amarelo é uma happy accident: mutação genética do Bourbon clássico onde frutos nascem amarelos em vez de vermelhos. Cafeicultor brasileiro em Minas Gerais notou isso décadas atrás e começou a propagar as mudas com cuidado. Hoje é tido como versão premium do Bourbon: mesma genética mas com ripening diferente que amplifica doçura natural ao máximo. É raro, mais caro, e faz jus ao preço quando preparado com respeito.",
-      "altitude_implications": "Amarelo cresce entre 1.000 e 1.600 metros, mas altitude muda tudo em seu perfil. De 1.000 a 1.200m: corpo cheio, chocolate dominante, doçura extrema. De 1.200 a 1.400m (o ideal): doçura equilibrada com acidez, complexidade aflora. Acima de 1.400m: acidez sobe, corpo cai, perde a doçura que é o ponto todo. Escolha altitude baixa se quer doçura máxima, altitude média se quer doçura com elegância.",
-      "flavor": {
-        "descricao": "Doçura intensa, notas de mel, frutas tropicais, corpo cheio, acidez equilibrada",
-        "acidez": "Equilibrada",
-        "corpo": "Cheio",
-        "docura": "Intensa",
-        "notas": [
-          "Mel",
-          "Frutas tropicais",
-          "Caramelo",
-          "Corpo denso",
-          "Chocolate branco"
-        ]
+      "tipo": "variedade",
+      "perfil": "Doçura em destaque",
+      "notas": ["Mel", "frutas", "caramelo"],
+      "corpo": "Explore torras diferentes",
+      "sensorial": "Use mel, caramelo e frutas como referências para explorar a doçura. Compare o que você encontra na xícara com a descrição do produtor.",
+      "historia": "O Bourbon Amarelo faz parte da história do melhoramento do café no Brasil. O IAC reúne diferentes linhagens dessa variedade entre suas cultivares de excelente qualidade de bebida. Suas seleções têm nomes próprios, como IAC J2 e IAC J9; por isso, saber a linhagem e o produtor acrescenta contexto à variedade.",
+      "fonte": {
+        "url": "https://www.iac.sp.gov.br/produtoseservicos/orgulhonacional/programa_cafe.php?lang=pt",
+        "publicacao": "Instituto Agronômico (IAC)"
       },
-      "tasting_guide": "Doçura é a razão de existir: se não está percebendo mel e frutas tropicais, extração errou. Procure por complexidade (não é só doce, tem acidez balanceando). Chocolate branco é a assinatura de grãos bem fermentados. Mel floral no meio palato, frutas tropicais no aftertaste. É café que pede pausa para apreciar cada nuance.",
-      "pairings": "Doce só: bolo de chocolate, pudim cremoso, sorvete de baunilha. Café da tarde é horário perfeito. Não combina com salgado porque salgado anula a doçura que o define. Melhor pós-refeição leve ou standalone em momento de pausa contemplativa.",
-      "metodos_recomendados": [
-        "French Press",
-        "Aeropress",
-        "V60"
-      ],
-      "recipe": {
-        "cafe_gramas": 20,
-        "agua_ml": 300,
-        "proporcao": "1:15",
-        "temperatura": "88-92°C",
-        "tempo_total_minutos": 4,
-        "granulometria": "Grossa-média",
-        "passos": [
-          "Pese 20g de grãos Bourbon Amarelo",
-          "Aqueça água a 88-92°C (temperatura mais baixa para preservar doçura)",
-          "Moa grossa-média (permite mais tempo de extração)",
-          "Pré-aqueça a prensa ou dripper",
-          "Coloque o café moído",
-          "Despeje água em movimento suave",
-          "Espere 4 minutos para extração completa",
-          "A doçura natural vai dominar o perfil"
-        ]
-      },
-      "recipe_notes": "Temperatura baixa é crítica para preservar doçura: 88 a 90°C é ideal. Grind grossa permite longer contact time sem over-extraction. French Press é ideal: longa imersão amplifica corpo e doçura simultaneamente. Evite espresso porque pressão mais calor extremo traz amargura, perdendo tudo que é especial em Amarelo. Paciência e temperatura controlada são segredos.",
-      "especificacoes": {
-        "cafeina_percentual": "1,4%",
-        "producao_global": "~5-8% arabica (raro)",
-        "altitude_ideal": "1.200-1.600m",
-        "clima": "Montanhoso tropical"
-      }
+      "degustacao": "Observe a doçura ao longo dos goles. Tente separar aroma, textura e sabor para descrever melhor sua experiência.",
+      "cultivo": "Procure a altitude e a região informadas para o lote. O nome Bourbon Amarelo não substitui a identificação da fazenda, da linhagem e do processo.",
+      "preparo": "Comece com um método conhecido e registre as medidas. Ajuste uma variável por vez até encontrar seu equilíbrio preferido.",
+      "harmonizacao": "Experimente pão amanteigado ou bolo simples como acompanhamento. Use pequenas porções para continuar percebendo as nuances da bebida.",
+      "metodosSugeridos": ["v60", "coado", "aeropress"]
     },
     {
       "id": "geisha",
       "nome": "Geisha",
-      "regiao": "Panamá, Boquete",
-      "pais": "Panamá",
-      "altitude": "1.500-2.000m",
-      "origin": "Variedade etíope trazida para o Panamá em 1960. Floresce em altitude extrema, resultando em complexidade e elegância incomparáveis. Um dos cafés mais caros do mundo (atualmente $150-200/kg).",
-      "origin_story": "Geisha é African royalty em terra panamenha. Trazida da Etiópia para o Panamá nos anos 1960, floresceu em altitude extrema (1.500 a 2.000m) do Boquete criando complexidade floral nunca antes vista. Em 2004, Geisha ganhou prêmio de melhor café do mundo e status de unicórnio: raro, caro, transformador. Hoje está entre os cafés mais prestigiados do planeta, com preço que pode chegar a 150 a 200 dólares o quilo.",
-      "altitude_implications": "Geisha exige altitude extrema para existir de verdade. A 1.500m+, complexidade emerge. A 1.700m+, florais dominam e acidez fica refrescante. 2.000m é o limiar máximo para cultivo viável. Altitude é tudo: em altitude baixa, Geisha é só café comum e sem interesse. Em Boquete, entre 1.500 e 2.000 metros, torna-se transcendente. Terroir aqui não é detalhe, é o ponto inteiro.",
-      "flavor": {
-        "descricao": "Floral intenso, frutas exóticas, complexidade excepcional, elegância pura",
-        "acidez": "Viva e refinada",
-        "corpo": "Leve-médio",
-        "docura": "Delicada",
-        "notas": [
-          "Floral",
-          "Framboesa",
-          "Jasmim",
-          "Frutas tropicais",
-          "Mel de flores"
-        ]
+      "tipo": "variedade",
+      "perfil": "Delicado e aromático",
+      "notas": ["Floral", "frutas", "delicadeza"],
+      "corpo": "Experimente em filtrados",
+      "sensorial": "O Geisha panamenho é conhecido por aromas delicados, que podem lembrar flores, jasmim e pêssego. Use essas referências como convite à observação, sem tratar as notas como garantia de todo lote.",
+      "historia": "O Geisha associado ao Panamá tem origem em material coletado em florestas da Etiópia na década de 1930. Passou por instituições de pesquisa e chegou à América Central, sendo distribuído no Panamá nos anos 1960. A World Coffee Research distingue a linhagem panamenha T2722 de outros materiais também chamados Geisha ou Gesha.",
+      "fonte": {
+        "url": "https://varieties.worldcoffeeresearch.org/varieties/geisha-panama",
+        "publicacao": "World Coffee Research"
       },
-      "tasting_guide": "Floral é a porta de entrada: jasmim, rosa, gardênia, tudo presente. Frutas exóticas aparecem depois (framboesa, mirtilo, maçã verde). Corpo é leve por design: não mata aromas delicados que tomam conta da xícara. Acidez é refinada (limão, lima) não afiada nem agressiva. É café para saborear devagar, não para grelhar rápido. Cada gole é meditação.",
-      "pairings": "Gourmet só: light desserts (macaron, panna cotta), frutas frescas. Manhã serena em silêncio. Cerimônia: serve um pequeno copo e deixa pessoa aproveitar. Não combina com nada forte (chocolate escuro, caramelo mascaram completamente). Geisha merece escuta, não companhia barulhenta.",
-      "metodos_recomendados": [
-        "V60",
-        "Aeropress",
-        "French Press"
-      ],
-      "recipe": {
-        "cafe_gramas": 12,
-        "agua_ml": 200,
-        "proporcao": "1:17",
-        "temperatura": "94-96°C",
-        "tempo_total_minutos": 3,
-        "granulometria": "Fina",
-        "passos": [
-          "Use apenas 12g de grãos Geisha (café precioso)",
-          "Água a 94-96°C exata",
-          "Moa FINO (extração precisa é crítica)",
-          "Bloom de 45 segundos (deixe CO2 sair)",
-          "Despeje em círculos finos e controlados",
-          "Tempo total exato: 3 minutos",
-          "Observe os aromas florais intensos",
-          "Cada gota é ouro puro"
-        ]
-      },
-      "recipe_notes": "Precisão é tudo. Grind muito fino causa over-extraction (acidez seca). Grind muito grossa causa under-extraction (plano e sem interesse). Temperatura: 94 a 96°C exata é tight, abaixo perde florais, acima traz amargura. Use água filtrada sempre. Sirva em xícara pré-aquecida. Beba quente: esfria e sabor muda. Cada detalhe importa, nada é acidental.",
-      "especificacoes": {
-        "cafeina_percentual": "1,5%",
-        "producao_global": "< 1% arabica (extremamente raro)",
-        "altitude_ideal": "1.500-2.100m",
-        "clima": "Montanha tropical úmida"
-      }
+      "degustacao": "Dê atenção ao aroma e prove sem acompanhamento no primeiro momento. Compare a percepção em diferentes temperaturas de consumo.",
+      "cultivo": "A origem e a identificação do material importam: nem todos os cafés chamados Geisha são geneticamente iguais. Consulte também a região, altitude e informações do produtor.",
+      "preparo": "Use uma receita que você consiga repetir e evite mudar várias medidas de uma vez. Um preparo conhecido facilita perceber as diferenças do grão.",
+      "harmonizacao": "Prove primeiro o café sozinho. Depois, se quiser, compare com um biscoito simples ou fruta de sabor suave.",
+      "metodosSugeridos": ["v60", "coado", "aeropress"]
     },
     {
       "id": "acaia",
       "nome": "Acaiá",
-      "regiao": "Brasil, São Paulo",
-      "pais": "Brasil",
-      "altitude": "800-1.400m",
-      "origin": "Híbrido de Mundo Novo e Bourbon, desenvolvido no Brasil. Resistente e produtivo, ganha cada vez mais espaço na cafeicultura brasileira de qualidade.",
-      "origin_story": "Acaiá é café do futuro brazuca: híbrido resistente que cafeicultor ama (alta produção, menos doença) mas specialty coffee respeitava pouco inicialmente. Desenvolvido no Brasil, criado para sobreviver em altitude média onde alguns originários falham. Nos últimos 10 anos, qualidade disparou e hoje produz café que rivaliza com Bourbon em complexidade e refinamento. Representa cerca de 6% da produção mundial e segue conquistando respeito.",
-      "altitude_implications": "Acaiá prospera entre 800 e 1.400 metros, mas altitude muda sua personalidade significativamente. De 800 a 1.000m: corpo pesado, chocolate dominante, suavidade máxima. De 1.000 a 1.200m (ideal): balanço perfeito: corpo cheio mais acidez presente mais sabores finos todos convivendo. Acima de 1.200m: acidez sobe, corpo diminui, perde o encorpamento que é sua força. Encontre sua zona de conforto.",
-      "flavor": {
-        "descricao": "Corpo médio-cheio, acidez suave, notas de chocolate e frutas secas, final limpo",
-        "acidez": "Suave",
-        "corpo": "Médio-cheio",
-        "docura": "Equilibrada",
-        "notas": [
-          "Chocolate escuro",
-          "Frutas secas",
-          "Nozes",
-          "Corpo balanceado"
-        ]
+      "tipo": "variedade",
+      "perfil": "Um café para descobrir",
+      "notas": ["Chocolate", "frutas secas"],
+      "corpo": "Perfil varia com a origem",
+      "sensorial": "Procure referências de chocolate e frutas secas e observe o corpo. Compare suas impressões com as notas descritas para o lote.",
+      "historia": "Acaiá integra o conjunto de cultivares desenvolvidas pelo IAC. Seus registros incluem seleções de 1977, caracterizadas por produtividade elevada e sementes grandes. Conhecer o nome da seleção e sua origem ajuda a distinguir os diferentes lotes encontrados no mercado.",
+      "fonte": {
+        "url": "https://www.iac.sp.gov.br/cultivares/inicio/resultados_quantitativos_view.php?pesquisa=Caf%C3%A9",
+        "publicacao": "Instituto Agronômico (IAC)"
       },
-      "tasting_guide": "Procure por corpo primeiro (é a razão de ser) e chocolate discreto no fundo (não é óbvio, é sutil). Frutas secas aparecem em brews mais longos (French Press), desaparecem em brews curtos. Acidez é suave: só presente se extração estiver precisa. Não é café barulhento, é silencioso e consistente. Confiável para diário.",
-      "pairings": "Afternoon staple perfeito: chocolate, nuts, pão integral tostado. Não é café de manhã (pesado demais), é café de afternoon break entre 3 e 4pm. Combina com tudo exceto ácido ou cítrico (anula chocolate completamente). Companheiro leal de trabalho.",
-      "metodos_recomendados": [
-        "Aeropress",
-        "V60",
-        "French Press"
-      ],
-      "recipe": {
-        "cafe_gramas": 17,
-        "agua_ml": 260,
-        "proporcao": "1:15",
-        "temperatura": "91-95°C",
-        "tempo_total_minutos": 3.5,
-        "granulometria": "Média",
-        "passos": [
-          "Meça 17g de café Acaiá",
-          "Água a 91-95°C",
-          "Moa em granulometria média",
-          "Pré-aqueça o dripper",
-          "Bloom de 30 segundos",
-          "Despeje a água em movimento constante",
-          "Total de 3,5 minutos",
-          "Desfrute do corpo equilibrado"
-        ]
-      },
-      "recipe_notes": "Acaiá tolera bem variação, é café perdão. Grind mais grossa em French Press: corpo máximo, chocolate, frutas secas ganham espaço. Grind mais fina em Aeropress: acidez sobe, chocolate suaviza. Temperatura: 91 a 93°C traz chocolate, 94 a 95°C traz acidez. Roast level importa: médio realça complexidade, escuro mascara. Ajuste conforme sua prensa.",
-      "especificacoes": {
-        "cafeina_percentual": "1,5%",
-        "producao_global": "~6% arabica",
-        "altitude_ideal": "1.000-1.300m",
-        "clima": "Subtropical"
-      }
-    },
-    {
-      "id": "arabica",
-      "nome": "Arábica",
-      "regiao": "Etiópia, Kaffa",
-      "pais": "Etiópia",
-      "altitude": "1.200-2.200m",
-      "origin": "A espécie original e nativa da Etiópia, berço do café. Representa 60% da produção mundial. Cultivada desde tempos imemoriais nas terras altas de Kaffa.",
-      "origin_story": "A história do Arábica começa nas montanhas nubladas da Etiópia, há séculos. Segundo a lenda, um pastor notou que suas cabras ficavam estranhamente animadas depois de comer certos frutos vermelhos. E aí nasceu o café que hoje é bebido por mais de 2 bilhões de pessoas.\n\nDo berço etíope, o Arábica viajou pela Arábia (é daí que vem o nome), se enraizou em terras altas da Turquia, depois Egito, e eventualmente conquistou a Europa através de mercadores venezianos. No século 17, jesuítas portugueses trouxeram mudas pra Brasil, que hoje produz um terço da safra mundial.\n\nPor quê o Arábica virou o rei do café? Porque tem sabor. Enquanto robusta é potência bruta, Arábica sussurra complexidade: acidez brilhante, corpo equilibrado, notas que mudam conforme a altitude e o solo. É o café que fez o café valer a pena. E mesmo sendo mais delicado pra cultivar, mais caro, mais exigente, pessoas escolhem ele.\n\nHoje encontra Arábica de qualidade em Etiópia (berço), Brasil (volume), Colômbia (equilíbrio) e dúzias de outras regiões. Cada safra conta uma história geográfica diferente.",
-      "altitude_implications": "Altitude é a alavanca secreta do sabor do café. Quanto mais alto, mais lento o fruto amadurece. Parece ruim, mas é perfeito. Ripening lento significa concentração. Os açúcares têm tempo de se desenvolver, os ácidos se aprofundam no grão, criando densidade e complexidade.\n\nArábica prospera entre 800 e 2.200 metros de altitude. Nessa faixa consegue acidez viva, doçura natural e corpo que não soa aguado. Altitudes muito altas (acima de 2.500m) produzem cafés interessantes mas arriscados: clima fica instável, colheita fica rara e cara. Altitudes muito baixas (abaixo de 600m) deixam o grão plano, sem padrão.\n\nA mágica real está entre 1.000 e 1.800 metros. É aí que encontra Arábica que brilha (quando você toma, sente a diferença). A acidez não é sour (azedo chato), é lively (vivo); o corpo tem peso mas não é viscoso. Se provar uma xícara de Arábica de altitude decente versus uma de origem duvidosa, você entende na segunda.",
-      "flavor": {
-        "descricao": "Corpo médio, acidez viva, doçura natural, notas que variam conforme a origem (chocolate, frutas, floral).",
-        "acidez": "Viva e agradável",
-        "corpo": "Médio",
-        "docura": "Natural marcante",
-        "notas": [
-          "Chocolate ao leite",
-          "Caramelo",
-          "Frutas vermelhas",
-          "Floral",
-          "Nozes"
-        ]
-      },
-      "tasting_guide": "Comece com o aroma. Antes mesmo de beber, o nariz faz o trabalho de detective. Levante a xícara pra perto, inspire devagar. Que te diz? Notas florais? Chocolate? Citrus?\n\nAgora o primeiro gole. Não beba rápido, deixa a língua sentir. Procura equilíbrio: ácido (que faz saliva) e corpo (que faz peso) vivendo junto. Se só sente amargura ou só sente fraco, algo saiu errado no preparo ou no grão.\n\nO meio da xícara revela complexidade. Aqui o café se abre, notas secundárias aparecem. Chocolate meio amargo, notas de noz, às vezes até fruta vermelha com sutileza.\n\nO final é o teste: quanto tempo o sabor fica na boca? Um segundo? Dez? Arábica de qualidade deixa um final limpo, levemente doce, que quer que você beba mais.\n\nMétodo importa. V60 tira acidez brilhante. French Press tira corpo cheio com óleos. Espresso tira intensidade. Use 88–92°C de água: mais frio perde o brilho; muito quente puxa amargura indesejada.",
-      "pairings": "Arábica é o café da manhã ideal. Croissant de manteiga, bolo de chocolate, pão com queijo (qualquer coisa que celebre manhã fica melhor com Arábica do lado).\n\nDepois de almoço também é perfeito. Não como shot isolado (pesado demais), mas como companheiro de sobremesa (café com brigadeiro, café com pudim) porque a acidez do café limpa o paladar e responde bem à doçura.\n\nTarde focada? Arábica em xícara grande, nem muito quente pra poder beber devagar, é sua melhor amiga pra concentração. Diferente de bebidas açucaradas, café de verdade não deixa nervoso, só alerta.\n\nNão faça Arábica com algo muito amargo (chocolate dark demais) ou muito ácido (laranja), vai ganhar um no outro. Pense sabores complementares, não competidores.",
-      "metodos_recomendados": [
-        "V60",
-        "Aeropress",
-        "French Press"
-      ],
-      "recipe": {
-        "cafe_gramas": 16,
-        "agua_ml": 240,
-        "proporcao": "1:15",
-        "temperatura": "92-96°C",
-        "tempo_total_minutos": 3,
-        "granulometria": "Média",
-        "passos": [
-          "Pese 16g de café Arábica em grãos",
-          "Aqueça 240ml de água a 92-96°C",
-          "Moa na hora em granulometria média",
-          "Escalde o filtro com água quente",
-          "Despeje o café e aguarde 30 segundos (bloom)",
-          "Prossiga vertendo água em círculos suaves",
-          "Tempo total: 3 minutos",
-          "Aprecie a qualidade da espécie original"
-        ]
-      },
-      "recipe_notes": "Tudo gira em torno de extração equilibrada. Água quente dissolve os bons sabores no café moído: ácidos florais, doçura, corpo. Mas se você der tempo demais ou usar água muito quente, acaba puxando amargura também.\n\nA moagem é o primeiro detalhe. Média é o caminho do meio (nem pó fino, nem granulado tosco). Se moer muito fino, faz over-extraction e fica amargo; se moer muito grossa, o sabor sai fraco e aguado.\n\nTemperatura conta uma história também. A faixa de 88–92°C é onde o Arábica brilha de verdade. Como assim? É água quente mas não fervendo (deixa fervir, espera uns 30 segundos, depois usa). Mais frio que isso perde o brilho; muito quente puxa amargura que você não quer.\n\nAí entra o ratio, a proporção de café pra água. O padrão é 1:16 (30g café, 480ml água), mas ajusta conforme seu gosto: mais café deixa forte, menos café deixa mais delicado.\n\nE o timing depende do método. V60 leva uns 3-4 minutos. French Press leva 4. Espresso, 25-30 segundos. Tempo demais traz over-extração (sabor flat); tempo pouco deixa tudo insosso.\n\nHonestamente, o maior erro que vejo é impaciência. Pessoa quer fazer tudo rápido, tira água muito quente, acha que economiza 30 segundos. Resultado: xícara amarga, falsa, não parece nem café. Arábica cobra respeito no preparo. Leva tempo, mas vale cada segundo.",
-      "especificacoes": {
-        "cafeina_percentual": "1,2-1,5%",
-        "producao_global": "~60% arabica",
-        "altitude_ideal": "1.500-2.000m",
-        "clima": "Tropical de altitude"
-      }
+      "degustacao": "Concentre-se na textura e no sabor que fica após o gole. Compare uma receita mais leve com outra mais intensa para descobrir sua preferência.",
+      "cultivo": "A região e a altitude pertencem à história do lote. Consulte a embalagem ou a torrefação para conhecer a procedência do café que você está preparando.",
+      "preparo": "Comece pela receita base e anote as quantidades. Mantenha o método constante durante a comparação de diferentes grãos.",
+      "harmonizacao": "Experimente com pão, castanhas ou um pedaço de chocolate. Trate a harmonização como uma descoberta pessoal.",
+      "metodosSugeridos": ["coado", "prensa", "v60"]
     },
     {
       "id": "icatu",
       "nome": "Icatu",
-      "regiao": "Brasil, São Paulo",
-      "pais": "Brasil",
-      "altitude": "600-1.200m",
-      "origin": "Híbrido complexo que combina Bourbon, Typica e Robusta. Desenvolvido no Instituto Agronômico de Campinas. Resistente a pragas mas com qualidade de arabica.",
-      "origin_story": "Icatu é experimento bem-sucedido: Robusta (resistência, corpo) cruzada com Arábica (qualidade, sabor). Resultado: café que sobrevive em altitude baixa onde Arábica puro morreria, mas com sabor competitivo. Desenvolvido em Campinas na década de 1970, é símbolo da inovação cafeeira brasileira. Representa cerca de 2% da produção mundial arábica mas tem nicho leal entre quem adora corpo sem compromisso de sabor.",
-      "altitude_implications": "Icatu cresce bem entre 600 e 1.200 metros, altitude baixa que Arábica puro rejeita. De 600 a 800m: corpo extremamente cheio, chocolate intenso, acidez praticamente zero. De 800 a 1.000m (ideal): corpo encorpado mais chocolate mais doçura sem perder definição completa. Acima de 1.000m: corpo diminui, perde vantagem competitiva. Escolha baixo se quer máximo corpo, escolha médio se quer um pouco de elegância.",
-      "flavor": {
-        "descricao": "Corpo encorpado, acidez suave, notas de chocolate e cacau, final adocicado",
-        "acidez": "Suave",
-        "corpo": "Encorpado",
-        "docura": "Adocicada",
-        "notas": [
-          "Chocolate",
-          "Cacau",
-          "Nozes",
-          "Corpo pesado",
-          "Macio"
-        ]
+      "tipo": "variedade",
+      "perfil": "Corpo e doçura",
+      "notas": ["Cacau", "chocolate"],
+      "corpo": "Experimente seu método favorito",
+      "sensorial": "Explore referências de cacau e chocolate. Observe como a doçura e a textura aparecem no lote e na receita escolhidos.",
+      "historia": "O grupo Icatu está entre as cultivares do programa de café do IAC. Inclui seleções de frutos vermelhos e amarelos, além do Icatu Precoce. O instituto registra diferentes características entre essas seleções; conhecer o nome completo e o produtor ajuda a identificar melhor cada café.",
+      "fonte": {
+        "url": "https://www.iac.sp.gov.br/produtoseservicos/orgulhonacional/programa_cafe.php?lang=pt",
+        "publicacao": "Instituto Agronômico (IAC)"
       },
-      "tasting_guide": "Corpo é tudo aqui: pesado, macio, redondo, envolvente. Chocolate é discreto no fundo, nunca óbvio. Acidez quase ausente (herança Robusta). Final adocicado puro e limpo: ideal para quem não gosta de acidez vivida. É café que abraça, não que desafia.",
-      "pairings": "Chocolate, caramelo, panetone. Café pós-refeição pesada (domingo à tarde, almoço família). Manhã energética também funciona (corpo mais cafetina combinam). Não combina com ácido ou frutas (anula sabor completamente). Bom companheiro de silêncio.",
-      "metodos_recomendados": [
-        "French Press",
-        "Aeropress",
-        "Italiana"
-      ],
-      "recipe": {
-        "cafe_gramas": 19,
-        "agua_ml": 280,
-        "proporcao": "1:14",
-        "temperatura": "89-93°C",
-        "tempo_total_minutos": 4,
-        "granulometria": "Grossa",
-        "passos": [
-          "Meça 19g de café Icatu",
-          "Aqueça água a 89-93°C (temperatura mais baixa)",
-          "Moa em granulometria GROSSA (para French Press ideal)",
-          "Pré-aqueça a prensa",
-          "Coloque o café moído",
-          "Despeje água em movimento lento",
-          "Deixe descansar 4 minutos",
-          "Aprecie o corpo encorpado e macio"
-        ]
+      "degustacao": "Compare a sensação de corpo e o sabor residual. Uma anotação curta já ajuda a reconhecer o que você prefere.",
+      "cultivo": "Procure o nome completo da cultivar, a região e a altitude do lote. Essas informações contextualizam o grão além do nome Icatu.",
+      "preparo": "Use o preparo que melhor combina com sua rotina. Ajuste o volume na calculadora e compare intensidades sem mudar as outras variáveis.",
+      "harmonizacao": "Experimente uma pequena porção de chocolate ou um acompanhamento de sabor neutro e compare com o café puro.",
+      "metodosSugeridos": ["prensa", "coado", "aeropress"]
+    },
+    {
+      "id": "arabica",
+      "nome": "Arábica",
+      "tipo": "especie",
+      "perfil": "Uma espécie, muitas descobertas.",
+      "notas": ["Origens", "variedades", "diversidade"],
+      "corpo": "Conheça a espécie",
+      "sensorial": "Não existe um único perfil que represente todos os arábicas. Use as notas descritas para seu lote e suas próprias impressões como guia.",
+      "historia": "Arábica é o nome da espécie Coffea arabica. Dentro dela existe uma grande diversidade de variedades, como Bourbon e Catuaí. Por isso, uma embalagem que informa apenas “100% arábica” ainda deixa espaço para descobrir variedade, origem, processamento e torra.",
+      "fonte": {
+        "url": "https://varieties.worldcoffeeresearch.org/arabica",
+        "publicacao": "World Coffee Research"
       },
-      "recipe_notes": "Grind grossa é crucial: fino causa over-extraction de amargura (herança Robusta indesejada). French Press é ideal: long immersion realça corpo, suaviza Robusta bitterness. Temperatura baixa (89 a 91°C) protege, acima de 93°C traz amargura. Roast escuro amplifica chocolate, roast médio traz equilíbrio. Sirva logo: esfria e fica pesado demais na xícara.",
-      "especificacoes": {
-        "cafeina_percentual": "1,7% (maior que arabica pura)",
-        "producao_global": "~2% arabica",
-        "altitude_ideal": "800-1.100m",
-        "clima": "Subtropical"
-      }
+      "degustacao": "Comece anotando três coisas: aroma, sensação de corpo e sabor que fica depois do gole. Seu vocabulário pode crescer a cada café.",
+      "cultivo": "Arábica reúne cafés de regiões muito diferentes. Para conhecer a altitude e a origem do seu café, consulte a informação do lote, não apenas a espécie.",
+      "preparo": "Você pode começar pela receita base do método mesmo sem saber a variedade. Use o grão que já tem e ajuste ao seu gosto.",
+      "harmonizacao": "Primeiro prove o café sozinho. Depois compare com o acompanhamento que você já gosta, observando o que muda na experiência.",
+      "metodosSugeridos": ["v60", "coado", "prensa"]
     }
   ]
 }

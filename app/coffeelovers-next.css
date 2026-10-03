@@ -2,10 +2,12 @@
  * Adaptações do kit para Next.js.
  * O protótipo navega com <button>; aqui a navegação usa <Link>, que renderiza <a>.
  * Mantido separado de coffeelovers.css para que o CSS do kit continue substituível.
+ *
+ * Evite declarar `color` no seletor genérico `a`: ele empata em especificidade
+ * com as classes de componente do kit e, por vir depois na cascata, venceria.
  */
 
 #coffee-next a {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -31,4 +33,10 @@
 #coffee-next .cl-nav a:hover {
   color: var(--cl-ink);
   background: var(--cl-soft);
+}
+
+/* .cl-text-button e .cl-discovery já estilizam por classe; só falta o
+   comportamento de caixa que o <button> tinha por padrão. */
+#coffee-next a.cl-text-button {
+  width: fit-content;
 }

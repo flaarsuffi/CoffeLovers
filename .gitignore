@@ -46,3 +46,7 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Kit de design recebido por export. O que serve de referência foi
+# extraído para docs/design-system/; o original tem zips e um .git aninhado.
+novo/

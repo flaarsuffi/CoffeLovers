@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>CoffeeLovers — Protótipo interativo</title>
+  <link rel="stylesheet" href="assets/prototype-shell.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div id="prototype-controls" aria-label="Controles de apresentação do protótipo">
+  <div><strong>CoffeeLovers</strong><span>Protótipo interativo · v1.0</span></div>
+  <div class="prototype-options">
+    <label>Aparência <select id="prototype-theme"><option value="system">Sistema</option><option value="cream">Creme</option><option value="espresso">Escuro</option></select></label>
+    <label>Largura <select id="prototype-device"><option value="responsive">Responsiva</option><option value="mobile">Celular · 390 px</option></select></label>
+  </div>
+</div>
+<div id="coffee-next" data-look="system" data-device="responsive" aria-label="CoffeeLovers · proposta de layout">
+  <div class="cl-app">
+    <header class="cl-header">
+      <button class="cl-logo" type="button" data-page="preparar" aria-label="CoffeeLovers, início"><span class="cl-mark"><i data-lucide="bean" aria-hidden="true"></i></span><span>coffee<em>lovers</em><span style="color:var(--cl-gold)">.</span></span></button>
+      <nav class="cl-nav" aria-label="Navegação principal">
+        <button type="button" data-page="preparar" aria-current="page">Preparar</button>
+        <button type="button" data-page="metodos">Métodos</button>
+        <button type="button" data-page="graos">Grãos</button>
+      </nav>
+    </header>
+    <main class="cl-content">
+      <div data-screen="preparar">
+        <div class="cl-intro">
+          <div><div class="cl-kicker">Do grão à xícara</div><h1>Seu café.<br><em>Do seu jeito.</em></h1></div>
+          <p>Encontre uma boa receita para começar.<br>Depois, ajuste ao seu paladar.</p>
+        </div>
+        <div class="cl-workspace">
+          <section class="cl-form" aria-labelledby="cl-form-title">
+            <div class="cl-section-label"><h2 id="cl-form-title">Vamos preparar?</h2><span>O resultado muda com você</span></div>
+            <div class="cl-fields">
+              <div><label class="cl-label" for="cl-method">Método</label><select id="cl-method"><option value="v60">V60</option><option value="aeropress">AeroPress</option><option value="prensa">Prensa francesa</option><option value="coado">Coado de papel</option><option value="moka">Moka italiana</option></select></div>
+              <div><label class="cl-label" for="cl-grain">Grão <span>· opcional</span></label><select id="cl-grain"><option value="Não sei meu grão">Não sei meu grão</option>Bourbon</option>Catuaí</option>Bourbon Amarelo</option>Geisha</option>Acaiá</option>Arábica</option>Icatu</option></select></div>
+            </div>
+            <div id="cl-normal-controls">
+              <div class="cl-water">
+                <div class="cl-water-heading"><label class="cl-label" for="cl-water">Água para o preparo</label><div class="cl-number"><input id="cl-water" type="number" min="100" max="1000" step="1" value="350" inputmode="numeric" aria-describedby="cl-water-error"><span>ml</span></div></div>
+                <input id="cl-slider" type="range" min="100" max="1000" step="1" value="350" aria-label="Ajustar água em mililitros">
+                <div class="cl-scale"><span>100 ml</span><span>1 litro</span></div>
+                <p id="cl-water-error" class="cl-error" role="alert" hidden>Use um volume entre 100 e 1.000 ml.</p>
+              </div>
+              <div class="cl-preference"><span class="cl-label">Como você gosta?</span><div class="cl-segments" role="group" aria-label="Intensidade do café"><button type="button" data-intensity="leve" aria-pressed="false">Mais leve</button><button type="button" data-intensity="equilibrado" aria-pressed="true">Equilibrado</button><button type="button" data-intensity="intenso" aria-pressed="false">Mais intenso</button></div></div>
+              <p class="cl-note">A receita base segue o método. O grão é opcional.</p>
+            </div>
+            <div id="cl-moka-controls" hidden><p class="cl-note" style="font-size:14px;margin-top:22px">Na Moka, a quantidade depende do tamanho da sua cafeteira.</p><p class="cl-note" style="font-size:13px">Use o reservatório e o funil como referência, seguindo as orientações do fabricante.</p></div>
+          </section>
+          <section class="cl-recipe" aria-labelledby="cl-result-title">
+            <div class="cl-recipe-top"><h2 id="cl-result-title"><span class="cl-live-dot"></span>Sua próxima xícara</h2><span class="cl-recipe-method" id="cl-result-method">V60</span></div>
+            <div id="cl-numeric-result">
+              <div class="cl-recipe-grain" id="cl-result-grain">Receita base · equilibrada</div>
+              <div class="cl-amounts"><div class="cl-amount"><strong id="cl-coffee">21,9</strong><span>g</span><p>de café</p></div><div class="cl-amount"><strong class="cl-water-total" id="cl-result-water">350</strong><span>ml</span><p>de água</p></div></div>
+              <div class="cl-ratio"><span>Proporção</span><strong id="cl-ratio">1:16</strong><span>· café : água</span></div>
+              <div class="cl-specs"><div class="cl-spec"><i data-lucide="circle-dot" aria-hidden="true"></i><div><span>Moagem</span><strong id="cl-grind">Média-fina</strong></div></div><div class="cl-spec"><i data-lucide="clock-3" aria-hidden="true"></i><div><span>Tempo de preparo</span><strong id="cl-time">3–4 min</strong></div></div></div>
+            </div>
+            <div id="cl-moka-result" class="cl-moka-info" hidden><strong>Cada tamanho,<br>uma medida.</strong>Água abaixo da válvula. Café no funil, sem prensar. Respeite a capacidade da sua cafeteira.</div>
+            <button id="cl-guide-button" class="cl-primary" type="button" aria-expanded="false" aria-controls="cl-guide"><span>Ver como preparar</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+            <div class="cl-recipe-foot">Uma receita inicial. O melhor ajuste é o seu.</div>
+            <p id="cl-announcement" aria-live="polite" aria-atomic="true" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)"></p>
+          </section>
+        </div>
+        <section id="cl-guide" class="cl-guide" hidden aria-labelledby="cl-guide-title"><div class="cl-guide-title"><div><div class="cl-kicker">Um passo de cada vez</div><h2 id="cl-guide-title">Prepare seu V60</h2></div><button type="button" id="cl-guide-close" class="cl-close" aria-label="Fechar passo a passo"><i data-lucide="x" aria-hidden="true"></i></button></div><ol id="cl-steps"></ol></section>
+        <section class="cl-explore" aria-labelledby="cl-explore-title"><div class="cl-explore-heading"><h2 id="cl-explore-title">Conheça seu café.</h2><button class="cl-text-button" type="button" data-page="metodos">Explorar <i data-lucide="arrow-right" aria-hidden="true"></i></button></div><div class="cl-discovery-grid"><button class="cl-discovery" type="button" data-page="graos"><span class="cl-discovery-icon"><i data-lucide="bean" aria-hidden="true"></i></span><span><h3>Encontre seu grão</h3><p>Sabores, origens e novas descobertas.</p></span><i data-lucide="arrow-up-right" class="cl-arrow" aria-hidden="true"></i></button><button class="cl-discovery" type="button" data-page="metodos"><span class="cl-discovery-icon"><i data-lucide="coffee" aria-hidden="true"></i></span><span><h3>Escolha seu método</h3><p>Um preparo que combina com seu ritmo.</p></span><i data-lucide="arrow-up-right" class="cl-arrow" aria-hidden="true"></i></button></div></section>
+      </div>
+      <div data-screen="metodos" hidden><div class="cl-catalog-intro"><div class="cl-kicker">Encontre seu ritual</div><h1>Um método para<br><em>cada momento.</em></h1><p>Compare o preparo, escolha seu favorito e leve a seleção direto para a calculadora.</p></div><div id="cl-method-catalog" class="cl-catalog-grid"></div></div>
+      <div data-screen="graos" hidden><div class="cl-catalog-intro"><div class="cl-kicker">Comece pela curiosidade</div><h1>Conheça o que vai<br><em>na sua xícara.</em></h1><p>Explore sabores, origens e histórias. Cada grão tem uma página para você conhecer mais.</p></div><div id="cl-grain-catalog" class="cl-catalog-grid"></div><div class="cl-knowledge-note"><strong>Espécie e variedade: qual a diferença?</strong><br>Arábica é uma espécie. Bourbon, Catuaí e outras variedades ajudam a contar sua diversidade. <button type="button" id="cl-arabica-info">Conheça o Arábica →</button></div></div>
+      <article data-screen="grao-detalhe" hidden aria-labelledby="cl-detail-name">
+        <nav class="cl-breadcrumb" aria-label="Caminho da página"><button type="button" data-page="graos">Todos os grãos</button><i data-lucide="chevron-right" aria-hidden="true"></i><span id="cl-detail-crumb">Bourbon</span></nav>
+        <div class="cl-grain-hero"><div><div class="cl-kicker" id="cl-detail-kind">Conheça a variedade</div><h1 id="cl-detail-name">Bourbon</h1><div class="cl-grain-lead" id="cl-detail-lead">Doçura e equilíbrio</div><div class="cl-flavors" id="cl-detail-flavors"></div><button type="button" id="cl-detail-prepare" class="cl-grain-cta"><span>Preparar com este grão</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div><section class="cl-sensory" aria-labelledby="cl-sensory-title"><div class="cl-sensory-top"><i data-lucide="bean" aria-hidden="true"></i>Perfil na xícara</div><h2 id="cl-sensory-title">O que procurar ao provar</h2><p id="cl-detail-sensory"></p><p style="border-top:1px solid #ffffff25;padding-top:12px;margin-top:14px;font-size:11px">As notas são referências para explorar. O lote, a torra e o preparo também contam.</p></section></div>
+        <div class="cl-grain-reading"><div class="cl-editorial"><section aria-labelledby="cl-origin-heading"><h2 id="cl-origin-heading">Origem & história</h2><p id="cl-detail-history"></p><div class="cl-source">Para aprofundar: <a id="cl-detail-source" href="https://varieties.worldcoffeeresearch.org/varieties/bourbon" target="_blank" rel="noopener noreferrer">World Coffee Research</a></div></section><section aria-labelledby="cl-tasting-heading"><h2 id="cl-tasting-heading">Como degustar</h2><p id="cl-detail-taste"></p><div class="cl-tasting"><div><span>01</span><strong>Perceba o aroma</strong>Aproxime a xícara e tente reconhecer uma primeira nota.</div><div><span>02</span><strong>Sinta a textura</strong>Observe se a bebida parece delicada ou mais encorpada.</div><div><span>03</span><strong>Compare os goles</strong>Volte à xícara quando ela estiver menos quente e perceba o que mudou.</div></div></section><details open><summary>Altitude e região de cultivo</summary><p id="cl-detail-cultivation"></p></details><details><summary>Torra, moagem e preparo</summary><p id="cl-detail-brew"></p></details><details><summary>Harmonizações para experimentar</summary><p id="cl-detail-pairing"></p></details><details><summary>Cafeína e informações do lote</summary><p>Fazenda, região, altitude, processo e data da torra ajudam a conhecer o café que está na sua mão. Procure essas informações na embalagem ou com a torrefação. O nome da variedade, sozinho, não informa a quantidade de cafeína na sua xícara.</p></details></div><aside class="cl-grain-aside"><div class="cl-kicker">Da leitura ao preparo</div><h2>Experimente na prática.</h2><p>Escolha um método para levar este grão à sua receita.</p><div id="cl-detail-methods" class="cl-grain-methods"></div><p class="cl-aside-note">A calculadora mantém o grão escolhido. Ajuste o volume e a intensidade ao seu gosto.</p></aside></div>
+      </article>
+    </main>
+    <footer class="cl-footer"><span>© CoffeeLovers · Feito para quem aprecia café.</span><span><i data-lucide="leaf" aria-hidden="true"></i>Um bom café começa com curiosidade.</span></footer>
+  </div>
+</div>
+  <script src="assets/lucide.min.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/prototype-controls.js"></script>
+</body>
+</html>

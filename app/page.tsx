@@ -1,3 +1,8 @@
+import { Suspense } from "react";
+import { graos, metodos } from "@/lib/data";
+import { Calculator } from "@/components/calculator/Calculator";
+import { DiscoveryLinks } from "@/components/calculator/DiscoveryLinks";
+
 export default function PreparePage() {
   return (
     <>
@@ -17,7 +22,11 @@ export default function PreparePage() {
         </p>
       </div>
 
-      <p className="cl-note">A calculadora entra na próxima etapa.</p>
+      <Suspense fallback={null}>
+        <Calculator metodos={metodos} graos={graos} />
+      </Suspense>
+
+      <DiscoveryLinks />
     </>
   );
 }

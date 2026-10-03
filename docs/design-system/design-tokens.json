@@ -1,0 +1,226 @@
+{
+  "name": "CoffeeLovers",
+  "version": "1.0",
+  "status": "Prototipo para implementacao",
+  "unit": "CSS px",
+  "colors": {
+    "--cl-bg": {
+      "light": "#f5f1e9",
+      "dark": "#171b18"
+    },
+    "--cl-surface": {
+      "light": "#fffcf6",
+      "dark": "#232923"
+    },
+    "--cl-soft": {
+      "light": "#eee8dc",
+      "dark": "#30372f"
+    },
+    "--cl-ink": {
+      "light": "#24372c",
+      "dark": "#f4efe4"
+    },
+    "--cl-muted": {
+      "light": "#657065",
+      "dark": "#b1baae"
+    },
+    "--cl-line": {
+      "light": "#dbded3",
+      "dark": "#404b40"
+    },
+    "--cl-accent": {
+      "light": "#305740",
+      "dark": "#c5d5a8"
+    },
+    "--cl-on-accent": {
+      "light": "#fffdf5",
+      "dark": "#233327"
+    },
+    "--cl-gold": {
+      "light": "#8a5b25",
+      "dark": "#dfbc82"
+    },
+    "--cl-dark": {
+      "light": "#233c2c",
+      "dark": "#233c2c"
+    },
+    "--cl-cream": {
+      "light": "#fbf4e6",
+      "dark": "#fbf4e6"
+    }
+  },
+  "literalColors": [
+    "#00000008",
+    "#171b18",
+    "#232923",
+    "#233327",
+    "#233c2c",
+    "#24372c",
+    "#273b2c",
+    "#30372f",
+    "#305740",
+    "#404b40",
+    "#657065",
+    "#8a5b25",
+    "#ad302c",
+    "#b1baae",
+    "#b5c6ae",
+    "#bbcbb5",
+    "#c0cdb7",
+    "#c5d5a8",
+    "#c8d5be",
+    "#cfbd93",
+    "#d6c39a",
+    "#d7decf",
+    "#d8e2cd",
+    "#dbded3",
+    "#dfbc82",
+    "#e4cfaa",
+    "#e8e8d8",
+    "#ebeadc",
+    "#eee8dc",
+    "#f3ddb6",
+    "#f4efe4",
+    "#f5f1e9",
+    "#fbf4e6",
+    "#ffb4ab",
+    "#fffcf6",
+    "#fffdf5",
+    "#ffffff25",
+    "#ffffff30"
+  ],
+  "typography": {
+    "families": {
+      "ui": "DM Sans, Arial, sans-serif",
+      "editorial": "Fraunces, Georgia, serif"
+    },
+    "fontSizes": [
+      "10px",
+      "11px",
+      "12px",
+      "13px",
+      "14px",
+      "15px",
+      "16px",
+      "18px",
+      "20px",
+      "21px",
+      "22px",
+      "23px",
+      "25px",
+      "27px",
+      "33px",
+      "35px",
+      "36px",
+      "39px",
+      "40px",
+      "41px",
+      "42px",
+      "43px",
+      "45px",
+      "48px",
+      "49px",
+      "54px",
+      "55px",
+      "58px"
+    ],
+    "fontWeights": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "lineHeights": [
+      "1.1",
+      "1.13",
+      "1.2",
+      "1.3",
+      "1.35",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.65",
+      "1.7",
+      "1.75",
+      "1.8",
+      "1.85"
+    ],
+    "letterSpacings": [
+      "-.3px",
+      "-.4px",
+      "-.5px",
+      "-1.5px",
+      "-1px",
+      "-2px",
+      ".6px",
+      "1.8px",
+      "1px"
+    ]
+  },
+  "spacingPx": [
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0,
+    14.0,
+    15.0,
+    16.0,
+    17.0,
+    18.0,
+    19.0,
+    20.0,
+    21.0,
+    22.0,
+    23.0,
+    24.0,
+    25.0,
+    26.0,
+    27.0,
+    28.0,
+    29.0,
+    30.0,
+    32.0,
+    35.0,
+    38.0
+  ],
+  "borderRadius": [
+    "10px",
+    "11px",
+    "12px",
+    "14px",
+    "15px",
+    "16px",
+    "20px",
+    "30px",
+    "50%",
+    "7px",
+    "8px",
+    "9px",
+    "var(--cl-radius)"
+  ],
+  "breakpoints": {
+    "type": "container",
+    "name": "coffee",
+    "maxWidthsPx": [
+      760,
+      570,
+      350
+    ]
+  },
+  "layout": {
+    "maxWidthPx": 1100,
+    "mobilePreviewMaxWidthPx": 390,
+    "calculatorColumns": "1.14fr 1fr",
+    "grainHeroColumns": "1.35fr 1fr",
+    "grainReadingColumns": "1.65fr 1fr"
+  },
+  "rulesFile": "css-reference.json"
+}

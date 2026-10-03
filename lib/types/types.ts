@@ -1,79 +1,54 @@
-export interface Grao {
-  id: string;
-  nome: string;
-  regiao: string;
-  pais: string;
-  altitude: string;
-  origin: string;
-  origin_story?: string;
-  altitude_implications?: string;
-  tasting_guide?: string;
-  pairings?: string;
-  recipe_notes?: string;
-  flavor: {
-    descricao: string;
-    acidez: string;
-    corpo: string;
-    docura: string;
-    notas: string[];
-  };
-  metodos_recomendados: string[];
-  recipe: {
-    cafe_gramas: number;
-    agua_ml: number;
-    proporcao: string;
-    temperatura: string;
-    tempo_total_minutos: number;
-    granulometria: string;
-    passos: Array<{
-      numero: number;
-      titulo: string;
-      descricao: string;
-    }>;
-  };
-  especificacoes: {
-    cafeina_percentual: string;
-    producao_global: string;
-    altitude_ideal: string;
-    clima: string;
-  };
+export interface Passo {
+  titulo: string;
+  descricao: string;
 }
 
 export interface Metodo {
   id: string;
   nome: string;
+  /** Denominador da proporção café:água. `null` quando o método não tem medida universal (Moka). */
+  proporcao: number | null;
+  moagem: string;
+  tempo: string;
+  nivel: string;
+  /** Nome do ícone Lucide, em kebab-case. */
   icone: string;
-  tagline: string;
   descricao: string;
-  dificuldade: string;
-  tempo_minutos: number;
-  investimento: string;
-  origem: string;
-  vibe: string;
-  tutorial: {
-    passos: Array<{
-      numero: number;
-      titulo: string;
-      descricao: string;
-      dica: string;
-    }>;
-  };
-  tecnicas: {
-    temperatura: string;
-    tempo: string;
-    proporcao: string;
-    granulometria: string;
-  };
-  equipment: Array<{
-    nome: string;
-    descricao: string;
-  }>;
-  recipe: {
-    cafe_gramas: number;
-    agua_ml: number;
-    tempo_total_minutos: number;
-  };
-  graos_combinam: string[];
-  pros: string[];
-  cons: string[];
+  passos: Passo[];
+}
+
+export type Intensidade = "leve" | "equilibrado" | "intenso";
+
+export interface Fonte {
+  url: string;
+  publicacao: string;
+}
+
+export interface Grao {
+  id: string;
+  nome: string;
+  /** Arábica é espécie; as demais são variedades dentro dela. */
+  tipo: "variedade" | "especie";
+  perfil: string;
+  notas: string[];
+  corpo: string;
+  sensorial: string;
+  historia: string;
+  fonte: Fonte;
+  degustacao: string;
+  cultivo: string;
+  preparo: string;
+  harmonizacao: string;
+  metodosSugeridos: string[];
+}
+
+export interface Receita {
+  metodo: Metodo;
+  grao: Grao | null;
+  aguaMl: number;
+  intensidade: Intensidade;
+  /** Denominador final já com o ajuste de intensidade. `null` na Moka. */
+  proporcao: number | null;
+  /** Gramas de café. `null` na Moka. */
+  cafeG: number | null;
 }

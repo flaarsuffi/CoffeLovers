@@ -3,360 +3,122 @@
     {
       "id": "v60",
       "nome": "V60",
-      "icone": "⏳",
-      "tagline": "Precisão & Clareza",
-      "descricao": "Controle total sobre o processo de extração. Ideal para explorar cada nuance do café e revelar notas delicadas.",
-      "dificuldade": "Intermediária",
-      "tempo_minutos": 3,
-      "tempo_exato": "3-4 min",
-      "investimento": "R$ 40-80",
-      "origem": "Desenvolvido pela Hario no Japão em 2005. O nome vem do ângulo de 60 graus do cone.",
-      "vibe": "Precisão, clareza, controle total. Para quem quer explorar nuances.",
-      "tutorial": "Aqui vem o passo-a-passo prático. Primeira coisa: use água entre 88 e 92°C (deixa esfriar uns 30 segundos depois de fervida). Coloque o V60 num copo ou jarro, encaixe o filtro e despeje água quente pra umedecer, isso tira gosto de papel. Agora o café: use proporção 1:16 (um grama de café pra 16 de água). Com café moído na granulação média-fina (tipo areia fina), comece o bloom. Despeje um pouco de água, só pra umedecer bem, e espere 30 a 45 segundos. A partir daí, despeje em movimentos circulares lentos, sempre do centro pra fora. O café inteiro deve cair entre 3 e 4 minutos. Dica: não despeje tudo de uma vez, faz em 3 etapas. Se ficar muito rápido (menos de 3 minutos), a moagem tá grossa demais. Se demora mais de 4 minutos, pó muito fino.",
-      "tecnicas": {
-        "temperatura": "92-96°C",
-        "tempo": "3-4 min exato",
-        "proporcao": "1:16 (café:água)",
-        "granulometria": "Média-fina",
-        "grind_size": "Semelhante a açúcar cristal"
-      },
-      "equipment": [
+      "proporcao": 16,
+      "moagem": "Média-fina",
+      "tempo": "3–4 min",
+      "nivel": "Intermediário",
+      "icone": "coffee",
+      "descricao": "Uma xícara limpa, com espaço para perceber cada nota.",
+      "passos": [
         {
-          "nome": "V60 Dripper",
-          "descricao": "Ceramic, glass ou plástico. Ceramic é mais durável e retem melhor calor. Custa R$ 40-60.",
-          "essencial": true
+          "titulo": "Prepare o filtro",
+          "descricao": "Encaixe e enxágue o filtro. Descarte a água usada no enxágue."
         },
         {
-          "nome": "Filtro de Papel",
-          "descricao": "Específico pra V60 (tabletop). Qualidade importante — papel branqueado remove resíduos.",
-          "essencial": true
+          "titulo": "Adicione o café",
+          "descricao": "Use a quantidade da receita e umedeça todo o pó. Espere cerca de 30 segundos."
         },
         {
-          "nome": "Balança Digital",
-          "descricao": "Precisão de 0.1g. Essencial pra V60 — você precisa de exatidão. Custa R$ 60-150.",
-          "essencial": true
-        },
-        {
-          "nome": "Moedor Manual/Elétrico",
-          "descricao": "Moagem na hora é obrigatória. Burr grinder (não blade). Custa R$ 100-500+.",
-          "essencial": true
-        },
-        {
-          "nome": "Bule/Chaleira com bico fino",
-          "descricao": "Precisão no derramamento. Bico fino permite controle. Custa R$ 30-100.",
-          "essencial": false
+          "titulo": "Complete a água",
+          "descricao": "Despeje aos poucos, em movimentos circulares. Use o tempo como referência."
         }
-      ],
-      "recipe": {
-        "cafe_gramas": 17,
-        "agua_ml": 250,
-        "proporcao": "1:15",
-        "temperatura": "93°C",
-        "tempo_total": "3:30",
-        "granulometria": "Média-fina"
-      },
-      "graos_combinam": [
-        "Bourbon",
-        "Catuaí",
-        "Geisha",
-        "Arábica"
-      ],
-      "pros": [
-        "Clareza máxima",
-        "Controle total",
-        "Sabor brilhante",
-        "Ritmo personalizado"
-      ],
-      "cons": [
-        "Curva de aprendizado",
-        "Requer técnica",
-        "Moagem crítica",
-        "Setup específico"
-      ],
-      "origin": "V60 é um desses métodos que nasceu de uma pergunta simples: como fazer café limpo, com corpo equilibrado e sem o sedimento tipo french press? A resposta veio do Japão em 2005, quando a Hario criou esse cone com espiral interna que se tornou cult entre os apaixonados por café. O nome vem do ângulo: 60 graus. A empresa queria um método que desse controle total sobre o fluxo de água, deixando o barista (você) no comando de cada segundo da extração. Hoje é a ferramenta favorita de campeonatos de café ao redor do mundo, porque não é sorte, é técnica mesmo.",
-      "technique_description": "O que torna V60 especial é aquela espiral interna do cone. Parece simples, mas muda tudo: ela quebra a água em pequenos fluxos quando cai, cria turbulência uniforme e direciona o café sempre pro mesmo caminho. O ângulo de 60 graus também é estratégico. Quanto mais perpendicular você despeja a água, mais rápido ela passa. Quanto mais lateral, mais lento. Isso quer dizer que você não está só passando água pelo café, está orquestrando a extração. A espiral força contato uniforme entre a água e o pó, evita caminhos onde água passa sem extrair nada. Resultado: café limpo, sem sedimento, com acidez brilhante e origem clara.",
-      "why_choose": "V60 é pra você que quer controle total e café limpinho. A grande vantagem: clareza de sabor impressionante, cada nota sensorial do grão aparece. Perfeito pra origem único, pra café especial que você quer conhecer de verdade. E não tem sedimento tipo french press. A desvantagem é que exige atenção. Não é liga-e-esquece. Precisa de atenção constante, movimento certo, timing preciso. Se você tá ocupado ou gosta de algo mais automático, talvez não seja sua amiga. Mas se você curte ritual e quer café que explora tudo que o grão tem, V60 é ouro.",
-      "pro_tips": "Se seu café saiu amargo e pesado, ajusta o ângulo pra mais lateral (deixa mais devagar). Se tá fraco demais, o bloom foi curto. Estenda pro 45 segundos cheio. Experimenta variar a altura que você despeja: mais alto = mais turbulência, mais rápido. Mais perto = mais controle. Outra coisa: filtro é aliado seu, não vilão. Papel de qualidade faz diferença. E que tal experimentar uma moagem um pouco mais grossa e bloom mais longo quando tá usando um café mais light? Você vai ver notas florais e frutadas explodirem. V60 aprecia café fresco também, não mais que 30 dias de torra.\n---"
+      ]
     },
     {
       "id": "aeropress",
-      "nome": "Aeropress",
-      "icone": "🔄",
-      "tagline": "Versátil & Rápido",
-      "descricao": "Imersão + pressão = extração eficiente com corpo rico e perfil limpo. Este guia usa o método tradicional (imersão de ~2-3 min). Extremamente versátil e portátil.",
-      "dificuldade": "Fácil",
-      "tempo_minutos": 2,
-      "tempo_exato": "2-3 min",
-      "investimento": "R$ 100-150",
-      "origem": "Inventado por Alan Adler em 2005. Combina imersão (French Press) com pressão (Espresso) em um método manual único.",
-      "vibe": "Flexível, forgivable, rápido. Para quem quer simplicidade com qualidade.",
-      "tutorial": "Básico mesmo. Encaixa o êmbolo na câmara, vira de cabeça pra baixo (quer dizer, o êmbolo fica em cima). Coloca o filtro no fundo (papel ou metal, escolhe). Despeja um pouco de água quente pra umedecer (uns 200ml). Coloca o café moído (18 a 20 gramas, um pouco mais fino que V60). Despeja água quente, tipo 200ml, em um movimento rápido. Mexe bem com uma colher por 10 segundos. Deixa descansar por mais 30 segundos. Agora a parte da pressão: encosta o êmbolo lá no topo (sem forçar ainda), depois pressiona pra baixo de forma constante e suave. Leva uns 30 segundos pra descer. Quando ouvir um psiu no final, é porque saiu todo o café da câmara. Pronto, 1 minuto e 50 segundos só.",
-      "tecnicas": {
-        "temperatura": "85-90°C",
-        "tempo": "2-3 min total",
-        "proporcao": "1:15 a 1:18",
-        "granulometria": "Médio-fina",
-        "pressao": "Lenta e constante"
-      },
-      "equipment": [
+      "nome": "AeroPress",
+      "proporcao": 15,
+      "moagem": "Média-fina",
+      "tempo": "2–3 min",
+      "nivel": "Versátil",
+      "icone": "cylinder",
+      "descricao": "Imersão e pressão para explorar diferentes receitas.",
+      "passos": [
         {
-          "nome": "Aeropress",
-          "descricao": "Cilindro plástico com êmbolo. Durável, leve, portátil. R$ 100-150.",
-          "essencial": true
+          "titulo": "Monte sobre a xícara",
+          "descricao": "Coloque o filtro na tampa e encaixe na câmara, apoiada sobre uma xícara firme."
         },
         {
-          "nome": "Filtros de Papel",
-          "descricao": "Específicos para Aeropress. Caixa com 350 filtros R$ 20-30.",
-          "essencial": true
+          "titulo": "Misture café e água",
+          "descricao": "Adicione o café e a água da receita. Mexa suavemente e deixe em infusão."
         },
         {
-          "nome": "Moedor Manual",
-          "descricao": "Manual é popular para Aeropress (portabilidade). R$ 80-200.",
-          "essencial": true
-        },
-        {
-          "nome": "Chaleira com bico fino",
-          "descricao": "Controle na hora do bloom. R$ 30-80.",
-          "essencial": false
+          "titulo": "Pressione devagar",
+          "descricao": "Encaixe o êmbolo e pressione com cuidado. Siga as orientações do seu equipamento."
         }
-      ],
-      "recipe": {
-        "cafe_gramas": 18,
-        "agua_ml": 250,
-        "proporcao": "1:14",
-        "temperatura": "88°C",
-        "tempo_total": "2:30",
-        "granulometria": "Médio-fina"
-      },
-      "graos_combinam": [
-        "Bourbon",
-        "Catuaí",
-        "Acaiá",
-        "Icatu"
-      ],
-      "pros": [
-        "Fácil de aprender",
-        "Versátil",
-        "Portátil",
-        "Consistente",
-        "Forgivable"
-      ],
-      "cons": [
-        "Menos clareza que V60",
-        "Requer prensa (para alguns)",
-        "Filtros descartáveis"
-      ],
-      "origin": "Aeropress é história legal: um cara chamado Alan Adler, engenheiro formado, apaixonado por café, olhou pro mercado e pensou \"por que ninguém criou algo que usa pressão tipo espresso mas sem máquina de 10 mil reais?\". Foi em 2005 também, coincidência legal. Ele criou essa coisa de cilindro com êmbolo, bem simples mesmo, e conseguiu algo genial: pressão com controle manual, resultado rápido (menos de 2 minutos), limpo tipo paper filter, mas com corpo tipo french press. Nasceu em Santa Rosa, Califórnia, e conquistou o mundo inteiro. Agora tem campeonato específico de Aeropress, sabia? É tipo o underdog que virou favorita.",
-      "technique_description": "Pensa numa seringa gigante pra café. Você coloca o pó, despeja água quente, mexe, e depois pressiona manualmente o êmbolo pra baixo. Essa pressão força a água através do café bem rápido, em alta concentração, criando uma extração intensificada. O café cai em menos de 2 minutos. Mas aqui vem a magia: mesmo com essa velocidade toda, o filtro (que pode ser papel ou metal) retira os óleos gordurosos, deixando o café limpo. É tipo um hibrido entre paper filter clean e french press body. A física aí é a pressão aplicada manualmente fazendo a extração acontecer de forma diferente de outros métodos, concentrando os sabores.",
-      "why_choose": "Aeropress é pra quem valoriza rapidez e praticidade sem abrir mão de qualidade. Faz café muito bom em tempo mínimo. Ideal pra manhã corrida, viagem, mochila. E é resistente tipo uma rocha, cabe na bolsa, não quebra fácil. A dificuldade maior é encontrar a pressão ideal, não é toda hora que você acerta. Alguns acham que sai muito forte mesmo, precisa de ajuste. Também tem debate infinito sobre filtro papel vs. metal: papel é mais limpo, metal deixa mais corpo e óleos. E cuidado com temperatura: se água esfriar demais, café sai fraco. Precisa ser realmente quente.",
-      "pro_tips": "Quer café mais suave? Usa filtro de papel e aumenta um pouco a água. Quer mais corpo? Metal filter + menos água = concentrado bem denso. Se descobrir que tá muito forte, tira um pouco de água antes. Se tá fraco, café moído mais fino. Outra coisa: inverted method é um hack que muita gente usa. Em vez de virar de cabeça pra cima no final, você prepara tudo de cabeça pra baixo (é estranho mesmo), depois vira rápido e pressiona. Alguns juramen que controlam melhor dessa forma. Vale experimentar. E relaxa com a pressão, não precisa fazer força hercúlea. Constante e suave é a chave.\n---"
+      ]
     },
     {
-      "id": "french-press",
-      "nome": "French Press",
-      "icone": "🫖",
-      "tagline": "Corpo Encorpado",
-      "descricao": "Imersão longa revela todas as nuances do café com corpo cheio e ricos. O método clássico e indulgente.",
-      "dificuldade": "Muito fácil",
-      "tempo_minutos": 4,
-      "tempo_exato": "4 min",
-      "investimento": "R$ 50-150",
-      "origem": "Inventada em 1929 por Attilio Calimani. Método de imersão que retém óleos naturais do café.",
-      "vibe": "Relaxado, corpulento, tradicional. Para quem quer qualidade sem técnica.",
-      "tutorial": "Coloca água pra fervir. Enquanto aquece, mói o café mais grosso, tipo açúcar cristal mesmo (se moer fino, vai muita poeira pro seu café). Quando água ferve, deixa esfriar uns 30 segundos (água demais quente queima café). Despeja um pouco no bule vazio pra aquecer, depois descarta. Agora coloca o café (proporção 1:15, um grama pra 15 de água). Despeja a água quente, mexe bem com uma colher, deixa coberto por 4 minutos. Depois pressiona lentamente o êmbolo. Tira toda a água escura pra fora do bule se não quiser ficar mais amargo (deixa o sedimento lá). Café tá pronto pra servir. Dica: se deixar francês muito tempo depois de pronto, café fica queimado. Sirva rápido.",
-      "tecnicas": {
-        "temperatura": "95-100°C",
-        "tempo": "4 min exato",
-        "proporcao": "1:14 a 1:16",
-        "granulometria": "Grossa (flocos de milho)",
-        "imersao": "Completa"
-      },
-      "equipment": [
+      "id": "prensa",
+      "nome": "Prensa francesa",
+      "proporcao": 15,
+      "moagem": "Grossa",
+      "tempo": "4 min",
+      "nivel": "Fácil",
+      "icone": "glass-water",
+      "descricao": "Mais corpo e uma rotina simples, sem filtro de papel.",
+      "passos": [
         {
-          "nome": "French Press",
-          "descricao": "Vidro ou aço inox. Tamanhos 350ml-1L. R$ 50-150.",
-          "essencial": true
+          "titulo": "Adicione o café",
+          "descricao": "Coloque o café de moagem grossa na prensa."
         },
         {
-          "nome": "Moedor Burr",
-          "descricao": "Essencial para moagem grossa consistente. R$ 100-300.",
-          "essencial": true
+          "titulo": "Deixe em infusão",
+          "descricao": "Adicione a água da receita, mexa suavemente e aguarde cerca de 4 minutos."
         },
         {
-          "nome": "Colher de madeira",
-          "descricao": "Opcional mas bom para agitar durante bloom.",
-          "essencial": false
+          "titulo": "Pressione e sirva",
+          "descricao": "Abaixe o êmbolo devagar e transfira a bebida para a xícara."
         }
-      ],
-      "recipe": {
-        "cafe_gramas": 30,
-        "agua_ml": 400,
-        "proporcao": "1:13",
-        "temperatura": "97°C",
-        "tempo_total": "4:00",
-        "granulometria": "Grossa"
-      },
-      "graos_combinam": [
-        "Bourbon",
-        "Bourbon Amarelo",
-        "Icatu",
-        "Acaiá"
-      ],
-      "pros": [
-        "Muito fácil",
-        "Corpo rico",
-        "Óleos naturais",
-        "Investimento baixo",
-        "Sem filtros descartáveis"
-      ],
-      "cons": [
-        "Sedimento",
-        "Menos clareza",
-        "Requer moagem grossa",
-        "Perde calor rápido"
-      ],
-      "origin": "French Press é clássica mesmo, a avó da maioria dos métodos modernos. Criada na França no século 19, mas patenteada pelo italiano Attilio Calimani em 1901. É tipo aquele instrumento que o avô de alguém usava, respeito. A vibe é simples: joga café e água quente dentro, deixa ficar um tempo, pressiona. Sem complicação. Conquistou o mundo porque é funcional, barato e faz café gostoso. O nome francês pegou mais que o italiano (às vezes chamam de cafeteira italiana, mas ai tá confundindo com Moka Pot, cuidado). Tem presença garantida em qualquer casa, restaurante, escritório minimamente preocupado com café.",
-      "technique_description": "French Press funciona por imersão. Pensa em infusão tipo chá de verdade. Café e água ficam junto pelo tempo todo, conversando. Isso extrai muito bem mesmo, porque o pó fica em contato direto com a água quente, sem pressa. Mas aqui vem o ponto: não tem filtro de papel, o que tira os óleos. Então francês sempre tem sedimento, aquele pozinho que desce pro fundo do copo. Alguns adoram porque tira mais sabor. Outros odeiam porque tira limpeza. É tradeoff. O êmbolo com tela de metal faz a separação no final. Quando você pressiona, a tela desce e mantém a maior parte do pó lá em baixo. Não é filtro perfeito, mas separa o grosso do fino.",
-      "why_choose": "French Press é pra quem curte café encorpado, com personalidade, sem preocupação com sedimento mínimo. Ótimo pro café mais escuro, porque realça chocolate e notas torradas. Não exige precisão, água pura não precisa estar em temperatura exata, é bem tranquilo. E o ritual é lindo, bem contemplativo. Desvantagem: sedimento existe. Se você odeia pozinho, não é sua coisa. Também deixa café mais gorduroso (os óleos naturais do café ficam ali), o que algunos chamam de riqueza e outros chamam de pesado. E levanta o LDL se bebe muito café diário, os óleos fazem diferença na saúde. Mas pra ocasiões especiais, é perfeito.",
-      "pro_tips": "Café muito fino demais e tá amargo? Reduz o tempo de imersão pra 3 minutos. Quer mais força? Deixa 5 minutos. Moagem mais grossa sempre ajuda. Experimente variar: deixa a água mais quente (depois de fervida, imediatamente) pra extração mais agressiva, ou deixa esfriar mais pra extração mais suave. Outro hack: depois de pressionar, tira o êmbolo inteiro, coloca uma peneira por cima do bule e despeja o café em copo, deixando mais do sedimento pra trás. Faz diferença de limpeza. E se estiver servindo pra várias pessoas, despeja tudo num jarro primeiro depois distribui, não deixa café na prensa.\n---"
-    },
-    {
-      "id": "italiana",
-      "nome": "Italiana",
-      "icone": "☕",
-      "tagline": "Concentrado & Intenso",
-      "descricao": "Pressão de vapor, sabor intenso e concentrado. O clássico italiano que não se extingue.",
-      "dificuldade": "Fácil",
-      "tempo_minutos": 6,
-      "tempo_exato": "6-8 min",
-      "investimento": "R$ 50-200",
-      "origem": "Inventada em 1901 por Alfonso Bialetti. A moka pot é ícone de design italiano e da cultura de café caseiro.",
-      "vibe": "Clássico, intenso, social. Para rituais italianos de café.",
-      "tutorial": "Vem cá, passo a passo. Enche a câmara de baixo com água até a válvula (aquele parafusinho de segurança lá). Moem café bem fino, quase em pó (tipo farinha de trigo mesmo, bem fino). Encaixa o filtro que tem a câmara do meio, enche com café sem comprimir muito (aqui é mais leve que espresso). Encaixa a câmara de cima, fecha bem. Bota no fogo em temperatura média. Não deixa no máximo, porque queima. Aguarda. Você vai ouvir um barulhinho tipo ofegante quando a água começa a subir. É normal. Quando sair um som mais aguçado, tipo gemido, tira do fogo. Pronto, café saiu pra cima. Serve rápido, se deixar muito tempo fica amargo. Cuidado: a câmara fica quente, bem quente mesmo.",
-      "tecnicas": {
-        "temperatura": "Vapor (não exata)",
-        "tempo": "6-8 min total",
-        "proporcao": "1:8 a 1:10 (muito concentrado)",
-        "granulometria": "Fina",
-        "pressao": "Vapor (natural)"
-      },
-      "equipment": [
-        {
-          "nome": "Moka Pot",
-          "descricao": "Alumínio ou aço inox. Tamanhos 1, 3, 6, 9 xícaras. R$ 50-200.",
-          "essencial": true
-        },
-        {
-          "nome": "Moedor Burr",
-          "descricao": "Moagem fina consistente. R$ 100-300.",
-          "essencial": true
-        },
-        {
-          "nome": "Fogão (gás ou elétrico)",
-          "descricao": "Qualquer fogão funciona. Prefira fogo médio-baixo.",
-          "essencial": true
-        }
-      ],
-      "recipe": {
-        "cafe_gramas": 18,
-        "agua_ml": 120,
-        "proporcao": "1:7",
-        "temperatura": "Vapor",
-        "tempo_total": "7:00",
-        "granulometria": "Fina"
-      },
-      "graos_combinam": [
-        "Catuaí",
-        "Acaiá",
-        "Bourbon Amarelo"
-      ],
-      "pros": [
-        "Fácil de aprender",
-        "Concentrado",
-        "Clássico",
-        "Sem eletricidade",
-        "Social"
-      ],
-      "cons": [
-        "Menos controle",
-        "Não é tecnicamente espresso",
-        "Pode queimar",
-        "Requer fogão"
-      ],
-      "origin": "Moka Pot é ícone italiano, 100%. Criada por Alfonso Bialetti em 1933, é daquelas coisas que você olha e sabe que é italiana por design sozinho. O nome vem da história: há séculos a melhor café do mundo vinha da região de Moka, no Iêmen. Italianos queriam aquele café em casa, mas sem pagar muito. Então Bialetti criou uma cafeteira de três câmaras que funciona com vapor, e boom, a receita clássica de café italiano nasceu ali. Aparência retrô-futurista, funciona que é uma beleza, e virou essencial em cozinhas italianas, do Rio até Tóquio. Até hoje é ícone de design. Você já deve ter visto.",
-      "technique_description": "Pensa em três andares: fundo (água), meio (café), topo (resultado). Você enche a câmara de baixo com água, coloca café moído bem fino no filtro do meio, e encaixa a câmara de cima vazia. Coloca no fogo (médio). A água do fundo aquece, vira vapor, pressiona e força a água quente passar pelo café moído pra câmara de cima. É pressão de vapor, tipo espresso de verdade, mas manual e caseira. A diferença de espresso: muito menos pressão e mais tempo. Mas o resultado é café concentrado, encorpado, escuro, praticamente o que italianos entendem por café mesmo. Nada de filtro, nada de imersão longa. É rápido, é intenso.",
-      "why_choose": "Moka Pot é pra quem gosta de café forte, bem denso, e não faz questão de filtro ou sofisticação. Rápido, prático, barato. Faz café que parece espresso direto, perfeito pro bico de açúcar ou mesmo sozinho. Não ocupa espaço, funciona em qualquer fogo (até acampamento). Vem em tamanhos diversos, desde pra uma xícara até 12. Desvantagem: exige atenção no fogo, porque se deixar de lado queima fácil. Não é aquele método liga-e-esquece. E se quiser café mais limpo, tipo V60, essa não é sua amiga. Também não dá pra desculpar: se queimou, queimou mesmo. Sabor fica amargão pra caramba. E tem o risco de superextração se forçar a moagem muito fina.",
-      "pro_tips": "Quer estender mais o sabor? Usa água fria na câmara de baixo, leva mais tempo, menos agressivo. Água quente já deixa tudo rápido demais. Se café tá saindo queimado, diminui o fogo ou levanta antes (confia em você). Proporção que funciona bem: enche a câmara do meio bem até a borda, quase rasante. Não compacta. E aqui vai um hack: depois que sai o primeiro fluxo de café pra cima, alguns tiram do fogo, descem um pouco a câmara de cima e deixam sair o vapor por baixo, depois encaixa de novo. Controla o fluxo. Experimental, mas vale a pena testar. Limpeza é importante: deixa secar bem, monta quando tá completamente seca."
+      ]
     },
     {
       "id": "coado",
-      "nome": "Coado",
-      "icone": "🧵",
-      "tagline": "Suave & Tradicional",
-      "descricao": "Método tradicional brasileiro de pano. Suave, acessível, e profundamente cultural. Café de avó.",
-      "dificuldade": "Muito fácil",
-      "tempo_minutos": 3,
-      "tempo_exato": "3-5 min",
-      "investimento": "R$ 10-30",
-      "origem": "Método tradicional das cozinhas brasileiras há séculos. Extremamente simples e acessível.",
-      "vibe": "Aconchego, tradição, simplicidade. Para quem ama café sem frescura.",
-      "tutorial": "Aqui vem super simples. Pega um suporte de coador (ou faz DIY com dois pregadores e um pano), encaixa o filtro de papel nele, coloca em cima da xícara ou jarro. Despeja água quente pra umedecer o papel (tira gosto), descarta essa água. Moem café um pouco mais fino que café de máquina (tipo areia média mesmo). Coloca na quantidade certa (1:16, um grama pra 16 de água). Despeja um pouco de água pra fazer bloom, 30 segundos. Depois despeja o resto de forma constante. A água deve passar toda em uns 3 a 4 minutos. Se passar muito rápido, moagem tá grossa. Se ficar lento demais, tá fino demais. Aqui é bem direto, menos variável que V60, mas ainda exige atenção básica.",
-      "tecnicas": {
-        "temperatura": "90-95°C",
-        "tempo": "3-5 min",
-        "proporcao": "1:18 a 1:20",
-        "granulometria": "Média-grossa",
-        "filtragem": "Pano (lenta)"
-      },
-      "equipment": [
+      "nome": "Coado de papel",
+      "proporcao": 16,
+      "moagem": "Média",
+      "tempo": "3–4 min",
+      "nivel": "Fácil",
+      "icone": "filter",
+      "descricao": "O ritual do dia a dia, com um resultado suave e familiar.",
+      "passos": [
         {
-          "nome": "Coador de Pano",
-          "descricao": "Pano de algodão tradicional. Dura anos se cuidado. R$ 10-30.",
-          "essencial": true
+          "titulo": "Prepare o coador",
+          "descricao": "Encaixe e enxágue o filtro de papel. Descarte a água."
         },
         {
-          "nome": "Moedor Manual",
-          "descricao": "Qualquer moedor funciona. Manual é tradicional. R$ 50-200.",
-          "essencial": false
+          "titulo": "Umedeça o café",
+          "descricao": "Adicione o café e um pouco da água da receita. Espere cerca de 30 segundos."
         },
         {
-          "nome": "Xícara/Caneca",
-          "descricao": "Qualquer xícara normal serve. R$ 10-50.",
-          "essencial": true
+          "titulo": "Complete o preparo",
+          "descricao": "Adicione o restante da água aos poucos e deixe filtrar."
         }
-      ],
-      "recipe": {
-        "cafe_gramas": 13,
-        "agua_ml": 250,
-        "proporcao": "1:19",
-        "temperatura": "93°C",
-        "tempo_total": "4:00",
-        "granulometria": "Média-grossa"
-      },
-      "graos_combinam": [
-        "Bourbon",
-        "Arábica",
-        "Catuaí",
-        "Qualquer grão"
-      ],
-      "pros": [
-        "Muito barato",
-        "Tradicional",
-        "Simples",
-        "Suave",
-        "Cultural",
-        "Sem lixo descartável"
-      ],
-      "cons": [
-        "Lento",
-        "Menos controle",
-        "Pano precisa higiene",
-        "Filtragem inconsistente"
-      ],
-      "origin": "Coado é método brasileiro, raiz mesmo. Não tem data de invenção tipo \"em 1905\", é aquela coisa que alguém um dia falou \"por que não usar pano ou papel pra filtrar?\" e a resposta foi genial. A origem é lá longe mesmo, em cafezais do século 19. Aqui no Brasil, o método se popularizou não por sofisticação, mas por praticidade: pega um papel, faz um funil, passa o café. Simples, eficiente, barato. Vovó usava, mãe usava, você provavelmente já usou. Tem aquele suporte em plástico ou cobre que prende o filtro na xícara, de tão comum. É método que sobreviveu porque funciona, sem pretensão nenhuma.",
-      "technique_description": "Coado usa gravidade e papel. Água quente passa pelo café, encontra o papel que retém os óleos e o pó, e sai limpa no copo. Sem pressão, sem imersão longa, sem motor. Só física simples. O papel é chave aqui. Ele age como barreira contra óleos do café, deixando água passar conforme café cai por gravidade. Quanto mais fino o papel, mais tempo leva, mais limpo sai. Quanto mais grosso, mais rápido, mas menos limpo. A superfície do papel importa também: papel branco absorve um pouco de sabor, papel marrom retém um pouco de sabor (por isso tem gente que prefere). Resultado final: café limpinho, sem sedimento, corpo médio, acidez clara.",
-      "why_choose": "Coado é pra simplicidade com qualidade. Não precisa de equipamento sofisticado, não precisa de habilidade técnica muito alta. Café limpo, rápido. Perfeito pra dia comum, pra café de chegada em casa, sem ritual. Custo praticamente zero. Funciona em qualquer lugar. Desvantagem: talvez seja \"muito simples\" pra quem gosta de técnica e ritual. E dependência de filtro: se acabar, não funciona. Café nem sempre explora tudo que grão tem de potencial (papel tira óleos que outras pessoas vêem como parte do sabor). Também não é método que impõe que você estude e aprenda. É aquele café que você faz no automático.",
-      "pro_tips": "Manter água na temperatura certa é essencial: 88 a 92°C mesmo. Abaixo disso não extrai bem, acima queima. Usa água filtrada se tiver acesso, água ruim tira sabor. Aqui vai um hack: molha o filtro antes de usar não é só pra tirar gosto de papel, também aqueça o copo ou jarro embaixo. Café cai direto em copo frio perde calor rápido. Outra: alguns filtros de papel branco absorvem mais sabor que de papel marrom. Se notar diferença, muda. E importante: moagem deve ser consistente. Se tiver partículas muito diferentes de tamanho, algumas saem escuras (queimadas) e outras fracas (não extraídas). Investe num moedor bom, faz diferença real. Última dica: café fresco é tudo. Coado realça bem a frescura, então procura sempre grão novo."
+      ]
+    },
+    {
+      "id": "moka",
+      "nome": "Moka italiana",
+      "proporcao": null,
+      "moagem": "Conforme fabricante",
+      "tempo": "Varia por tamanho",
+      "nivel": "Fogão",
+      "icone": "flame",
+      "descricao": "Uma bebida concentrada. A medida acompanha o tamanho da cafeteira.",
+      "passos": [
+        {
+          "titulo": "Respeite o reservatório",
+          "descricao": "Coloque água abaixo da válvula de segurança, conforme o fabricante."
+        },
+        {
+          "titulo": "Preencha o funil",
+          "descricao": "Adicione café sem prensar e monte a cafeteira corretamente."
+        },
+        {
+          "titulo": "Aqueça com cuidado",
+          "descricao": "Siga o tempo e a intensidade de fogo indicados para seu modelo."
+        }
+      ]
     }
   ]
 }
