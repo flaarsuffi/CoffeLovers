@@ -6,6 +6,7 @@ Calculadora de proporção café/água e conteúdo sobre grãos e métodos de pr
 npm install
 npm run dev     # http://localhost:3000
 npm test        # Vitest
+npm run lint    # ESLint (next/core-web-vitals)
 npm run build
 ```
 

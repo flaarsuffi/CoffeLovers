@@ -1,0 +1,7 @@
+node_modules
+.next
+out
+build
+
+# Kit do design system: código de referência, de terceiro, mantido como veio
+docs/design-system/reference
