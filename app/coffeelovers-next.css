@@ -40,3 +40,19 @@
 #coffee-next a.cl-text-button {
   width: fit-content;
 }
+
+/* Ação do card de catálogo — o <button> centralizava o rótulo por padrão */
+#coffee-next a.cl-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Link dentro da nota sobre espécie — espelha .cl-knowledge-note button */
+#coffee-next .cl-knowledge-note a {
+  color: var(--cl-accent);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

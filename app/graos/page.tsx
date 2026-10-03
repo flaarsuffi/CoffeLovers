@@ -1,3 +1,7 @@
+import Link from "next/link";
+import { variedades } from "@/lib/data";
+import { GrainCard } from "@/components/catalog/GrainCard";
+
 export default function GraosPage() {
   return (
     <>
@@ -14,7 +18,18 @@ export default function GraosPage() {
         </p>
       </div>
 
-      <p className="cl-note">O catálogo de grãos entra na próxima etapa.</p>
+      <div className="cl-catalog-grid">
+        {variedades.map((grao) => (
+          <GrainCard key={grao.id} grao={grao} />
+        ))}
+      </div>
+
+      <div className="cl-knowledge-note">
+        <strong>Espécie e variedade: qual a diferença?</strong>
+        <br />
+        Arábica é uma espécie. Bourbon, Catuaí e outras variedades ajudam a
+        contar sua diversidade. <Link href="/graos/arabica">Conheça o Arábica →</Link>
+      </div>
     </>
   );
 }

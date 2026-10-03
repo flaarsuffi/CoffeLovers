@@ -1,3 +1,6 @@
+import { metodos } from "@/lib/data";
+import { MethodCard } from "@/components/catalog/MethodCard";
+
 export default function MetodosPage() {
   return (
     <>
@@ -14,7 +17,11 @@ export default function MetodosPage() {
         </p>
       </div>
 
-      <p className="cl-note">O catálogo de métodos entra na próxima etapa.</p>
+      <div className="cl-catalog-grid">
+        {metodos.map((metodo) => (
+          <MethodCard key={metodo.id} metodo={metodo} />
+        ))}
+      </div>
     </>
   );
 }
