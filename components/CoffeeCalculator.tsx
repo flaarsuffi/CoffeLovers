@@ -151,22 +151,56 @@ export function CoffeeCalculator({
         </div>
       )}
 
-      {/* Coffee Result */}
+      {/* Coffee Result — Circle */}
       {isValid && coffeeAmount !== null && (
-        <div className="p-6 bg-gradient-to-br from-primary/5 to-primary/0 border border-primary rounded-lg text-center">
-          <div className="text-xs font-bold uppercase tracking-wider text-text-tertiary mb-2">
-            Café moído recomendado
+        <div className="space-y-6">
+          {/* Main Result Circle */}
+          <div className="flex justify-center">
+            <div className="relative w-48 h-48 rounded-full border-2 border-primary flex flex-col items-center justify-center"
+                 style={{
+                   background: 'radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.02))'
+                 }}>
+              <div className="text-6xl font-light text-primary">
+                {coffeeAmount}
+              </div>
+              <div className="text-xs text-text-tertiary uppercase tracking-wider mt-2">
+                gramas
+              </div>
+            </div>
           </div>
-          <div className="text-5xl font-light text-primary mb-1">
-            {coffeeAmount}
-          </div>
-          <div className="text-sm text-text-secondary">gramas</div>
 
-          {/* Variations */}
+          {/* Variations Box */}
           {currentRatio && (
-            <div className="mt-6 pt-6 border-t border-primary/20 text-xs text-text-secondary space-y-1">
-              <div>Leve: {Math.round(waterAmount / (parseInt(currentRatio.variações.leve.split(":")[1]) || 16))}g</div>
-              <div>Intenso: {Math.round(waterAmount / (parseInt(currentRatio.variações.intenso.split(":")[1]) || 16))}g</div>
+            <div className="p-4 bg-bg-subtle border border-border rounded-md text-center space-y-2">
+              <div className="text-xs text-text-tertiary uppercase tracking-wider mb-3">
+                Ajuste conforme preferência
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="p-3 bg-bg-subtle rounded border border-border/50 hover:border-primary/30 transition-colors">
+                  <div className="text-xs text-text-tertiary">Leve</div>
+                  <div className="text-lg text-text-primary font-light">
+                    {Math.round(waterAmount / (parseInt(currentRatio.variações.leve.split(":")[1]) || 16))}g
+                  </div>
+                </div>
+                <div className="p-3 bg-bg-subtle rounded border border-border/50 hover:border-primary/30 transition-colors">
+                  <div className="text-xs text-text-tertiary">Intenso</div>
+                  <div className="text-lg text-text-primary font-light">
+                    {Math.round(waterAmount / (parseInt(currentRatio.variações.intenso.split(":")[1]) || 16))}g
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Moagem Recomendada */}
+          {currentRatio?.moagem_recomendada && (
+            <div className="p-4 bg-primary/5 border border-primary/20 rounded-md text-center">
+              <div className="text-xs text-text-tertiary uppercase tracking-wider mb-2">
+                Moagem recomendada
+              </div>
+              <div className="text-sm text-text-primary font-light">
+                {currentRatio.moagem_recomendada}
+              </div>
             </div>
           )}
         </div>

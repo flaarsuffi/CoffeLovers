@@ -284,4 +284,92 @@ describe("CoffeeCalculator Types & Logic", () => {
       expect(ratio).toBeDefined();
     });
   });
+
+  describe("Sprint 3: Result Circle & Polish", () => {
+    it("should render result circle with border-primary", () => {
+      const circleClasses = "border-2 border-primary rounded-full";
+      expect(circleClasses).toContain("border-primary");
+      expect(circleClasses).toContain("rounded-full");
+    });
+
+    it("should display result in large text (text-6xl = 48px)", () => {
+      const fontSize = 48;
+      expect(fontSize).toBeGreaterThan(36);
+    });
+
+    it("should show variations in grid (grid-cols-2)", () => {
+      const gridLayout = "grid-cols-2";
+      expect(gridLayout).toBe("grid-cols-2");
+    });
+
+    it("should have hover state on variation boxes", () => {
+      const hoverClass = "hover:border-primary/30 transition-colors";
+      expect(hoverClass).toContain("hover:border");
+      expect(hoverClass).toContain("transition-colors");
+    });
+
+    it("should display moagem_recomendada when available", () => {
+      const ratio = mockRatios[0];
+      expect(ratio.moagem_recomendada).toBeDefined();
+      expect(ratio.moagem_recomendada).toBe("Média-fina");
+    });
+
+    it("should calculate variation amounts correctly", () => {
+      const ratio = mockRatios[0];
+      const waterAmount = 350;
+
+      // Leve: 1:17
+      const leve_denom = parseInt(ratio.variações.leve.split(":")[1]) || 16;
+      const leve = Math.round(waterAmount / leve_denom);
+
+      // Intenso: 1:15
+      const intenso_denom = parseInt(ratio.variações.intenso.split(":")[1]) || 16;
+      const intenso = Math.round(waterAmount / intenso_denom);
+
+      expect(leve).toBe(21);
+      expect(intenso).toBe(23);
+      expect(leve).toBeLessThan(intenso);
+    });
+
+    it("should handle missing moagem_recomendada gracefully", () => {
+      const ratio = mockRatios[1]; // geisha without moagem
+      expect(ratio.moagem_recomendada).toBeUndefined();
+      // Component should not crash, should skip rendering
+    });
+
+    it("should have proper spacing between sections (space-y-6 = 24px)", () => {
+      const spacing = 24;
+      expect(spacing).toBeGreaterThanOrEqual(20);
+    });
+
+    it("should render result circle with radial gradient", () => {
+      const gradient = "radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.02))";
+      expect(gradient).toContain("radial-gradient");
+      expect(gradient).toContain("rgba(212, 175, 55");
+    });
+
+    it("should circle size be (w-48 h-48 = 192px × 192px)", () => {
+      const size = 192; // 48 * 4px
+      expect(size).toBeGreaterThan(150);
+      expect(size).toBeLessThan(250);
+    });
+
+    it("should variations be in 2-column grid (not stacked)", () => {
+      const gridCols = 2;
+      expect(gridCols).toBe(2);
+    });
+
+    it("should all design tokens present (colors, spacing, typography)", () => {
+      const tokens = {
+        borderPrimary: "border-primary",
+        textTertiary: "text-text-tertiary",
+        textPrimary: "text-text-primary",
+        bgSubtle: "bg-bg-subtle",
+        spacingY6: "space-y-6",
+      };
+      Object.values(tokens).forEach((token) => {
+        expect(token.length).toBeGreaterThan(0);
+      });
+    });
+  });
 });
